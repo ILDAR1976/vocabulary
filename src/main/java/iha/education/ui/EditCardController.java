@@ -3,7 +3,7 @@ package iha.education.ui;
 //Underconstraction
 
 import javafx.collections.ObservableList;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -30,6 +30,8 @@ public class EditCardController<T,S> {
     private S service;
      
     @FXML private AnchorPane entityTypeAnchor;
+   
+    @FXML private BorderPane editPane;
     
     @FXML private TableView<T> table;
  
@@ -43,9 +45,13 @@ public class EditCardController<T,S> {
 
     @Autowired 
     public AnchorPane getEntityTypeAnchor() {
-    	
     	return entityTypeAnchor;
     }
+ 
+    public BorderPane getEditPane() {
+    	return editPane;
+    }
+    
     
     public void handleCloseTable() {
     	this.entityTypeAnchor.setVisible(false);

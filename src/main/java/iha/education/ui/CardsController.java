@@ -9,6 +9,7 @@ import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.util.Callback;
+import javafx.util.StringConverter;
 import javafx.beans.property.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -127,15 +128,16 @@ public class CardsController {
 		TableColumn<Cards, String> idColumn = new TableColumn<>("ID");
 		idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
 
-		TableColumn<Cards, String> partSpeechColumn = new TableColumn<>("Parts of Speech");
+		TableColumn<Cards, PartSpeech> partSpeechColumn = new TableColumn<>("Parts of Speech");
 		partSpeechColumn.setCellValueFactory(new PropertyValueFactory<>("partSpeech"));
-		//partSpeechColumn.setOnEditCommit(e -> partSpeechColumn_OnEditCommit(e));
 		
+		partSpeechColumn.setCellFactory(PartSpeechFieldTableCell.forTableColumn());
+		partSpeechColumn.setOnEditStart(e -> partSpeechColumn_OnEditCommit(e));
 		
-		TableColumn<Cards, String> senseGroupColumn = new TableColumn<>("Sense group");
+		TableColumn<Cards, SenseGroup> senseGroupColumn = new TableColumn<>("Sense group");
 		senseGroupColumn.setCellValueFactory(new PropertyValueFactory<>("senseGroup"));
 
-		TableColumn<Cards, String> subGroupColumn = new TableColumn<>("Subgroup");
+		TableColumn<Cards, SubGroup> subGroupColumn = new TableColumn<>("Subgroup");
 		subGroupColumn.setCellValueFactory(new PropertyValueFactory<>("subGroup"));
 
 		TableColumn<Cards, String> wordColumn = new TableColumn<>("Word");
@@ -149,7 +151,7 @@ public class CardsController {
 		TableColumn<Cards, String> exampleColumn = new TableColumn<>("Example");
 		exampleColumn.setCellValueFactory(new PropertyValueFactory<>("example"));
 
-		partSpeechColumn.setCellValueFactory(new Callback<CellDataFeatures<Cards, String>, ObservableValue<String>>() {
+/*		partSpeechColumn.setCellValueFactory(new Callback<CellDataFeatures<Cards, String>, ObservableValue<String>>() {
 			@Override
 			public ObservableValue<String> call(CellDataFeatures<Cards, String> param) {
 				Cards cards = param.getValue();
@@ -157,7 +159,18 @@ public class CardsController {
 				return stringProp;
 			}
 		});
+*/
+		/*		
+		partSpeechColumn.setCellValueFactory(new Callback<CellDataFeatures<Cards, PartSpeech>, ObservableValue<PartSpeech>>() {
+			@Override
+			public ObservableValue<PartSpeech> call(CellDataFeatures<Cards, PartSpeech> param) {
+				Cards cards = param.getValue();
+				//SimpleStringProperty stringProp = new SimpleStringProperty(cards.getPartSpeech().getWord());
+				return null;
+			}
+		});
 
+		
 		senseGroupColumn.setCellValueFactory(new Callback<CellDataFeatures<Cards, String>, ObservableValue<String>>() {
 			@Override
 			public ObservableValue<String> call(CellDataFeatures<Cards, String> param) {
@@ -175,7 +188,7 @@ public class CardsController {
 				return stringProp;
 			}
 		});
-
+*/
 		table.getColumns().setAll(idColumn, partSpeechColumn, senseGroupColumn, subGroupColumn, wordColumn,
 				translateColumn, exampleColumn);
 
@@ -205,7 +218,7 @@ public class CardsController {
 	}
 	
 	private void partSpeechColumn_OnEditCommit(Event e) {
-		
+		((MainController) this.mainApp.getMainView().getController()).getMainFrame().setCenter(mainApp.getEditCardView().getView());
 	}
 	
 	private void generateTestData() {

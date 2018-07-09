@@ -139,5 +139,13 @@ public class Cards implements Serializable {
 		return true;
 	}
 
+
+
+	@Override
+	public String toString() {
+		return word;
+	}
+
+	
     
 }

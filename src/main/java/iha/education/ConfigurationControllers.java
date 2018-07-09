@@ -5,6 +5,7 @@ import javafx.scene.Parent;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import iha.education.ui.CardsController;
+import iha.education.ui.EditCardController;
 import iha.education.ui.MainController;
 
 import java.io.IOException;
@@ -34,6 +35,12 @@ public class ConfigurationControllers {
     public View getSearchView() throws IOException {
         return loadView("fxml/search.fxml");
     }
+
+    @Bean(name = "editCardView")
+    public View getEditCardView() throws IOException {
+        return loadView("fxml/editCard.fxml");
+    }
+
     
     @Bean
     public CardsController getCardsController() throws IOException {
@@ -45,6 +52,13 @@ public class ConfigurationControllers {
         return (MainController) getMainView().getController();
     }
 
+    @Bean
+    public EditCardController getEditCardController() throws IOException {
+        return (EditCardController) getEditCardView().getController();
+    }
+
+    
+    
     protected View loadView(String url) throws IOException {
         InputStream fxmlStream = null;
         try {

@@ -14,14 +14,14 @@ import java.io.Serializable;
 public class PartSpeech implements Serializable {
 	
 	private Long id;
-    private String word;
+    private String name;
     private String translate;
 
     public PartSpeech() {
     }
 
-    public PartSpeech(String word, String translate) {
-    	this.word = word;
+    public PartSpeech(String name, String translate) {
+    	this.name = name;
     	this.translate = translate;
     }
     
@@ -38,11 +38,11 @@ public class PartSpeech implements Serializable {
 
 	@Column(unique = true)
 	public String getWord() {
-		return word;
+		return name;
 	}
 	
 	public void setWord(String word) {
-		this.word = word;
+		this.name = word;
 	}
 
 	@Column(unique = true)
@@ -59,7 +59,7 @@ public class PartSpeech implements Serializable {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((word == null) ? 0 : word.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
 
@@ -77,13 +77,19 @@ public class PartSpeech implements Serializable {
 				return false;
 		} else if (!id.equals(other.id))
 			return false;
-		if (word == null) {
-			if (other.word != null)
+		if (name == null) {
+			if (other.name != null)
 				return false;
-		} else if (!word.equals(other.word))
+		} else if (!name.equals(other.name))
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return  name;
+	}
     
+	
 	
 }

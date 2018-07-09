@@ -26,8 +26,13 @@ public class Application extends AbstractJavaFxApplicationSupport {
 
     @Qualifier("cardsView")
     @Autowired
-    public ConfigurationControllers.View cardsView;
+    private ConfigurationControllers.View cardsView;
 
+    @Qualifier("editCardView")
+    @Autowired
+    private ConfigurationControllers.View editCardView;
+
+    
     @Override
     public void start(Stage stage) throws Exception {
         Scene scene = new Scene(mainView.getView(),1200,800,true);
@@ -50,4 +55,18 @@ public class Application extends AbstractJavaFxApplicationSupport {
     public static void main(String[] args) {
         launchApp(Application.class, args);
     }
+
+	public ConfigurationControllers.View getMainView() {
+		return mainView;
+	}
+
+	public ConfigurationControllers.View getCardsView() {
+		return cardsView;
+	}
+
+	public ConfigurationControllers.View getEditCardView() {
+		return editCardView;
+	}
+    
+    
 }

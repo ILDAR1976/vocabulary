@@ -29,8 +29,8 @@ public class MainController {
     @FXML
     public void handleShowCardsDialog() throws IOException {
     	mainFrame.setCenter(null);
-    	((CardsController)mainApp.cardsView.getController()).getCardsAnchor().setVisible(true);
-    	mainFrame.setCenter(mainApp.cardsView.getView());
+    	((CardsController)mainApp.getCardsView().getController()).getCardsAnchor().setVisible(true);
+    	mainFrame.setCenter(mainApp.getCardsView().getView());
     }
     
     @FXML
@@ -50,4 +50,10 @@ public class MainController {
     public void setMainApp(Application mainApp) {
         this.mainApp = mainApp;
     }
+
+	public BorderPane getMainFrame() {
+		return mainFrame;
+	}
+    
+    
 }
