@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vocabulary>
+    <card>
+        <example>I begin a talk</example>
+        <id>1</id>
+        <partSpeech>
+            <id>1</id>
+            <translate>Глагол</translate>
+            <word>Verb</word>
+        </partSpeech>
+        <senseGroup>
+            <id>1</id>
+            <name>Verb of Stage</name>
+            <translate>Глаголы стадии</translate>
+        </senseGroup>
+        <subGroup>
+            <id>1</id>
+            <name>beginning</name>
+            <translate>Начало</translate>
+        </subGroup>
+        <translate>начало</translate>
+        <word>begin</word>
+    </card>
+    <card>
+        <example>I start</example>
+        <id>2</id>
+        <partSpeech>
+            <id>1</id>
+            <translate>Глагол</translate>
+            <word>Verb</word>
+        </partSpeech>
+        <senseGroup>
+            <id>1</id>
+            <name>Verb of Stage</name>
+            <translate>Глаголы стадии</translate>
+        </senseGroup>
+        <subGroup>
+            <id>1</id>
+            <name>beginning</name>
+            <translate>Начало</translate>
+        </subGroup>
+        <translate>начинать</translate>
+        <word>start</word>
+    </card>
+</vocabulary>
