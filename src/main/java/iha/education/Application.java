@@ -31,21 +31,20 @@ public class Application extends AbstractJavaFxApplicationSupport {
     @Qualifier("editCardView")
     @Autowired
     private ConfigurationControllers.View editCardView;
-
-    
+   
     @Override
     public void start(Stage stage) throws Exception {
-        Scene scene = new Scene(mainView.getView(),1200,800,true);
     	((MainController) mainView.getController()).setMainApp(this);
     	((CardsController) cardsView.getController()).setMainApp(this);
-    	stage.setTitle(windowTitle);
-    	
+        
+    	Scene scene = new Scene(mainView.getView(),1200,800,true);
     	scene.getStylesheets()
 			.add(getClass()
 			.getClassLoader()
 			.getResource("css/DarkTheme.css")
 			.toExternalForm());
     	
+    	stage.setTitle(windowTitle);
     	stage.setScene(scene);
         stage.setResizable(true);
         stage.centerOnScreen();
@@ -67,6 +66,6 @@ public class Application extends AbstractJavaFxApplicationSupport {
 	public ConfigurationControllers.View getEditCardView() {
 		return editCardView;
 	}
-    
-    
+ 
+
 }

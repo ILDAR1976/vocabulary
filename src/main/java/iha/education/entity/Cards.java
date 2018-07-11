@@ -11,12 +11,20 @@ import java.io.Serializable;
 
 @Entity
 @Table
+@NamedQueries({
+    //@NamedQuery(name="update.updateAll", query="select count(c) from Contact c")
+    //@NamedQuery(name="Cards.updateAll", query="update Cards set example=:example, modificated=:modificated, partSpeech=:partSpeech, senseGroup=:senseGroup, subGroup=:subGroup, translate=:translate, word=:word where id=:id")
+    @NamedQuery(name="Cards.findAllFromPartSpeech", query="select ps from PartSpeech ps")
+})
+
 public class Cards implements Serializable {
 	
 	private Long id;
 	
-    @ManyToOne(targetEntity = PartSpeech.class)
-    @JoinColumn(name = "id")
+	@ManyToOne(targetEntity = PartSpeech.class, cascade = CascadeType.ALL)
+	@JoinTable(name = "PartSpeech", 
+    joinColumns = @JoinColumn(name = "id"), 
+    inverseJoinColumns = @JoinColumn(name = "partSpeech"))
     private PartSpeech partSpeech;
 
     @ManyToOne(targetEntity = SenseGroup.class)
@@ -26,15 +34,15 @@ public class Cards implements Serializable {
     @ManyToOne(targetEntity = SubGroup.class)
     @JoinColumn(name = "id")
     private SubGroup subGroup;
+    
     private String word;
     private String translate;
     private String example;
-
+    private Boolean modificated;
+    
     public Cards() {
     }
 
-
-    
     public Cards(PartSpeech partSpeech, SenseGroup senseGroup, SubGroup subGroup, String word, String translate,
 			String example) {
 		super();
@@ -107,13 +115,21 @@ public class Cards implements Serializable {
 	public void setExample(String example) {
 		this.example = example;
 	}
+	
+	@Column
+	public Boolean getModificated() {
+		return modificated;
+	}
+
+	public void setModificated(Boolean modificated) {
+		this.modificated = modificated;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((word == null) ? 0 : word.hashCode());
 		return result;
 	}
 
@@ -131,21 +147,6 @@ public class Cards implements Serializable {
 				return false;
 		} else if (!id.equals(other.id))
 			return false;
-		if (word == null) {
-			if (other.word != null)
-				return false;
-		} else if (!word.equals(other.word))
-			return false;
 		return true;
 	}
-
-
-
-	@Override
-	public String toString() {
-		return word;
-	}
-
-	
-    
 }

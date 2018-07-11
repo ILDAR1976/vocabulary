@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import iha.education.entity.Cards;
 
-@SuppressWarnings("restriction")
+@SuppressWarnings("serial")
 @XmlRootElement(name = "vocabulary")
 public class CardsListWrapper implements Serializable  {
     private List<Cards> cards;

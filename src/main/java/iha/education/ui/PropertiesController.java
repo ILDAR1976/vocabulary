@@ -118,8 +118,8 @@ public class PropertiesController {
         TableColumn<Cards, String> subGroupColumn = new TableColumn<>("Subgroup");
         subGroupColumn.setCellValueFactory(new PropertyValueFactory<>("subGroup"));
 
-        TableColumn<Cards, String> wordColumn = new TableColumn<>("Word");
-        wordColumn.setCellValueFactory(new PropertyValueFactory<>("word"));
+        TableColumn<Cards, String> NameColumn = new TableColumn<>("Name");
+        NameColumn.setCellValueFactory(new PropertyValueFactory<>("Name"));
 
         TableColumn<Cards, String> translateColumn = new TableColumn<>("Translate");
         translateColumn.setCellValueFactory(new PropertyValueFactory<>("translate"));
@@ -131,7 +131,7 @@ public class PropertiesController {
             @Override
             public ObservableValue<String> call(CellDataFeatures<Cards, String> param) {
                 Cards cards = param.getValue();
-                SimpleStringProperty stringProp = new SimpleStringProperty(cards.getPartSpeech().getWord());
+                SimpleStringProperty stringProp = new SimpleStringProperty(cards.getPartSpeech().getName());
                 return stringProp;
             }
         });
@@ -156,7 +156,7 @@ public class PropertiesController {
             }
         });
 
-        table.getColumns().setAll(idColumn, partSpeechColumn, senseGroupColumn, subGroupColumn, wordColumn, translateColumn, exampleColumn);
+        table.getColumns().setAll(idColumn, partSpeechColumn, senseGroupColumn, subGroupColumn, NameColumn, translateColumn, exampleColumn);
 
         table.setItems(data);
         

@@ -20,7 +20,6 @@ public class Utils {
 		Marshaller m = context.createMarshaller();
 		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 		m.marshal(wrapper, file);
-		
 	}
 	
 	public static CardsListWrapper loadCards(File file, CardsListWrapper wrapper) {

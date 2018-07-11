@@ -40,7 +40,6 @@ public class ConfigurationControllers {
     public View getEditCardView() throws IOException {
         return loadView("fxml/editCard.fxml");
     }
-
     
     @Bean
     public CardsController getCardsController() throws IOException {

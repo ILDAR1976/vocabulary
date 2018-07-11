@@ -5,8 +5,8 @@
         <id>1</id>
         <partSpeech>
             <id>1</id>
+            <name>Verb</name>
             <translate>Глагол</translate>
-            <word>Verb</word>
         </partSpeech>
         <senseGroup>
             <id>1</id>
@@ -26,8 +26,8 @@
         <id>2</id>
         <partSpeech>
             <id>1</id>
+            <name>Verb</name>
             <translate>Глагол</translate>
-            <word>Verb</word>
         </partSpeech>
         <senseGroup>
             <id>1</id>

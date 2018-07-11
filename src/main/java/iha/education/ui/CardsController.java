@@ -1,20 +1,20 @@
 package iha.education.ui;
 
-import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TableView.TableViewFocusModel;
+import javafx.scene.control.TableView.TableViewSelectionModel;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.util.Callback;
-import javafx.util.StringConverter;
-import javafx.beans.property.*;
+import javafx.collections.FXCollections;
+import javafx.scene.control.*;
+import javafx.event.*;
+import javafx.scene.control.cell.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import iha.education.Application;
 import iha.education.entity.Cards;
 import iha.education.entity.PartSpeech;
@@ -26,21 +26,7 @@ import iha.education.service.SenseGroupService;
 import iha.education.service.SubGroupService;
 import iha.education.utils.CardsListWrapper;
 import iha.education.utils.Utils;
-import javafx.collections.FXCollections;
 import static iha.education.utils.Utils.*;
-import javafx.application.*;
-import javafx.stage.*;
-import javafx.scene.*;
-import javafx.scene.control.*;
-import javafx.scene.layout.*;
-import javafx.scene.text.*;
-import javafx.event.*;
-import javafx.scene.control.cell.*;
-import javafx.beans.property.*;
-import javafx.collections.*;
-import javafx.geometry.*;
-import javafx.util.converter.*;
-
 import javax.annotation.PostConstruct;
 import javax.xml.bind.JAXBException;
 import java.io.File;
@@ -66,6 +52,18 @@ public class CardsController {
 	@Autowired
 	private CardsService cardsService;
 
+	//@Autowired
+	private List<Cards> cards;
+	
+	//@Autowired
+	private List<PartSpeech> partSpeeches;
+	
+	//@Autowired
+	private List<SenseGroup> senseGroups;
+	
+	//@Autowired
+	private List<SubGroup> subGroups;
+	
 	@FXML
 	private AnchorPane cardsAnchor;
 
@@ -74,16 +72,12 @@ public class CardsController {
 	
 	@FXML
 	private Label notApply;
-
-	private ObservableList<Cards> data;
-	private List<Cards> cards = new ArrayList<Cards>();
-	private CardsListWrapper wrapper;
-	private Application mainApp;
 	
-	@FXML
-	public void initialize() {
-	}
-
+	private Application mainApp;
+	private CardsListWrapper wrapper;
+	private ObservableList<Cards> cardsData;
+	private TableViewSelectionModel<Cards> selectionModel;
+	
 	@Autowired
 	public AnchorPane getCardsAnchor() {
 		return cardsAnchor;
@@ -95,9 +89,10 @@ public class CardsController {
 
 	public void handleSaveData() throws JAXBException {
 		File file = Utils.getVocabularyFile();
-		data = FXCollections.observableArrayList(cards);
+		cardsData = FXCollections.observableArrayList(cards);
+		cardsData.stream().forEach(e->{cardsService.save(e);});
 		wrapper = new CardsListWrapper();
-		wrapper.setCards(data);
+		wrapper.setCards(cardsData);
 		saveCards(file, wrapper);
 		notApply.setVisible(false);
 	}
@@ -111,35 +106,34 @@ public class CardsController {
 		case 1:
 			generateTestData();
 			cards = cardsService.findAll();
-			data = FXCollections.observableArrayList(cards);
+			cardsData = FXCollections.observableArrayList(cards);
 			wrapper = new CardsListWrapper();
-			wrapper.setCards(data);
+			wrapper.setCards(cardsData);
 			saveCards(file, wrapper);
 			break;
 		case 2:
+			cards = new ArrayList<>();
 			wrapper = new CardsListWrapper(FXCollections.observableArrayList(cards));
 			wrapper = loadCards(file, wrapper);
 			transferToSpringContext();
-			cards = cardsService.findAll();
-			data = FXCollections.observableArrayList(cards);
+			cardsData = FXCollections.observableArrayList(cards);
 			break;
 		}
 
 		TableColumn<Cards, String> idColumn = new TableColumn<>("ID");
 		idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
-
+		
 		TableColumn<Cards, PartSpeech> partSpeechColumn = new TableColumn<>("Parts of Speech");
 		partSpeechColumn.setCellValueFactory(new PropertyValueFactory<>("partSpeech"));
-		
 		partSpeechColumn.setCellFactory(PartSpeechFieldTableCell.forTableColumn());
-		partSpeechColumn.setOnEditStart(e -> partSpeechColumn_OnEditCommit(e));
+		partSpeechColumn.setOnEditStart(e -> {partSpeechColumn_OnEditCommit(e);});
 		
 		TableColumn<Cards, SenseGroup> senseGroupColumn = new TableColumn<>("Sense group");
 		senseGroupColumn.setCellValueFactory(new PropertyValueFactory<>("senseGroup"));
-
+		
 		TableColumn<Cards, SubGroup> subGroupColumn = new TableColumn<>("Subgroup");
 		subGroupColumn.setCellValueFactory(new PropertyValueFactory<>("subGroup"));
-
+		
 		TableColumn<Cards, String> wordColumn = new TableColumn<>("Word");
 		wordColumn.setCellValueFactory(new PropertyValueFactory<>("word"));
 		wordColumn.setCellFactory(TextFieldTableCell.forTableColumn());
@@ -147,78 +141,84 @@ public class CardsController {
 		
 		TableColumn<Cards, String> translateColumn = new TableColumn<>("Translate");
 		translateColumn.setCellValueFactory(new PropertyValueFactory<>("translate"));
-
+		
 		TableColumn<Cards, String> exampleColumn = new TableColumn<>("Example");
 		exampleColumn.setCellValueFactory(new PropertyValueFactory<>("example"));
-
-/*		partSpeechColumn.setCellValueFactory(new Callback<CellDataFeatures<Cards, String>, ObservableValue<String>>() {
-			@Override
-			public ObservableValue<String> call(CellDataFeatures<Cards, String> param) {
-				Cards cards = param.getValue();
-				SimpleStringProperty stringProp = new SimpleStringProperty(cards.getPartSpeech().getWord());
-				return stringProp;
-			}
-		});
-*/
-		/*		
-		partSpeechColumn.setCellValueFactory(new Callback<CellDataFeatures<Cards, PartSpeech>, ObservableValue<PartSpeech>>() {
-			@Override
-			public ObservableValue<PartSpeech> call(CellDataFeatures<Cards, PartSpeech> param) {
-				Cards cards = param.getValue();
-				//SimpleStringProperty stringProp = new SimpleStringProperty(cards.getPartSpeech().getWord());
-				return null;
-			}
-		});
-
 		
-		senseGroupColumn.setCellValueFactory(new Callback<CellDataFeatures<Cards, String>, ObservableValue<String>>() {
-			@Override
-			public ObservableValue<String> call(CellDataFeatures<Cards, String> param) {
-				Cards cards = param.getValue();
-				SimpleStringProperty stringProp = new SimpleStringProperty(cards.getSenseGroup().getName());
-				return stringProp;
-			}
-		});
-
-		subGroupColumn.setCellValueFactory(new Callback<CellDataFeatures<Cards, String>, ObservableValue<String>>() {
-			@Override
-			public ObservableValue<String> call(CellDataFeatures<Cards, String> param) {
-				Cards cards = param.getValue();
-				SimpleStringProperty stringProp = new SimpleStringProperty(cards.getSubGroup().getName());
-				return stringProp;
-			}
-		});
-*/
-		table.getColumns().setAll(idColumn, partSpeechColumn, senseGroupColumn, subGroupColumn, wordColumn,
-				translateColumn, exampleColumn);
-
-		table.setItems(data);
-
+		TableColumn<Cards, String> modificatedColumn = new TableColumn<>("Modificated");
+		modificatedColumn.setCellValueFactory(new PropertyValueFactory<>("modificated"));
+		modificatedColumn.setVisible(false);
+		
+		table.getColumns().setAll(
+				idColumn, 
+				partSpeechColumn, 
+				senseGroupColumn, 
+				subGroupColumn, 
+				wordColumn,
+				translateColumn, 
+				exampleColumn,
+				modificatedColumn);
+		table.setItems(cardsData);
 	}
 
 	private void transferToSpringContext() {
-		for (Cards item : wrapper.getCards()) {
-			partSpeechService.save(item.getPartSpeech());
-			senseGroupService.save(item.getSenseGroup());
-			subGroupService.save(item.getSubGroup());
-			cardsService.save(new Cards(partSpeechService.findById(item.getPartSpeech().getId()),
-					senseGroupService.findById(item.getSenseGroup().getId()),
-					subGroupService.findById(item.getSubGroup().getId()), item.getWord(), item.getTranslate(),
-					item.getExample()));
-		}
+		
+		partSpeeches = new ArrayList<>();
+		senseGroups = new ArrayList<>();
+		subGroups = new ArrayList<>();
+		
+		wrapper.getCards().stream().forEach(item->{
+			if (!partSpeeches.contains(item.getPartSpeech())) {
+				partSpeeches.add(item.getPartSpeech());
+				partSpeechService.save(partSpeeches.get(partSpeeches.size()-1));
+			}
 
+			if (!getSenseGroups().contains(item.getSenseGroup())) {
+				senseGroups.add(item.getSenseGroup());
+				senseGroupService.save(senseGroups.get(senseGroups.size()-1));
+			}
+			
+			if (!getSubGroups().contains(item.getSubGroup())) {
+				subGroups.add(item.getSubGroup());
+				subGroupService.save(subGroups.get(subGroups.size()-1));
+			}
+			
+			cards.add(new Cards(
+					partSpeeches.get(partSpeeches.size()-1),
+					senseGroups.get(senseGroups.size()-1),
+					subGroups.get(subGroups.size()-1), 
+			item.getWord(), 
+			item.getTranslate(),
+			item.getExample()));
+			
+			cardsService.save(cards.get(cards.size()-1));
+		});
 	}
 
+	@SuppressWarnings("unchecked")
 	private void wordColumn_OnEditCommit(Event e) {
-		TableColumn.CellEditEvent<Cards, String> ce;
-		ce = (TableColumn.CellEditEvent<Cards, String>) e;
-		Cards cds = ce.getRowValue();
-		cds.setWord(ce.getNewValue());
+		TableColumn.CellEditEvent<Cards, String> cellEvent;
+		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
+		Cards cards = cellEvent.getRowValue();
+		cards.setWord(cellEvent.getNewValue());
 		notApply.setVisible(true);
+		cards.setModificated(true);
+		table.refresh();
 	}
 	
+	@SuppressWarnings("unchecked")
 	private void partSpeechColumn_OnEditCommit(Event e) {
-		((MainController) this.mainApp.getMainView().getController()).getMainFrame().setCenter(mainApp.getEditCardView().getView());
+		EditCardController<PartSpeech,PartSpeechService,CardsController> editController = ((EditCardController<PartSpeech,PartSpeechService,CardsController>) mainApp.getEditCardView().getController());
+		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
+		editController.getEditPane().setVisible(true);
+		editController.setService(partSpeechService);
+		editController.setContoller(this);
+		editController.setMainController(mainController);
+		TableColumn.CellEditEvent<Cards, String> cellEvent;
+		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
+		editController.setEntity(cellEvent.getRowValue().getPartSpeech());
+		editController.update();
+		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
 	}
 	
 	private void generateTestData() {
@@ -234,4 +234,64 @@ public class CardsController {
 	public void setMainApp(Application mainApp) {
         this.mainApp = mainApp;
     }
+	
+	public ObservableList<Cards> getData() {
+		return cardsData;
+	}
+	
+	public void setData(ObservableList<Cards> data) {
+		this.cardsData = data;
+	}
+
+	public TableView<Cards> getTable() {
+		return table;
+	}
+
+	public void setTable(TableView<Cards> table) {
+		this.table = table;
+	}
+
+	public Label getNotApply() {
+		return notApply;
+	}
+
+	public void setNotApply(Label notApply) {
+		this.notApply = notApply;
+	}
+	
+	public List<Cards> getCards() {
+		return cards;
+	}
+
+	public void setCards(List<Cards> cards) {
+		this.cards = cards;
+	}
+
+	public List<PartSpeech> getPartSpeeches() {
+		return partSpeeches;
+	}
+
+	public void setPartSpeeches(List<PartSpeech> partSpeeches) {
+		this.partSpeeches = partSpeeches;
+	}
+
+	public List<SenseGroup> getSenseGroups() {
+		return senseGroups;
+	}
+
+	public void setSenseGroups(List<SenseGroup> senseGroups) {
+		this.senseGroups = senseGroups;
+	}
+
+	public List<SubGroup> getSubGroups() {
+		return subGroups;
+	}
+
+	public void setSubGroups(List<SubGroup> subGroups) {
+		this.subGroups = subGroups;
+	}
+
+	public void update() {
+		table.refresh();
+	}
 }

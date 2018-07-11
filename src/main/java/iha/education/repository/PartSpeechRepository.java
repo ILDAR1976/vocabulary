@@ -12,5 +12,5 @@ import java.util.List;
 public interface PartSpeechRepository extends CrudRepository<PartSpeech, Long> {
 
     List<PartSpeech> findAll();
-
+ 
 }

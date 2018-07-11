@@ -14,7 +14,7 @@ import javafx.util.converter.DefaultStringConverter;
 
 @SuppressWarnings({ "restriction", "unused" })
 public class PartSpeechFieldTableCell<S, T> extends TableCell<S, T> {
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+	
 	public static <S> Callback<TableColumn<S,PartSpeech>, TableCell<S,PartSpeech>> forTableColumn() {
         return item -> new PartSpeechFieldTableCell<S,PartSpeech>();
     }
@@ -23,15 +23,13 @@ public class PartSpeechFieldTableCell<S, T> extends TableCell<S, T> {
 		super();
 	}
 
-	 // --- converter
+	// --- converter
     private ObjectProperty<PartSpeech> converter =
             new SimpleObjectProperty<PartSpeech>(this, "converter");
 
     public final ObjectProperty<PartSpeech> converterProperty() {
         return converter;
     }
-    
-  
     
     public final PartSpeech getConverter() {
         return converterProperty().get();
@@ -44,7 +42,7 @@ public class PartSpeechFieldTableCell<S, T> extends TableCell<S, T> {
 	 @Override public void updateItem(T item, boolean empty) {
 		 super.updateItem(item, false);
 		 if (item !=null) {
-			 this.setText(((PartSpeech) item).getWord() + " - " + ((PartSpeech) item).getTranslate());
+			 this.setText(((PartSpeech) item).getName() + " - " + ((PartSpeech) item).getTranslate());
 		 }
 	 }
 	 

@@ -127,7 +127,7 @@ public class CheckCardController {
             @Override
             public ObservableValue<String> call(CellDataFeatures<Cards, String> param) {
                 Cards cards = param.getValue();
-                SimpleStringProperty stringProp = new SimpleStringProperty(cards.getPartSpeech().getWord());
+                SimpleStringProperty stringProp = new SimpleStringProperty(cards.getPartSpeech().getName());
                 return stringProp;
             }
         });
