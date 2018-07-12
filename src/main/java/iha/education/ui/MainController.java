@@ -29,8 +29,10 @@ public class MainController {
     @FXML
     public void handleShowCardsDialog() throws IOException {
     	mainFrame.setCenter(null);
-    	((CardsController)mainApp.getCardsView().getController()).getCardsAnchor().setVisible(true);
+    	CardsController cards = (CardsController)mainApp.getCardsView().getController();
+    	cards.getCardsAnchor().setVisible(true);
     	mainFrame.setCenter(mainApp.getCardsView().getView());
+    	cards.setFocus();
     }
     
     @FXML

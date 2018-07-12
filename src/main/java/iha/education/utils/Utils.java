@@ -25,8 +25,6 @@ public class Utils {
 	public static CardsListWrapper loadCards(File file, CardsListWrapper wrapper) {
 		
 		try {
-			
-			System.out.println(Files.exists(file.toPath()));
 	        JAXBContext context = JAXBContext
 	                .newInstance(CardsListWrapper.class);
 	        Unmarshaller um = context.createUnmarshaller();

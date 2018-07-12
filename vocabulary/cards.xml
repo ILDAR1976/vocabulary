@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <vocabulary>
     <card>
-        <example>I begin a talk</example>
+        <example>I begin</example>
         <id>1</id>
+        <modificated>true</modificated>
         <partSpeech>
             <id>1</id>
             <name>Verb</name>
@@ -41,5 +42,68 @@
         </subGroup>
         <translate>начинать</translate>
         <word>start</word>
+    </card>
+    <card>
+        <example>I smile</example>
+        <id>3</id>
+        <partSpeech>
+            <id>1</id>
+            <name>Verb</name>
+            <translate>Глагол</translate>
+        </partSpeech>
+        <senseGroup>
+            <id>1</id>
+            <name>Verb of Stage</name>
+            <translate>Глаголы стадии</translate>
+        </senseGroup>
+        <subGroup>
+            <id>1</id>
+            <name>beginning</name>
+            <translate>Начало</translate>
+        </subGroup>
+        <translate>улыбнись</translate>
+        <word>smile</word>
+    </card>
+    <card>
+        <example>I continue</example>
+        <id>4</id>
+        <partSpeech>
+            <id>1</id>
+            <name>Verb</name>
+            <translate>Глагол</translate>
+        </partSpeech>
+        <senseGroup>
+            <id>1</id>
+            <name>Verb of Stage</name>
+            <translate>Глаголы стадии</translate>
+        </senseGroup>
+        <subGroup>
+            <id>1</id>
+            <name>beginning</name>
+            <translate>Начало</translate>
+        </subGroup>
+        <translate>продолжить</translate>
+        <word>continue</word>
+    </card>
+    <card>
+        <example>I am stoping</example>
+        <id>5</id>
+        <partSpeech>
+            <id>1</id>
+            <name>Verb</name>
+            <translate>Глагол</translate>
+        </partSpeech>
+        <senseGroup>
+            <id>1</id>
+            <name>Verb of Stage</name>
+            <translate>Глаголы стадии</translate>
+        </senseGroup>
+        <subGroup>
+            <id>1</id>
+            <name>beginning</name>
+            <translate>Начало</translate>
+        </subGroup>
+        <translate>остановись</translate>
+        <word>stop</word>
     </card>
 </vocabulary>

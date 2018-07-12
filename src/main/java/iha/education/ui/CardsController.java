@@ -9,6 +9,7 @@ import javafx.scene.control.TableView.TableViewFocusModel;
 import javafx.scene.control.TableView.TableViewSelectionModel;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.collections.FXCollections;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.event.*;
 import javafx.scene.control.cell.*;
@@ -52,18 +53,6 @@ public class CardsController {
 	@Autowired
 	private CardsService cardsService;
 
-	//@Autowired
-	private List<Cards> cards;
-	
-	//@Autowired
-	private List<PartSpeech> partSpeeches;
-	
-	//@Autowired
-	private List<SenseGroup> senseGroups;
-	
-	//@Autowired
-	private List<SubGroup> subGroups;
-	
 	@FXML
 	private AnchorPane cardsAnchor;
 
@@ -73,20 +62,54 @@ public class CardsController {
 	@FXML
 	private Label notApply;
 	
+	@FXML
+	private TextField txtPartOfSpeech;
+	
+	@FXML
+	private TextField txtSenseGroup;
+	
+	@FXML
+	private TextField txtSubGroup;
+	
+	@FXML
+	private TextField txtWord;
+	
+	@FXML 
+	private TextField txtTranslate;
+	
+	@FXML
+	private TextField txtExample;
+	
+	@FXML
+	private Button closeButton;
+	
 	private Application mainApp;
 	private CardsListWrapper wrapper;
 	private ObservableList<Cards> cardsData;
 	private TableViewSelectionModel<Cards> selectionModel;
+	private List<Cards> cards;
+	private List<PartSpeech> partSpeeches;
+	private List<SenseGroup> senseGroups;
+	private List<SubGroup> subGroups;
+	
+	private PartSpeech currentPartSpeech;
+	private SenseGroup currentSenseGroup;
+	private SubGroup currentSubGroup;
+	private String currentWord;
+	private String currentTranslate;
+	private String currentExample;
 	
 	@Autowired
 	public AnchorPane getCardsAnchor() {
 		return cardsAnchor;
 	}
 
+	@FXML
 	public void handleCloseTable() {
 		this.cardsAnchor.setVisible(false);
 	}
-
+	
+	@FXML
 	public void handleSaveData() throws JAXBException {
 		File file = Utils.getVocabularyFile();
 		cardsData = FXCollections.observableArrayList(cards);
@@ -96,7 +119,13 @@ public class CardsController {
 		saveCards(file, wrapper);
 		notApply.setVisible(false);
 	}
-
+	
+	public void setFocus() {
+		Node focusOwnerNode = mainApp.getScene().getFocusOwner();
+		focusOwnerNode = table;
+		focusOwnerNode.requestFocus();
+	}
+	
 	@SuppressWarnings("unchecked")
 	@PostConstruct
 	public void init() throws JAXBException, URISyntaxException {
@@ -130,9 +159,13 @@ public class CardsController {
 		
 		TableColumn<Cards, SenseGroup> senseGroupColumn = new TableColumn<>("Sense group");
 		senseGroupColumn.setCellValueFactory(new PropertyValueFactory<>("senseGroup"));
+		senseGroupColumn.setCellFactory(SenseGroupFieldTableCell.forTableColumn());
+		senseGroupColumn.setOnEditStart(e -> {senseGroup_OnEditCommit(e);});
 		
 		TableColumn<Cards, SubGroup> subGroupColumn = new TableColumn<>("Subgroup");
 		subGroupColumn.setCellValueFactory(new PropertyValueFactory<>("subGroup"));
+		subGroupColumn.setCellFactory(SubGroupFieldTableCell.forTableColumn());
+		subGroupColumn.setOnEditStart(e -> {subGroupColumn_OnEditCommit(e);});
 		
 		TableColumn<Cards, String> wordColumn = new TableColumn<>("Word");
 		wordColumn.setCellValueFactory(new PropertyValueFactory<>("word"));
@@ -141,9 +174,13 @@ public class CardsController {
 		
 		TableColumn<Cards, String> translateColumn = new TableColumn<>("Translate");
 		translateColumn.setCellValueFactory(new PropertyValueFactory<>("translate"));
+		translateColumn.setCellFactory(TextFieldTableCell.forTableColumn());
+		translateColumn.setOnEditCommit(e -> translateColumn_OnEditCommit(e));
 		
 		TableColumn<Cards, String> exampleColumn = new TableColumn<>("Example");
 		exampleColumn.setCellValueFactory(new PropertyValueFactory<>("example"));
+		exampleColumn.setCellFactory(TextFieldTableCell.forTableColumn());
+		exampleColumn.setOnEditCommit(e -> exampleColumn_OnEditCommit(e));
 		
 		TableColumn<Cards, String> modificatedColumn = new TableColumn<>("Modificated");
 		modificatedColumn.setCellValueFactory(new PropertyValueFactory<>("modificated"));
@@ -159,6 +196,18 @@ public class CardsController {
 				exampleColumn,
 				modificatedColumn);
 		table.setItems(cardsData);
+		
+		if (this.cardsData.isEmpty()) {
+			closeButton.setFocusTraversable(true);
+		} else {
+			TableViewFocusModel<Cards> fm = new TableViewFocusModel(table);
+			fm.focus(0);
+			TableViewSelectionModel<Cards> sm = table.getSelectionModel();
+			sm.select(0);
+			table.setSelectionModel(sm);
+			table.setFocusModel(fm);
+			
+		}
 	}
 
 	private void transferToSpringContext() {
@@ -205,7 +254,27 @@ public class CardsController {
 		cards.setModificated(true);
 		table.refresh();
 	}
-	
+
+	private void translateColumn_OnEditCommit(Event e) {
+		TableColumn.CellEditEvent<Cards, String> cellEvent;
+		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
+		Cards cards = cellEvent.getRowValue();
+		cards.setTranslate(cellEvent.getNewValue());
+		notApply.setVisible(true);
+		cards.setModificated(true);
+		table.refresh();
+	}
+
+	private void exampleColumn_OnEditCommit(Event e) {
+		TableColumn.CellEditEvent<Cards, String> cellEvent;
+		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
+		Cards cards = cellEvent.getRowValue();
+		cards.setExample(cellEvent.getNewValue());
+		notApply.setVisible(true);
+		cards.setModificated(true);
+		table.refresh();
+	}
+
 	@SuppressWarnings("unchecked")
 	private void partSpeechColumn_OnEditCommit(Event e) {
 		EditCardController<PartSpeech,PartSpeechService,CardsController> editController = ((EditCardController<PartSpeech,PartSpeechService,CardsController>) mainApp.getEditCardView().getController());
@@ -219,6 +288,117 @@ public class CardsController {
 		editController.setEntity(cellEvent.getRowValue().getPartSpeech());
 		editController.update();
 		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
+		editController.getTable().requestFocus();
+	}
+	
+	private void senseGroup_OnEditCommit(Event e) {
+		EditCardController<SenseGroup,SenseGroupService,CardsController> editController = ((EditCardController<SenseGroup,SenseGroupService,CardsController>) mainApp.getEditCardView().getController());
+		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
+		editController.getEditPane().setVisible(true);
+		editController.setService(senseGroupService);
+		editController.setContoller(this);
+		editController.setMainController(mainController);
+		TableColumn.CellEditEvent<Cards, String> cellEvent;
+		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
+		editController.setEntity(cellEvent.getRowValue().getSenseGroup());
+		editController.update();
+		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
+		editController.getTable().requestFocus();
+	}
+	
+	private void subGroupColumn_OnEditCommit(Event e) {
+		EditCardController<SubGroup,SubGroupService,CardsController> editController = ((EditCardController<SubGroup,SubGroupService,CardsController>) mainApp.getEditCardView().getController());
+		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
+		editController.getEditPane().setVisible(true);
+		editController.setService(subGroupService);
+		editController.setContoller(this);
+		editController.setMainController(mainController);
+		TableColumn.CellEditEvent<Cards, String> cellEvent;
+		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
+		editController.setEntity(cellEvent.getRowValue().getSubGroup());
+		editController.update();
+		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
+		editController.getTable().requestFocus();
+	}
+
+	@FXML
+	private void handlePartSpeech() {
+	
+		EditCardController<PartSpeech,PartSpeechService,CardsController> editController = ((EditCardController<PartSpeech,PartSpeechService,CardsController>) mainApp.getEditCardView().getController());
+		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
+		editController.getEditPane().setVisible(true);
+		editController.setEntity(currentPartSpeech);
+		editController.setService(partSpeechService);
+		editController.setContoller(this);
+		editController.setMainController(mainController);
+		editController.setInsertButton(true);
+		editController.update();
+		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
+		editController.getTable().requestFocus();
+	}
+	
+	@FXML
+	private void handleSenseGroup(Event e) {
+		EditCardController<SenseGroup,SenseGroupService,CardsController> editController = ((EditCardController<SenseGroup,SenseGroupService,CardsController>) mainApp.getEditCardView().getController());
+		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
+		editController.getEditPane().setVisible(true);
+		editController.setEntity(currentSenseGroup);
+		editController.setService(senseGroupService);
+		editController.setContoller(this);
+		editController.setMainController(mainController);
+		editController.setInsertButton(true);
+		editController.update();
+		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
+		editController.getTable().requestFocus();
+	}
+	
+	@FXML
+	private void handleSubGroup() {
+		EditCardController<SubGroup,SubGroupService,CardsController> editController = ((EditCardController<SubGroup,SubGroupService,CardsController>) mainApp.getEditCardView().getController());
+		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
+		editController.getEditPane().setVisible(true);
+		editController.setEntity(currentSubGroup);
+		editController.setService(subGroupService);
+		editController.setContoller(this);
+		editController.setMainController(mainController);
+		editController.setInsertButton(true);
+		editController.update();
+		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
+		editController.getTable().requestFocus();
+	}
+	
+	@FXML
+	private void handleInsertRow() {
+		currentWord = txtWord.getText();
+		currentTranslate = txtTranslate.getText();
+		currentExample = txtExample.getText();
+		
+		cards.add(new Cards(currentPartSpeech, currentSenseGroup, currentSubGroup,
+				            currentWord, currentTranslate, currentExample));
+		Cards card = cards.get(cards.size()-1);
+		cardsService.save(card);
+		cardsData.add(card);
+		table.refresh();
+		TableViewSelectionModel<Cards> sm = table.getSelectionModel();
+		sm.select(cards.size()-1);
+		clearOldValue();
+	}
+	
+	private void clearOldValue() {
+		currentPartSpeech = null;
+		currentSenseGroup = null;
+		currentSubGroup = null;
+		currentWord = "";
+		currentTranslate = "";
+		currentExample = "";
+		
+		txtPartOfSpeech.setText("");
+		txtSenseGroup.setText("");
+		txtSubGroup.setText("");
+		txtWord.setText("");
+		txtTranslate.setText("");
+		txtExample.setText("");
+		
 	}
 	
 	private void generateTestData() {
@@ -294,4 +474,77 @@ public class CardsController {
 	public void update() {
 		table.refresh();
 	}
+
+	public PartSpeech getCurrentPartSpeech() {
+		return currentPartSpeech;
+	}
+
+	public void setCurrentPartSpeech(PartSpeech currentPartSpeech) {
+		this.currentPartSpeech = currentPartSpeech;
+	}
+
+	public SenseGroup getCurrentSenseGroup() {
+		return currentSenseGroup;
+	}
+
+	public void setCurrentSenseGroup(SenseGroup currentSenseGroup) {
+		this.currentSenseGroup = currentSenseGroup;
+	}
+
+	public SubGroup getCurrentSubGroup() {
+		return currentSubGroup;
+	}
+
+	public void setCurrentSubGroup(SubGroup currentSubGroup) {
+		this.currentSubGroup = currentSubGroup;
+	}
+
+	public String getCurrentWork() {
+		return currentWord;
+	}
+
+	public void setCurrentWork(String currentWork) {
+		this.currentWord = currentWork;
+	}
+
+	public String getCurrentTranslate() {
+		return currentTranslate;
+	}
+
+	public void setCurrentTranslate(String currentTranslate) {
+		this.currentTranslate = currentTranslate;
+	}
+
+	public String getCurrentExample() {
+		return currentExample;
+	}
+
+	public void setCurrentExample(String currentExample) {
+		this.currentExample = currentExample;
+	}
+
+	public void setTxtPartOfSpeech(String txtPartSpeech) {
+		this.txtPartOfSpeech.setText(txtPartSpeech);
+	}
+
+	public void setTxtSenseGroup(String txtSenseGroup) {
+		this.txtSenseGroup.setText(txtSenseGroup);
+	}
+
+	public void setTxtSubGroup(String txtSubGroup) {
+		this.txtSubGroup.setText(txtSubGroup);
+	}
+
+	public void setTxtWord(String txtWord) {
+		this.txtWord.setText(txtWord);
+	}
+
+	public void setTxtTranslate(String txtTranslate) {
+		this.txtTranslate.setText(txtTranslate);
+	}
+
+	public void setTxtExample(String txtExample) {
+		this.txtExample.setText(txtExample);
+	}
+
 }

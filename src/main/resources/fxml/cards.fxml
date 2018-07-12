@@ -18,12 +18,27 @@
             <HBox BorderPane.alignment="CENTER">
                <children>
                   <TextField fx:id="txtPartOfSpeech" promptText="Part of Speech" />
-                  <TextField promptText="Sense group" />
-                  <TextField promptText="Subgroup" />
-                  <TextField promptText="Word" />
-                  <TextField promptText="Translate" />
-                  <TextField promptText="Example" />
-                  <Button minWidth="60.0" mnemonicParsing="false" prefWidth="60.0" text="Insert">
+                  <Button graphicTextGap="1.0" mnemonicParsing="false" onAction="#handlePartSpeech" prefHeight="25.0" prefWidth="7.0" text="...">
+                     <font>
+                        <Font size="4.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtSenseGroup" promptText="Sense group" />
+                  <Button graphicTextGap="1.0" mnemonicParsing="false" onAction="#handleSenseGroup" prefHeight="25.0" prefWidth="7.0" text="...">
+                     <font>
+                        <Font size="4.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtSubGroup" promptText="Subgroup" />
+                  <Button graphicTextGap="1.0" mnemonicParsing="false" onAction="#handleSubGroup" prefHeight="25.0" prefWidth="7.0" text="...">
+                     <font>
+                        <Font size="4.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtWord" promptText="Word" />
+                  <TextField fx:id="txtTranslate" promptText="Translate" />
+                  <TextField fx:id="txtExample" promptText="Example" />
+                  <Button minWidth="60.0" mnemonicParsing="false" onAction="#handleInsertRow" prefWidth="60.0" text="Insert">
                      <font>
                         <Font size="10.0" />
                      </font></Button>
@@ -50,7 +65,7 @@
                <right>
                   <ButtonBar buttonMinWidth="10.0" BorderPane.alignment="CENTER">
                      <buttons>
-                      <Button mnemonicParsing="false" onAction="#handleCloseTable" text="X" />
+                      <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleCloseTable" text="X" />
                      </buttons></ButtonBar>
                </right>
                <left>
