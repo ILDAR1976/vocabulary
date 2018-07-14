@@ -37,4 +37,9 @@ public class SenseGroupServiceImpl implements SenseGroupService {
 		return repository.findOne(id);
 	}
 
+	@Override
+	public SenseGroup findByName(String name) {
+		return repository.findByName(name);
+	}
+
 }

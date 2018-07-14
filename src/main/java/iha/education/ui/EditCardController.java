@@ -12,26 +12,19 @@ import javafx.scene.control.Label;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.collections.FXCollections;
-
-import org.hibernate.type.ClassType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import javafx.scene.control.TableView.TableViewFocusModel;
-//import javafx.scene.control.TableView.TableViewFocusModel;
+import javafx.scene.control.*;
 import javafx.scene.control.TableView.TableViewSelectionModel;
 import iha.education.entity.PartSpeech;
 import iha.education.entity.SenseGroup;
 import iha.education.entity.SubGroup;
 import iha.education.entity.Cards;
-import iha.education.service.CardsService;
 import iha.education.service.PartSpeechService;
 import iha.education.service.SenseGroupService;
 import iha.education.service.SubGroupService;
-
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings({ "restriction" })
@@ -48,10 +41,12 @@ public class EditCardController<T,S,C> {
 
     @FXML private Label information;
     
+    @FXML private TextField txtName;
+    
+    @FXML private TextField txtTranslate;
+    
     private ObservableList<T> data;
-	private TableViewSelectionModel<T> selectionModel;
     private Boolean insertButton = false;
-    private Class<T> type;
     @Autowired
     private T entity;
     @Autowired
@@ -63,7 +58,9 @@ public class EditCardController<T,S,C> {
     @Autowired
     private PartSpeechService partSpeechService;
     @Autowired
-    private CardsService cardsService;
+    private SenseGroupService senseGroupService;
+    @Autowired
+    private SubGroupService subGroupService;
     
     public BorderPane getEditPane() {
     	return editPane;
@@ -101,14 +98,62 @@ public class EditCardController<T,S,C> {
 	    		}
 	    		cardsCntl.getNotApply().setVisible(true);
 	    		cardsCntl.getTable().refresh();
+	    	} else {
+	    		if (entity instanceof PartSpeech){
+	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setPartSpeech((PartSpeech) entity);
+	    		} else if (entity instanceof SenseGroup) {
+	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setSenseGroup((SenseGroup) entity);
+	    		} else if (entity instanceof SubGroup) {
+	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setSubGroup((SubGroup) entity);
+	    		}
+	    		cardsCntl.getNotApply().setVisible(true);
+	    		cardsCntl.getTable().refresh();
 	    	}
+	    		
 	    	mainController.getMainFrame().setCenter(cardsCntl.getCardsAnchor());
     	}
     	
     	setInsertButton(false);
     }
-    
-    @SuppressWarnings({ "unchecked", "unused" })
+   
+	@SuppressWarnings("unchecked")
+	@FXML
+	private void handleInsertRow() {
+		CardsController cntrl = (CardsController) controller;
+		int mainIndex = 0;
+		if (service instanceof PartSpeechService) {
+			List<PartSpeech> ps = cntrl.getPartSpeeches();
+			ps.add(new PartSpeech(txtName.getText(), txtTranslate.getText()));
+			int index = ps.size()-1;
+			mainIndex = index;
+			partSpeechService.save(ps.get(index));
+			data.add((T) ps.get(index));
+			refreshAndSelect(index);
+		} else if (service instanceof SenseGroupService) {
+			List<SenseGroup> sg = cntrl.getSenseGroups();
+			sg.add(new SenseGroup(txtName.getText(), txtTranslate.getText()));
+			int index = sg.size()-1;
+			mainIndex = index;
+			senseGroupService.save(sg.get(index));
+			data.add((T) sg.get(index));			
+			refreshAndSelect(index);
+		} else if (service instanceof SubGroupService) {
+			List<SubGroup> sug = cntrl.getSubGroups();
+			sug.add(new SubGroup(txtName.getText(), txtTranslate.getText()));
+			int index = sug.size()-1;
+			mainIndex = index;
+			subGroupService.save(sug.get(index));
+			data.add((T) sug.get(index));			
+			refreshAndSelect(sug.size()-1);
+		}
+
+		txtName.setText("");
+		txtTranslate.setText("");
+		table.refresh();
+		
+	}
+
+    @SuppressWarnings({ "unchecked" })
     @PostConstruct
     public void init() {
  		  	
@@ -125,8 +170,7 @@ public class EditCardController<T,S,C> {
 		translateColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 		translateColumn.setOnEditCommit(e -> translateColumn_OnEditCommit(e));
         table.getColumns().setAll(idColumn,  nameColumn, translateColumn);
-        TableViewFocusModel<T> fm = new TableViewFocusModel(table);
-		fm.focus(0);
+        
         TableViewSelectionModel<T> sm = table.getSelectionModel();
 		sm.select(0);
 		
@@ -134,31 +178,39 @@ public class EditCardController<T,S,C> {
 
     @SuppressWarnings("unchecked")
 	public void update() {
+    	CardsController cntrl = (CardsController) controller;
     	if (service instanceof PartSpeechService) {
-    		this.data = (ObservableList<T>) FXCollections.observableArrayList(((CardsController) controller).getPartSpeeches());
+    		this.data = (ObservableList<T>) FXCollections.observableArrayList((cntrl).getPartSpeeches());
     		this.table.setItems(data);
+    		TableViewSelectionModel<T> sm = table.getSelectionModel();
+    		Cards crd = cntrl.getTable().getFocusModel().getFocusedItem();
+    		sm.select((T)crd.getPartSpeech());
+    		table.setSelectionModel(sm);
     		this.table.refresh();
-     		this.information.setText("THE part of speech edit window");
+     		this.information.setText("The part of speech edit window");
+     		this.information.setStyle(" -fx-text-fill: #d8d8d8;");
     	} else if (service instanceof SenseGroupService) {
-    		this.data = (ObservableList<T>) FXCollections.observableArrayList(((CardsController) controller).getSenseGroups());
+    		this.data = (ObservableList<T>) FXCollections.observableArrayList((cntrl).getSenseGroups());
     		this.table.setItems(data);
+    		TableViewSelectionModel<T> sm = table.getSelectionModel();
+    		Cards crd = cntrl.getTable().getFocusModel().getFocusedItem();
+    		sm.select((T)crd.getSenseGroup());
+    		table.setSelectionModel(sm);
     		this.table.refresh();
-     		this.information.setText("THE sense group edit window");
+     		this.information.setText("The sense group edit window");
+     		this.information.setStyle(" -fx-text-fill: #d8d8d8;");
     	} else if (service instanceof SubGroupService) {
-    		this.data = (ObservableList<T>) FXCollections.observableArrayList(((CardsController) controller).getSubGroups());
+    		this.data = (ObservableList<T>) FXCollections.observableArrayList((cntrl).getSubGroups());
     		this.table.setItems(data);
+    		TableViewSelectionModel<T> sm = table.getSelectionModel();
+    		Cards crd = cntrl.getTable().getFocusModel().getFocusedItem();
+    		sm.select((T)crd.getSubGroup());
+    		table.setSelectionModel(sm);
     		this.table.refresh();
-     		this.information.setText("THE subgroup edit window");
+     		this.information.setText("The subgroup edit window");
+     		this.information.setStyle(" -fx-text-fill: #d8d8d8;");
     	}
-
     	table.requestFocus();
-		TableViewFocusModel<T> fm = new TableViewFocusModel(table);
-		fm.focus(0);
-		TableViewSelectionModel<T> sm = table.getSelectionModel();
-		sm.select(0);
-		table.setSelectionModel(sm);
-		table.setFocusModel(fm);
-
     }
     
 	public T getEntity() {
@@ -205,6 +257,11 @@ public class EditCardController<T,S,C> {
 		return table;
 	}
 	
+	private void refreshAndSelect(int index) {
+		table.refresh();
+		TableViewSelectionModel<T> sm = table.getSelectionModel();
+		sm.select(index);
+	}
 
 	@SuppressWarnings("unchecked")
 	private void nameColumn_OnEditCommit(Event e) {

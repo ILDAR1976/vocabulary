@@ -37,4 +37,9 @@ public class PartSpeechServiceImpl implements PartSpeechService {
 		return repository.findOne(id);
 	}
 
+	@Override
+	public PartSpeech findByName(String name) {
+		return repository.findByName(name);
+	}
+
 }

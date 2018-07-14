@@ -36,15 +36,8 @@ public class CardsServiceImpl implements CardsService {
     }
 
 	@Override
-	public List<Cards> findBySensGroup() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<PartSpeech> findAllFromPartSpeech() {
-		
-		return repository.findAllFromPartSpeech();
+	public List<Cards> findByWord(String word) {
+		return repository.findByWord(word);
 	}
 
 	

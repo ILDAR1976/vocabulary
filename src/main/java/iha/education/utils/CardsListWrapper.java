@@ -11,7 +11,8 @@ import iha.education.entity.Cards;
 @SuppressWarnings("serial")
 @XmlRootElement(name = "vocabulary")
 public class CardsListWrapper implements Serializable  {
-    private List<Cards> cards;
+    
+	private List<Cards> cards;
 
     public CardsListWrapper() {
     	
@@ -20,6 +21,7 @@ public class CardsListWrapper implements Serializable  {
     public CardsListWrapper(List<Cards> cards) {
     	this.cards = cards;
     }
+    
     @XmlElement(name = "card")
 	public List<Cards> getCards() {
 		return cards;

@@ -18,7 +18,11 @@ public class MainController {
     private BorderPane mainFrame;
     
     @FXML
+    private AnchorPane mainAnchor;
+    
+    @FXML
     public void initialize() {
+    	mainAnchor.setStyle("-fx-background-color: #3c3c3c;");
     }
 
     @PostConstruct
@@ -32,7 +36,6 @@ public class MainController {
     	CardsController cards = (CardsController)mainApp.getCardsView().getController();
     	cards.getCardsAnchor().setVisible(true);
     	mainFrame.setCenter(mainApp.getCardsView().getView());
-    	cards.setFocus();
     }
     
     @FXML

@@ -37,4 +37,9 @@ public class SubGroupServiceImpl implements SubGroupService {
 		return repository.findOne(id);
 	}
 
+	@Override
+	public SubGroup findByName(String name) {
+		return repository.findByName(name);
+	}
+
 }

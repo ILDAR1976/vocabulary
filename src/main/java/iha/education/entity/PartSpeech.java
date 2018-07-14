@@ -2,6 +2,8 @@ package iha.education.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *
@@ -11,12 +13,16 @@ import java.io.Serializable;
 
 @Entity
 @Table
+@NamedQueries({
+    @NamedQuery(name="PartSpeech.findByName", query="select ps from PartSpeech ps where ps.name=:name")
+})
 public class PartSpeech implements Serializable {
 	
 	private Long id;
     private String name;
     private String translate;
-
+    private Set<Cards> cards = new HashSet<Cards>();
+    
     public PartSpeech() {
     }
 
@@ -52,6 +58,15 @@ public class PartSpeech implements Serializable {
 
 	public void setTranslate(String translate) {
 		this.translate = translate;
+	}
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "partSpeech")
+	public Set<Cards> getCards() {
+		return cards;
+	}
+
+	public void setCards(Set<Cards> cards) {
+		this.cards = cards;
 	}
 
 	@Override

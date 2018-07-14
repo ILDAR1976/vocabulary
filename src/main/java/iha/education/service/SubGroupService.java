@@ -11,5 +11,6 @@ public interface SubGroupService {
     List<SubGroup> findAll();
     SubGroup findById(int id);
     SubGroup findById(Long id);
+    SubGroup findByName(String name);
 
 }

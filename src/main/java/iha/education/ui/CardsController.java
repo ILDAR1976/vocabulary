@@ -4,15 +4,17 @@ import javafx.collections.ObservableList;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableView.TableViewFocusModel;
 import javafx.scene.control.TableView.TableViewSelectionModel;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.collections.FXCollections;
-import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.event.*;
 import javafx.scene.control.cell.*;
+
+import org.hibernate.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,7 @@ import iha.education.service.PartSpeechService;
 import iha.education.service.SenseGroupService;
 import iha.education.service.SubGroupService;
 import iha.education.utils.CardsListWrapper;
+import iha.education.utils.HibernateUtils;
 import iha.education.utils.Utils;
 import static iha.education.utils.Utils.*;
 import javax.annotation.PostConstruct;
@@ -86,7 +89,6 @@ public class CardsController {
 	private Application mainApp;
 	private CardsListWrapper wrapper;
 	private ObservableList<Cards> cardsData;
-	private TableViewSelectionModel<Cards> selectionModel;
 	private List<Cards> cards;
 	private List<PartSpeech> partSpeeches;
 	private List<SenseGroup> senseGroups;
@@ -112,7 +114,7 @@ public class CardsController {
 	@FXML
 	public void handleSaveData() throws JAXBException {
 		File file = Utils.getVocabularyFile();
-		cardsData = FXCollections.observableArrayList(cards);
+		//cardsData = FXCollections.observableArrayList(cards);
 		cardsData.stream().forEach(e->{cardsService.save(e);});
 		wrapper = new CardsListWrapper();
 		wrapper.setCards(cardsData);
@@ -120,18 +122,12 @@ public class CardsController {
 		notApply.setVisible(false);
 	}
 	
-	public void setFocus() {
-		Node focusOwnerNode = mainApp.getScene().getFocusOwner();
-		focusOwnerNode = table;
-		focusOwnerNode.requestFocus();
-	}
-	
 	@SuppressWarnings("unchecked")
 	@PostConstruct
 	public void init() throws JAXBException, URISyntaxException {
 		File file = Utils.getVocabularyFile();
 
-		switch (2) {
+		switch (1) {
 		case 1:
 			generateTestData();
 			cards = cardsService.findAll();
@@ -151,6 +147,8 @@ public class CardsController {
 
 		TableColumn<Cards, String> idColumn = new TableColumn<>("ID");
 		idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+		idColumn.setCellFactory(IdFieldTableCell.forTableColumn());
+		idColumn.setOnEditStart(e -> {idColumn_OnEditCommit(e);});
 		
 		TableColumn<Cards, PartSpeech> partSpeechColumn = new TableColumn<>("Parts of Speech");
 		partSpeechColumn.setCellValueFactory(new PropertyValueFactory<>("partSpeech"));
@@ -197,17 +195,22 @@ public class CardsController {
 				modificatedColumn);
 		table.setItems(cardsData);
 		
+		table.refresh();
 		if (this.cardsData.isEmpty()) {
-			closeButton.setFocusTraversable(true);
+			closeButton.requestFocus();;
 		} else {
-			TableViewFocusModel<Cards> fm = new TableViewFocusModel(table);
-			fm.focus(0);
+			
+			TableViewFocusModel<Cards> fm = table.getFocusModel();
+			fm.focus(cardsData.size()-1);
 			TableViewSelectionModel<Cards> sm = table.getSelectionModel();
-			sm.select(0);
+			sm.select(cardsData.size()-1);
 			table.setSelectionModel(sm);
 			table.setFocusModel(fm);
 			
 		}
+		
+		table.requestFocus();
+		
 	}
 
 	private void transferToSpringContext() {
@@ -219,29 +222,55 @@ public class CardsController {
 		wrapper.getCards().stream().forEach(item->{
 			if (!partSpeeches.contains(item.getPartSpeech())) {
 				partSpeeches.add(item.getPartSpeech());
-				partSpeechService.save(partSpeeches.get(partSpeeches.size()-1));
+				
 			}
 
+			partSpeechService.save(partSpeeches.get(partSpeeches.size()-1));
+			
 			if (!getSenseGroups().contains(item.getSenseGroup())) {
 				senseGroups.add(item.getSenseGroup());
-				senseGroupService.save(senseGroups.get(senseGroups.size()-1));
+				
 			}
+			
+			senseGroupService.save(senseGroups.get(senseGroups.size()-1));
 			
 			if (!getSubGroups().contains(item.getSubGroup())) {
 				subGroups.add(item.getSubGroup());
-				subGroupService.save(subGroups.get(subGroups.size()-1));
+				
 			}
 			
+			subGroupService.save(subGroups.get(subGroups.size()-1));
+			
 			cards.add(new Cards(
-					partSpeeches.get(partSpeeches.size()-1),
-					senseGroups.get(senseGroups.size()-1),
-					subGroups.get(subGroups.size()-1), 
+					item.getPartSpeech(),
+					item.getSenseGroup(),
+					item.getSubGroup(), 
 			item.getWord(), 
 			item.getTranslate(),
 			item.getExample()));
 			
 			cardsService.save(cards.get(cards.size()-1));
 		});
+	}
+
+	private void idColumn_OnEditCommit(CellEditEvent<Cards, String> e) {
+		TableColumn.CellEditEvent<Cards, String> cellEvent;
+		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
+		Cards cards = cellEvent.getRowValue();
+		
+		currentPartSpeech = cards.getPartSpeech();
+		currentSenseGroup = cards.getSenseGroup();
+		currentSubGroup = cards.getSubGroup();
+		currentWord = cards.getWord();
+		currentTranslate = cards.getTranslate();
+		currentExample = cards.getExample();
+		
+		txtPartOfSpeech.setText(currentPartSpeech.getName());
+		txtSenseGroup.setText(currentSenseGroup.getName());
+		txtSubGroup.setText(currentSubGroup.getName());
+		txtWord.setText(currentWord);
+		txtTranslate.setText(currentTranslate);
+		txtExample.setText(currentExample);
 	}
 
 	@SuppressWarnings("unchecked")
@@ -255,6 +284,7 @@ public class CardsController {
 		table.refresh();
 	}
 
+	@SuppressWarnings("unchecked")
 	private void translateColumn_OnEditCommit(Event e) {
 		TableColumn.CellEditEvent<Cards, String> cellEvent;
 		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
@@ -265,6 +295,7 @@ public class CardsController {
 		table.refresh();
 	}
 
+	@SuppressWarnings("unchecked")
 	private void exampleColumn_OnEditCommit(Event e) {
 		TableColumn.CellEditEvent<Cards, String> cellEvent;
 		cellEvent = (TableColumn.CellEditEvent<Cards, String>) e;
@@ -291,6 +322,7 @@ public class CardsController {
 		editController.getTable().requestFocus();
 	}
 	
+	@SuppressWarnings("unchecked")
 	private void senseGroup_OnEditCommit(Event e) {
 		EditCardController<SenseGroup,SenseGroupService,CardsController> editController = ((EditCardController<SenseGroup,SenseGroupService,CardsController>) mainApp.getEditCardView().getController());
 		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
@@ -306,6 +338,7 @@ public class CardsController {
 		editController.getTable().requestFocus();
 	}
 	
+	@SuppressWarnings("unchecked")
 	private void subGroupColumn_OnEditCommit(Event e) {
 		EditCardController<SubGroup,SubGroupService,CardsController> editController = ((EditCardController<SubGroup,SubGroupService,CardsController>) mainApp.getEditCardView().getController());
 		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
@@ -321,6 +354,7 @@ public class CardsController {
 		editController.getTable().requestFocus();
 	}
 
+	@SuppressWarnings("unchecked")
 	@FXML
 	private void handlePartSpeech() {
 	
@@ -339,6 +373,7 @@ public class CardsController {
 	
 	@FXML
 	private void handleSenseGroup(Event e) {
+		@SuppressWarnings("unchecked")
 		EditCardController<SenseGroup,SenseGroupService,CardsController> editController = ((EditCardController<SenseGroup,SenseGroupService,CardsController>) mainApp.getEditCardView().getController());
 		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
 		editController.getEditPane().setVisible(true);
@@ -354,6 +389,7 @@ public class CardsController {
 	
 	@FXML
 	private void handleSubGroup() {
+		@SuppressWarnings("unchecked")
 		EditCardController<SubGroup,SubGroupService,CardsController> editController = ((EditCardController<SubGroup,SubGroupService,CardsController>) mainApp.getEditCardView().getController());
 		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
 		editController.getEditPane().setVisible(true);
@@ -402,13 +438,61 @@ public class CardsController {
 	}
 	
 	private void generateTestData() {
-		partSpeechService.save(new PartSpeech("Verb", "Глагол"));
-		senseGroupService.save(new SenseGroup("Verb of Stage", "Глаголы стадии"));
-		subGroupService.save(new SubGroup("beginning", "Начало"));
-		cardsService.save(new Cards(partSpeechService.findById(1), senseGroupService.findById(1),
-				subGroupService.findById(1), "begin", "начало", "I begin a talk"));
-		cardsService.save(new Cards(partSpeechService.findById(1), senseGroupService.findById(1),
-				subGroupService.findById(1), "start", "начинать", "I start"));	
+		
+		Session session = HibernateUtils.getSessionFactory().openSession();
+		//session.beginTransaction();
+
+		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "begin", "начало", "I begin a talk");
+		//createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "start", "начинать", "I start a bussines");
+	
+		//session.getTransaction().commit();
+	}
+
+	@SuppressWarnings("unused")
+	private void createRow(
+			               String partSpeech,
+			               String partSpeech_translate,	
+			               String senseGroup,
+			               String senseGroup_translate,
+			               String subGroup,
+			               String subGroup_translate,
+			               String word, 
+			               String translate, 
+			               String example) {
+	
+		PartSpeech ps = new PartSpeech(partSpeech, partSpeech_translate);
+		//session.save(ps);
+		SenseGroup sg = new SenseGroup(senseGroup, senseGroup_translate);
+		//session.save(sg);
+		SubGroup sug = new SubGroup(subGroup,subGroup_translate);
+		//session.save(sug);
+		
+		partSpeechService.save(ps);
+		senseGroupService.save(sg);
+		subGroupService.save(sug);
+		/*		
+		ps = null;
+		sg = null;
+		sug = null;
+		
+		ps = partSpeechService.findByName(partSpeech);
+		sg = senseGroupService.findByName(senseGroup);
+		sug = subGroupService.findByName(subGroup);
+*/		
+		Cards cds = new Cards(word, 
+				              translate, 
+				              example); 
+		//session.save(cds);
+		
+		ps.getCards().add(cds);
+		sg.getCards().add(cds);
+		sug.getCards().add(cds);
+		
+		cds.setPartSpeech(ps);
+		cds.setSenseGroup(sg);
+		cds.setSubGroup(sug);
+		
+		cardsService.save(cds);
 	}
 
 	public void setMainApp(Application mainApp) {
@@ -473,6 +557,7 @@ public class CardsController {
 
 	public void update() {
 		table.refresh();
+		table.requestFocus();
 	}
 
 	public PartSpeech getCurrentPartSpeech() {

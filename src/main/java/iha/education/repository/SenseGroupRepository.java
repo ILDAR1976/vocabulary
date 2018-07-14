@@ -1,6 +1,7 @@
 package iha.education.repository;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import iha.education.entity.SenseGroup;
@@ -12,5 +13,6 @@ import java.util.List;
 public interface SenseGroupRepository extends CrudRepository<SenseGroup, Long> {
 
     List<SenseGroup> findAll();
+    SenseGroup findByName(@Param("name")String name);
 
 }

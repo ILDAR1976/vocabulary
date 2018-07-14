@@ -14,9 +14,9 @@
    <bottom>
       <HBox alignment="BOTTOM_RIGHT" BorderPane.alignment="BOTTOM_RIGHT">
          <children>
-            <TextField fx:id="editName" promptText="Name" />
-            <TextField fx:id="editTranslate" promptText="Translate" />
-            <Button mnemonicParsing="false" text="Ins" />
+            <TextField fx:id="txtName" promptText="Name" />
+            <TextField fx:id="txtTranslate" promptText="Translate" />
+            <Button mnemonicParsing="false" onAction="#handleInsertRow" text="Ins" />
             <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleOk" text="OK" />
          </children>
       </HBox>

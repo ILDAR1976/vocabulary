@@ -11,5 +11,6 @@ public interface PartSpeechService {
     List<PartSpeech> findAll();
     PartSpeech findById(int id);
     PartSpeech findById(Long id);
+    PartSpeech findByName(String name);
 
 }

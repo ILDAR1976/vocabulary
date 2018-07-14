@@ -12,6 +12,5 @@ public interface CardsService {
     Cards save(Cards cards);
    
     List<Cards> findAll();
-    List<Cards> findBySensGroup();
-    List<PartSpeech> findAllFromPartSpeech();
+    List<Cards> findByWord(String word);
 }

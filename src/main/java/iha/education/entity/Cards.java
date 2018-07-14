@@ -1,6 +1,8 @@
 package iha.education.entity;
 
 import javax.persistence.*;
+
+
 import java.io.Serializable;
 
 /**
@@ -12,29 +14,14 @@ import java.io.Serializable;
 @Entity
 @Table
 @NamedQueries({
-    //@NamedQuery(name="update.updateAll", query="select count(c) from Contact c")
-    //@NamedQuery(name="Cards.updateAll", query="update Cards set example=:example, modificated=:modificated, partSpeech=:partSpeech, senseGroup=:senseGroup, subGroup=:subGroup, translate=:translate, word=:word where id=:id")
-    @NamedQuery(name="Cards.findAllFromPartSpeech", query="select ps from PartSpeech ps")
+    @NamedQuery(name="Cards.findByWord", query="select c from Cards c where c.word=:word")
 })
-
 public class Cards implements Serializable {
 	
 	private Long id;
-	
-	@ManyToOne(targetEntity = PartSpeech.class, cascade = CascadeType.ALL)
-	@JoinTable(name = "PartSpeech", 
-    joinColumns = @JoinColumn(name = "id"), 
-    inverseJoinColumns = @JoinColumn(name = "partSpeech"))
-    private PartSpeech partSpeech;
-
-    @ManyToOne(targetEntity = SenseGroup.class)
-    @JoinColumn(name = "id")
-    private SenseGroup senseGroup;
-
-    @ManyToOne(targetEntity = SubGroup.class)
-    @JoinColumn(name = "id")
-    private SubGroup subGroup;
-    
+	private PartSpeech partSpeech;
+	private SenseGroup senseGroup;
+	private SubGroup subGroup;
     private String word;
     private String translate;
     private String example;
@@ -43,18 +30,22 @@ public class Cards implements Serializable {
     public Cards() {
     }
 
+    public Cards(String word, String translate, String example) {
+    	super();
+    	this.word = word;
+		this.translate = translate;
+		this.example = example;
+    	
+    }
+
+    
     public Cards(PartSpeech partSpeech, SenseGroup senseGroup, SubGroup subGroup, String word, String translate,
 			String example) {
-		super();
+		this(word, translate, example);
 		this.partSpeech = partSpeech;
 		this.senseGroup = senseGroup;
 		this.subGroup = subGroup;
-		this.word = word;
-		this.translate = translate;
-		this.example = example;
 	}
-
-
 
 	@Id
 	@GeneratedValue
@@ -66,6 +57,8 @@ public class Cards implements Serializable {
 		this.id = id;
 	}
 
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "partSpeech_id", nullable = false)
 	public PartSpeech getPartSpeech() {
 		return partSpeech;
 	}
@@ -74,6 +67,8 @@ public class Cards implements Serializable {
 		this.partSpeech = partSpeech;
 	}
 
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "senseGroup_id", nullable = false)
 	public SenseGroup getSenseGroup() {
 		return senseGroup;
 	}
@@ -82,6 +77,9 @@ public class Cards implements Serializable {
 		this.senseGroup = senseGroup;
 	}
 
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "subGroup_id", nullable = false)
 	public SubGroup getSubGroup() {
 		return subGroup;
 	}
@@ -90,7 +88,7 @@ public class Cards implements Serializable {
 		this.subGroup = subGroup;
 	}
 
-	@Column(unique = true)
+	@Column
 	public String getWord() {
 		return word;
 	}
@@ -125,6 +123,7 @@ public class Cards implements Serializable {
 		this.modificated = modificated;
 	}
 
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
