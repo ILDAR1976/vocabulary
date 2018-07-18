@@ -8,22 +8,41 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import iha.education.entity.WSLongAdapter;
+@XmlRootElement()
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 @Table
 @NamedQueries({
     @NamedQuery(name="SubGroup.findByName", query="select sug from SubGroup sug where sug.name=:name")
 })
 public class SubGroup implements Serializable  {
+
+	private static final long serialVersionUID = 7698174763611664547L;
+	@XmlElement
+	@XmlID
+    @XmlJavaTypeAdapter(WSLongAdapter.class)
 	private Long id;
+	@XmlElement
     private String name;
-    private String translate;
-    private Set<Cards> cards = new HashSet<Cards>();
+	@XmlElement
+	private String translate;
+	@XmlElementWrapper
+	private Set<Cards> cards = new HashSet<Cards>();
     
     
     SubGroup() {} 
@@ -34,8 +53,8 @@ public class SubGroup implements Serializable  {
 		this.translate = translate;
 	}
 
-	@Id
-	@GeneratedValue
+    @Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
  	public Long getId() {
 		return id;
 	}
@@ -44,7 +63,7 @@ public class SubGroup implements Serializable  {
 		this.id = id;
 	}
 
-	@Column(unique = true)
+	@Column
 	public String getName() {
 		return name;
 	}
@@ -62,7 +81,7 @@ public class SubGroup implements Serializable  {
 		this.translate = translate;
 	}
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "subGroup")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "subGroup")
 	public Set<Cards> getCards() {
 		return cards;
 	}

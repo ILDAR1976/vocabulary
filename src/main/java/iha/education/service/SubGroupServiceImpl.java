@@ -29,12 +29,12 @@ public class SubGroupServiceImpl implements SubGroupService {
 
 	@Override
 	public SubGroup findById(int id) {
-		return repository.findOne((long)id);
+		return repository.findById(Long.parseLong(Integer.toString(id))).get();
 	}
 
 	@Override
 	public SubGroup findById(Long id) {
-		return repository.findOne(id);
+		return repository.findById(id).get();
 	}
 
 	@Override

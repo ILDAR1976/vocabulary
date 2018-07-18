@@ -5,12 +5,12 @@ import org.junit.Ignore;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import javafx.embed.swing.JFXPanel;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @SuppressWarnings({ "unused", "restriction" })
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = Application.class)
+
 public class ApplicationTests {
 
     @BeforeClass

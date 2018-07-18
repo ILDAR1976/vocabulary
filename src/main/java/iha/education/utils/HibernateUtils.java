@@ -11,11 +11,11 @@ public class HibernateUtils {
 		try {
 			// Create the SessionFactory from hibernate.cfg.xml
 			Configuration oConf = new Configuration();
-	        String sDir = "mine";
+	        String sDir = "./mine";
 	        if(System.getenv("OPENSHIFT_DATA_DIR") != null){
 	        	sDir = System.getenv("OPENSHIFT_DATA_DIR");
 	        }
-	        String sUrl = String.format("jdbc:derby:%sMyDbTest", sDir);
+	        String sUrl = String.format("jdbc:h2:%sMyDbTest", sDir);
 			oConf.setProperty("hibernate.connection.url", sUrl);
 			
 			return oConf.configure().buildSessionFactory();

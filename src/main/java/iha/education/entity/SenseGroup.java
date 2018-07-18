@@ -8,22 +8,42 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import iha.education.entity.WSLongAdapter;
+
+@XmlRootElement()
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 @Table
 @NamedQueries({
     @NamedQuery(name="SenseGroup.findByName", query="select sg from SenseGroup sg where sg.name=:name")
 })
 public class SenseGroup implements Serializable  {
+
+	private static final long serialVersionUID = 3171922683698533043L;
+
+	@XmlElement
+	@XmlID
+    @XmlJavaTypeAdapter(WSLongAdapter.class)
 	private Long id;
-    private String name;
-    private String translate;
- 
+	@XmlElement
+	private String name;
+	@XmlElement
+	private String translate;
+	@XmlElementWrapper
     private Set<Cards> cards = new HashSet<Cards>();
 
     SenseGroup() {}
@@ -35,7 +55,7 @@ public class SenseGroup implements Serializable  {
 	}
 
     @Id
-   	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
 		return id;
 	}
@@ -43,7 +63,7 @@ public class SenseGroup implements Serializable  {
 		this.id = id;
 	}
 	
-	@Column(unique = true)
+	@Column
 	public String getName() {
 		return name;
 	}
@@ -59,7 +79,7 @@ public class SenseGroup implements Serializable  {
 		this.translate = translate;
 	}
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "senseGroup")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "senseGroup")
 	public Set<Cards> getCards() {
 		return cards;
 	}

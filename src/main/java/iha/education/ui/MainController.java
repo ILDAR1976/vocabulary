@@ -59,6 +59,4 @@ public class MainController {
 	public BorderPane getMainFrame() {
 		return mainFrame;
 	}
-    
-    
-}
+ }

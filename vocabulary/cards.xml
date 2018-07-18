@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vocabulary>
+    <card>
+        <id>4</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>begin</word>
+        <translate>начало</translate>
+        <example>I begin a talk</example>
+    </card>
+    <card>
+        <id>5</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>start</word>
+        <translate>начинать</translate>
+        <example>I start a bussines</example>
+    </card>
+</vocabulary>

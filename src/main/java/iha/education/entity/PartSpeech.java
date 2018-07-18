@@ -1,26 +1,40 @@
 package iha.education.entity;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+import iha.education.entity.WSLongAdapter;
+
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- *
- * @author Akhmetov Ildar (github/ILDAR1976)
- *
- **/
 
+@XmlRootElement()
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 @Table
 @NamedQueries({
     @NamedQuery(name="PartSpeech.findByName", query="select ps from PartSpeech ps where ps.name=:name")
 })
 public class PartSpeech implements Serializable {
-	
+
+	private static final long serialVersionUID = -2626530500508744754L;
+	@XmlElement
+	@XmlID
+    @XmlJavaTypeAdapter(WSLongAdapter.class)
 	private Long id;
+	@XmlElement
     private String name;
-    private String translate;
+	@XmlElement
+	private String translate;
+	@XmlElementWrapper
     private Set<Cards> cards = new HashSet<Cards>();
     
     public PartSpeech() {
@@ -32,7 +46,7 @@ public class PartSpeech implements Serializable {
     }
     
     @Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
  	public Long getId() {
 		return id;
 	}
@@ -42,7 +56,7 @@ public class PartSpeech implements Serializable {
 	}
 
 
-	@Column(unique = true)
+	@Column
 	public String getName() {
 		return name;
 	}
@@ -51,7 +65,7 @@ public class PartSpeech implements Serializable {
 		this.name = name;
 	}
 
-	@Column(unique = true)
+	@Column
 	public String getTranslate() {
 		return translate;
 	}
@@ -60,7 +74,7 @@ public class PartSpeech implements Serializable {
 		this.translate = translate;
 	}
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "partSpeech")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "partSpeech")
 	public Set<Cards> getCards() {
 		return cards;
 	}

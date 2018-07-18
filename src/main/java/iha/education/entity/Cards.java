@@ -1,7 +1,15 @@
 package iha.education.entity;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlIDREF;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import iha.education.entity.WSLongAdapter;
 
 import java.io.Serializable;
 
@@ -11,6 +19,8 @@ import java.io.Serializable;
  *
  **/
 
+@XmlRootElement()
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 @Table
 @NamedQueries({
@@ -18,13 +28,25 @@ import java.io.Serializable;
 })
 public class Cards implements Serializable {
 	
+
+	private static final long serialVersionUID = 1776649399856633994L;
+
+	@XmlElement
+	@XmlID
+    @XmlJavaTypeAdapter(WSLongAdapter.class)
 	private Long id;
+	@XmlIDREF
 	private PartSpeech partSpeech;
+	@XmlIDREF
 	private SenseGroup senseGroup;
+	@XmlIDREF
 	private SubGroup subGroup;
-    private String word;
-    private String translate;
-    private String example;
+	@XmlElement
+	private String word;
+	@XmlElement
+	private String translate;
+	@XmlElement
+	private String example;
     private Boolean modificated;
     
     public Cards() {
@@ -37,8 +59,7 @@ public class Cards implements Serializable {
 		this.example = example;
     	
     }
-
-    
+   
     public Cards(PartSpeech partSpeech, SenseGroup senseGroup, SubGroup subGroup, String word, String translate,
 			String example) {
 		this(word, translate, example);
@@ -47,8 +68,8 @@ public class Cards implements Serializable {
 		this.subGroup = subGroup;
 	}
 
-	@Id
-	@GeneratedValue
+    @Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
  	public Long getId() {
 		return id;
 	}
@@ -57,8 +78,8 @@ public class Cards implements Serializable {
 		this.id = id;
 	}
 
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "partSpeech_id", nullable = false)
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "partspeech_id", nullable = false)
 	public PartSpeech getPartSpeech() {
 		return partSpeech;
 	}
@@ -67,8 +88,8 @@ public class Cards implements Serializable {
 		this.partSpeech = partSpeech;
 	}
 
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "senseGroup_id", nullable = false)
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "sensegroup_id", nullable = false)
 	public SenseGroup getSenseGroup() {
 		return senseGroup;
 	}
@@ -78,8 +99,8 @@ public class Cards implements Serializable {
 	}
 
 
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "subGroup_id", nullable = false)
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "subgroup_id", nullable = false)
 	public SubGroup getSubGroup() {
 		return subGroup;
 	}

@@ -13,11 +13,37 @@ import javafx.collections.FXCollections;
 import javafx.scene.control.*;
 import javafx.event.*;
 import javafx.scene.control.cell.*;
+import org.springframework.session.Session;
+import org.springframework.core.convert.ConversionService;
+import org.springframework.core.convert.TypeDescriptor;
+import org.springframework.core.convert.support.GenericConversionService;
+import org.springframework.core.serializer.support.DeserializingConverter;
+import org.springframework.core.serializer.support.SerializingConverter;
+import org.springframework.dao.DataAccessException;
+import org.springframework.expression.Expression;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
+import org.springframework.jdbc.core.BatchPreparedStatementSetter;
+import org.springframework.jdbc.core.JdbcOperations;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.support.lob.DefaultLobHandler;
+import org.springframework.jdbc.support.lob.LobHandler;
+import org.springframework.session.FindByIndexNameSessionRepository;
+import org.springframework.session.MapSession;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionDefinition;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.TransactionCallbackWithoutResult;
+import org.springframework.transaction.support.TransactionOperations;
+import org.springframework.transaction.support.TransactionTemplate;
+import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
 
-import org.hibernate.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.session.jdbc.JdbcOperationsSessionRepository;
+
 import iha.education.Application;
 import iha.education.entity.Cards;
 import iha.education.entity.PartSpeech;
@@ -89,10 +115,10 @@ public class CardsController {
 	private Application mainApp;
 	private CardsListWrapper wrapper;
 	private ObservableList<Cards> cardsData;
-	private List<Cards> cards;
-	private List<PartSpeech> partSpeeches;
-	private List<SenseGroup> senseGroups;
-	private List<SubGroup> subGroups;
+	private List<Cards> cards =  new ArrayList<>();
+	private List<PartSpeech> partSpeeches =  new ArrayList<>();;
+	private List<SenseGroup> senseGroups =  new ArrayList<>();;
+	private List<SubGroup> subGroups =  new ArrayList<>();;
 	
 	private PartSpeech currentPartSpeech;
 	private SenseGroup currentSenseGroup;
@@ -439,18 +465,15 @@ public class CardsController {
 	
 	private void generateTestData() {
 		
-		Session session = HibernateUtils.getSessionFactory().openSession();
-		//session.beginTransaction();
-
 		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "begin", "начало", "I begin a talk");
-		//createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "start", "начинать", "I start a bussines");
 	
-		//session.getTransaction().commit();
+	
+		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "start", "начинать", "I start a bussines");
+
 	}
 
 	@SuppressWarnings("unused")
-	private void createRow(
-			               String partSpeech,
+	private void createRow(String partSpeech,
 			               String partSpeech_translate,	
 			               String senseGroup,
 			               String senseGroup_translate,
@@ -459,30 +482,42 @@ public class CardsController {
 			               String word, 
 			               String translate, 
 			               String example) {
-	
-		PartSpeech ps = new PartSpeech(partSpeech, partSpeech_translate);
-		//session.save(ps);
-		SenseGroup sg = new SenseGroup(senseGroup, senseGroup_translate);
-		//session.save(sg);
-		SubGroup sug = new SubGroup(subGroup,subGroup_translate);
-		//session.save(sug);
+		
+		PartSpeech ps = null;
+		SenseGroup sg = null;
+		SubGroup sug = null;
+		
+		if (partSpeechService.findByName(partSpeech) != null) {
+			ps = partSpeechService.findByName(partSpeech);
+		} else {
+			ps = new PartSpeech(partSpeech, partSpeech_translate);
+			ps.getCards().clear();
+			partSpeeches.add(ps);
+		}
+		
+		if (senseGroupService.findByName(senseGroup) != null) {
+			sg = senseGroupService.findByName(senseGroup);
+		} else {
+			sg = new SenseGroup(senseGroup, senseGroup_translate);
+			sg.getCards().clear();
+			senseGroups.add(sg);
+		}
+
+		if (subGroupService.findByName(subGroup) != null) {
+			sug = subGroupService.findByName(subGroup);
+		} else {
+			sug = new SubGroup(subGroup,subGroup_translate);
+			sug.getCards().clear();
+			subGroups.add(sug);
+		}
 		
 		partSpeechService.save(ps);
 		senseGroupService.save(sg);
 		subGroupService.save(sug);
-		/*		
-		ps = null;
-		sg = null;
-		sug = null;
-		
-		ps = partSpeechService.findByName(partSpeech);
-		sg = senseGroupService.findByName(senseGroup);
-		sug = subGroupService.findByName(subGroup);
-*/		
+
 		Cards cds = new Cards(word, 
 				              translate, 
 				              example); 
-		//session.save(cds);
 		
 		ps.getCards().add(cds);
 		sg.getCards().add(cds);
@@ -493,6 +528,8 @@ public class CardsController {
 		cds.setSubGroup(sug);
 		
 		cardsService.save(cds);
+		
+		cards.add(cds);
 	}
 
 	public void setMainApp(Application mainApp) {

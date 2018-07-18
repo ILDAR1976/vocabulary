@@ -47,12 +47,9 @@ public class EditCardController<T,S,C> {
     
     private ObservableList<T> data;
     private Boolean insertButton = false;
+
     @Autowired
-    private T entity;
-    @Autowired
-    private S service;
-    @Autowired 
-    private C controller;
+    private CardsController cardsController;
     @Autowired
     private MainController mainController;
     @Autowired
@@ -61,7 +58,12 @@ public class EditCardController<T,S,C> {
     private SenseGroupService senseGroupService;
     @Autowired
     private SubGroupService subGroupService;
+
+    private T entity;
+    private S service;
+    private C controller;
     
+
     public BorderPane getEditPane() {
     	return editPane;
     }

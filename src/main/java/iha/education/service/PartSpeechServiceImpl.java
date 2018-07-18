@@ -27,19 +27,20 @@ public class PartSpeechServiceImpl implements PartSpeechService {
         return repository.findAll();
     }
 
+	
+	@Override
+	public PartSpeech findByName(String name) {
+		return repository.findByName(name);
+	}
+
 	@Override
 	public PartSpeech findById(int id) {
-		return repository.findOne((long)id);
+		return repository.findById(Long.parseLong(Integer.toString(id))).get();
 	}
 
 	@Override
 	public PartSpeech findById(Long id) {
-		return repository.findOne(id);
-	}
-
-	@Override
-	public PartSpeech findByName(String name) {
-		return repository.findByName(name);
+		return repository.findById(id).get();
 	}
 
 }

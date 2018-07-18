@@ -27,19 +27,20 @@ public class SenseGroupServiceImpl implements SenseGroupService {
         return repository.findAll();
     }
 
+	
+	@Override
+	public SenseGroup findByName(String name) {
+		return repository.findByName(name);
+	}
+
 	@Override
 	public SenseGroup findById(int id) {
-		return repository.findOne((long)id);
+		return repository.findById(Long.parseLong(Integer.toString(id))).get();
 	}
 
 	@Override
 	public SenseGroup findById(Long id) {
-		return repository.findOne(id);
-	}
-
-	@Override
-	public SenseGroup findByName(String name) {
-		return repository.findByName(name);
+		return repository.findById(id).get();
 	}
 
 }
