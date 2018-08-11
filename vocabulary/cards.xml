@@ -18,4 +18,52 @@
         <translate>начинать</translate>
         <example>I start a bussines</example>
     </card>
+    <part_speech>
+        <id>1</id>
+        <name>Verb</name>
+        <translate>Глагол</translate>
+        <cards>
+            <cards>
+                <id>4</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>begin</word>
+                <translate>начало</translate>
+                <example>I begin a talk</example>
+            </cards>
+        </cards>
+    </part_speech>
+    <sense_group>
+        <id>2</id>
+        <name>Verb of Stage</name>
+        <translate>Глаголы стадии</translate>
+        <cards>
+            <cards>
+                <id>4</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>begin</word>
+                <translate>начало</translate>
+                <example>I begin a talk</example>
+            </cards>
+        </cards>
+    </sense_group>
+    <sub_group>
+        <id>3</id>
+        <name>beginning</name>
+        <translate>Начало</translate>
+        <cards>
+            <cards>
+                <id>4</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>begin</word>
+                <translate>начало</translate>
+                <example>I begin a talk</example>
+            </cards>
+        </cards>
+    </sub_group>
 </vocabulary>

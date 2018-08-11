@@ -153,18 +153,24 @@ public class CardsController {
 	public void init() throws JAXBException, URISyntaxException {
 		File file = Utils.getVocabularyFile();
 
-		switch (1) {
+		switch (2) {
 		case 1:
 			generateTestData();
 			cards = cardsService.findAll();
 			cardsData = FXCollections.observableArrayList(cards);
 			wrapper = new CardsListWrapper();
 			wrapper.setCards(cardsData);
+			wrapper.setPartSpeech(partSpeeches);
+			wrapper.setSenseGroup(senseGroups);
+			wrapper.setSubGroup(subGroups);
 			saveCards(file, wrapper);
 			break;
 		case 2:
 			cards = new ArrayList<>();
-			wrapper = new CardsListWrapper(FXCollections.observableArrayList(cards));
+			wrapper = new CardsListWrapper(FXCollections.observableArrayList(cards),
+					                       FXCollections.observableArrayList(partSpeeches),
+					                       FXCollections.observableArrayList(senseGroups),
+					                       FXCollections.observableArrayList(subGroups));
 			wrapper = loadCards(file, wrapper);
 			transferToSpringContext();
 			cardsData = FXCollections.observableArrayList(cards);
@@ -234,9 +240,7 @@ public class CardsController {
 			table.setFocusModel(fm);
 			
 		}
-		
 		table.requestFocus();
-		
 	}
 
 	private void transferToSpringContext() {
@@ -248,23 +252,23 @@ public class CardsController {
 		wrapper.getCards().stream().forEach(item->{
 			if (!partSpeeches.contains(item.getPartSpeech())) {
 				partSpeeches.add(item.getPartSpeech());
-				
 			}
 
+			partSpeeches.get(partSpeeches.size()-1).getCards().clear();
 			partSpeechService.save(partSpeeches.get(partSpeeches.size()-1));
 			
 			if (!getSenseGroups().contains(item.getSenseGroup())) {
 				senseGroups.add(item.getSenseGroup());
-				
 			}
 			
+			senseGroups.get(senseGroups.size()-1).getCards().clear();
 			senseGroupService.save(senseGroups.get(senseGroups.size()-1));
 			
 			if (!getSubGroups().contains(item.getSubGroup())) {
 				subGroups.add(item.getSubGroup());
-				
 			}
 			
+			subGroups.get(subGroups.size()-1).getCards().clear();
 			subGroupService.save(subGroups.get(subGroups.size()-1));
 			
 			cards.add(new Cards(
@@ -416,7 +420,7 @@ public class CardsController {
 	@FXML
 	private void handleSubGroup() {
 		@SuppressWarnings("unchecked")
-		EditCardController<SubGroup,SubGroupService,CardsController> editController = ((EditCardController<SubGroup,SubGroupService,CardsController>) mainApp.getEditCardView().getController());
+		EditCardController<SubGroup, SubGroupService, CardsController> editController = ((EditCardController<SubGroup,SubGroupService,CardsController>) mainApp.getEditCardView().getController());
 		MainController mainController = ((MainController) this.mainApp.getMainView().getController());
 		editController.getEditPane().setVisible(true);
 		editController.setEntity(currentSubGroup);
@@ -464,15 +468,10 @@ public class CardsController {
 	}
 	
 	private void generateTestData() {
-		
 		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "begin", "начало", "I begin a talk");
-	
-	
 		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "start", "начинать", "I start a bussines");
-
 	}
 
-	@SuppressWarnings("unused")
 	private void createRow(String partSpeech,
 			               String partSpeech_translate,	
 			               String senseGroup,

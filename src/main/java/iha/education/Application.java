@@ -80,6 +80,4 @@ public class Application extends AbstractJavaFxApplicationSupport {
 	public void setScene(Scene scene) {
 		this.scene = scene;
 	}
- 
-
 }

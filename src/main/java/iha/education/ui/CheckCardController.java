@@ -94,7 +94,7 @@ public class CheckCardController {
     	    	
    			break;
     		case 2:
-    			wrapper = new CardsListWrapper(FXCollections.observableArrayList(cards));
+    			wrapper = new CardsListWrapper();
     		    wrapper = loadCards(file, wrapper);
     		    transferToSpringContext();
     	    	cards = cardsService.findAll();

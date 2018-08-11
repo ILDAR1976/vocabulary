@@ -175,8 +175,7 @@ public class EditCardController<T,S,C> {
         
         TableViewSelectionModel<T> sm = table.getSelectionModel();
 		sm.select(0);
-		
-    }
+   }
 
     @SuppressWarnings("unchecked")
 	public void update() {
