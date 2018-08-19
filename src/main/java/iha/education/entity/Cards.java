@@ -31,7 +31,15 @@ import java.io.Serializable;
     @NamedQuery(name="Cards.findByWord", query="select c from Cards c where c.word=:word"),
     @NamedQuery(name="Cards.findByThirdFilter", query="select c from Cards c where c.partSpeech=:partSpeech and "
     																			 + "c.senseGroup=:senseGroup and "
-    																			 + "c.subGroup=:subGroup")
+    																			 + "c.subGroup=:subGroup"),
+    @NamedQuery(name="Cards.findByFifthFilterLike", query="select c from Cards c where"
+    		 + " c.partSpeech=:partSpeech and"
+			 + " c.senseGroup=:senseGroup and"
+			 + " c.subGroup=:subGroup and"
+			 + " c.word like :word and"
+			 + " c.translate like :translate"
+    		 )
+
 })
 
 public class Cards implements Serializable {
@@ -59,7 +67,6 @@ public class Cards implements Serializable {
    
     
     public Cards() {
-    	//logger.info("Cards 1 created ...");
     }
 
     public Cards(String word, String translate, String example) {
@@ -108,7 +115,6 @@ public class Cards implements Serializable {
 	public void setSenseGroup(SenseGroup senseGroup) {
 		this.senseGroup = senseGroup;
 	}
-
 
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "subgroup_id", nullable = false)

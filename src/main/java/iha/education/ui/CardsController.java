@@ -179,7 +179,6 @@ public class CardsController {
 			partSpeeches = partSpeechService.findAll();
 			senseGroups = senseGroupService.findAll();
 			subGroups = subGroupService.findAll();
-
 			cardsData = FXCollections.observableArrayList(cards);
 			break;
 		}
@@ -245,44 +244,12 @@ public class CardsController {
 			sm.select(cardsData.size()-1);
 			table.setSelectionModel(sm);
 			table.setFocusModel(fm);
+			
 		}
 		
-	}
-
-	private void transferToSpringContext() {
 		
-		partSpeeches = new ArrayList<>();
-		senseGroups = new ArrayList<>();
-		subGroups = new ArrayList<>();
+		table.requestFocus();
 		
-		wrapper.getCards().stream().forEach(item->{
-			Cards crds = item;
-			
-			PartSpeech ps = item.getPartSpeech();
-			ps.getCards().clear();
-			
-			SenseGroup sg = item.getSenseGroup();
-			sg.getCards().clear();
-			
-			SubGroup sug = item.getSubGroup();
-			sug.getCards().clear();
-			
-			crds.setPartSpeech(ps);
-			crds.setSenseGroup(sg);
-			crds.setSubGroup(sug);
-			
-			partSpeechService.save(ps);
-			senseGroupService.save(sg);
-			subGroupService.save(sug);
-			cardsService.save(crds);
-			
-			
-		});
-		
-		cards = cardsService.findAll();
-		partSpeeches = partSpeechService.findAll();
-		senseGroups = senseGroupService.findAll();
-		subGroups = subGroupService.findAll();
 	}
 
 	private void idColumn_OnEditCommit(CellEditEvent<Cards, String> e) {
@@ -450,6 +417,43 @@ public class CardsController {
 		TableViewSelectionModel<Cards> sm = table.getSelectionModel();
 		sm.select(cards.size()-1);
 		clearOldValue();
+		notApply.setVisible(true);
+		table.scrollTo(cards.size()-1);
+	}
+
+	@FXML
+	private void handleSearch() {
+		currentWord = txtWord.getText();
+		currentTranslate = txtTranslate.getText();
+		currentExample = txtExample.getText();
+		
+		if (currentPartSpeech == null && currentSenseGroup == null &&  currentSubGroup == null && currentWord.isEmpty() && currentTranslate.isEmpty()) {
+			cards = cardsService.findAll();
+		} else {
+			if (currentPartSpeech != null && currentSenseGroup == null &&  currentSubGroup == null) {
+				cards = cardsService.findByVariantOneFilterLike(currentPartSpeech, "%"+currentWord+"%", "%"+currentTranslate+"%");
+			} else if (currentPartSpeech == null && currentSenseGroup != null &&  currentSubGroup == null) {
+				cards = cardsService.findByVariantTwoFilterLike(currentSenseGroup, "%"+currentWord+"%", "%"+currentTranslate+"%");
+			} else if (currentPartSpeech == null && currentSenseGroup == null &&  currentSubGroup != null) {
+				cards = cardsService.findByVariantThreeFilterLike(currentSubGroup, "%"+currentWord+"%", "%"+currentTranslate+"%");
+			} else if (currentPartSpeech != null && currentSenseGroup != null &&  currentSubGroup == null) {
+				cards = cardsService.findByVariantFourFilterLike(currentPartSpeech, currentSenseGroup, "%"+currentWord+"%", "%"+currentTranslate+"%");
+			} else if (currentPartSpeech == null && currentSenseGroup != null &&  currentSubGroup != null) {
+				cards = cardsService.findByVariantFiveFilterLike(currentSenseGroup, currentSubGroup, "%"+currentWord+"%", "%"+currentTranslate+"%");
+			} else if (currentPartSpeech != null && currentSenseGroup == null &&  currentSubGroup != null) {
+				cards = cardsService.findByVariantSixFilterLike(currentPartSpeech, currentSubGroup, "%"+currentWord+"%", "%"+currentTranslate+"%");
+			} else {
+				cards = cardsService.findByFifthFilterLike(currentPartSpeech, currentSenseGroup, currentSubGroup, "%"+currentWord+"%", "%"+currentTranslate+"%");
+			}
+		}
+		
+		cardsData = FXCollections.observableArrayList(cards);
+		table.setItems(cardsData);
+		table.refresh();
+		TableViewSelectionModel<Cards> sm = table.getSelectionModel();
+		sm.select(cards.size()-1);
+		clearOldValue();
+		table.scrollTo(cards.size()-1);
 	}
 	
 	private void clearOldValue() {
@@ -592,7 +596,10 @@ public class CardsController {
 
 	public void update() {
 		table.refresh();
+		TableViewFocusModel<Cards> fm = table.getFocusModel();
+		fm.focus(cardsData.size()-1);
 		table.requestFocus();
+		table.scrollTo(cardsData.size()-1);
 	}
 
 	public PartSpeech getCurrentPartSpeech() {

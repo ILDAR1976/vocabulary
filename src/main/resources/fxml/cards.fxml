@@ -18,7 +18,7 @@
          <bottom>
             <HBox maxHeight="27.0" minHeight="27.0" prefHeight="27.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="txtPartOfSpeech" promptText="Part of Speech">
+                  <TextField fx:id="txtPartOfSpeech" editable="false" promptText="Part of Speech">
                      <font>
                         <Font size="10.0" />
                      </font></TextField>
@@ -27,7 +27,7 @@
                         <Font size="4.0" />
                      </font>
                   </Button>
-                  <TextField fx:id="txtSenseGroup" promptText="Sense group">
+                  <TextField fx:id="txtSenseGroup" editable="false" promptText="Sense group">
                      <font>
                         <Font size="10.0" />
                      </font></TextField>
@@ -36,7 +36,7 @@
                         <Font size="4.0" />
                      </font>
                   </Button>
-                  <TextField fx:id="txtSubGroup" promptText="Subgroup">
+                  <TextField fx:id="txtSubGroup" editable="false" promptText="Subgroup">
                      <font>
                         <Font size="10.0" />
                      </font></TextField>
@@ -61,7 +61,7 @@
                      <children>
                         <HBox alignment="TOP_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Button minWidth="60.0" mnemonicParsing="false" prefWidth="60.0" text="Delete">
+                              <Button minWidth="60.0" mnemonicParsing="false" onAction="#handleSearch" prefWidth="60.0" text="Search">
                                  <font>
                                     <Font size="10.0" />
                                  </font>

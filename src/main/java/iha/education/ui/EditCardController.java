@@ -73,7 +73,6 @@ public class EditCardController<T,S,C> {
     	this.editPane.setVisible(false);
     	if (this.controller instanceof CardsController) {
     		CardsController cardsCntl = (CardsController) controller;
-    		cardsCntl.getNotApply().setVisible(true);
     		cardsCntl.getTable().refresh();
     		mainController.getMainFrame().setCenter(cardsCntl.getCardsAnchor());
     		cardsCntl.getTable().requestFocus();
@@ -98,17 +97,33 @@ public class EditCardController<T,S,C> {
 	    			cardsCntl.setTxtSubGroup(entity.toString());
 	    			cardsCntl.setCurrentSubGroup((SubGroup) entity);
 	    		}
-	    		cardsCntl.getNotApply().setVisible(true);
 	    		cardsCntl.getTable().refresh();
 	    	} else {
+	    		Boolean flag = true;
 	    		if (entity instanceof PartSpeech){
+	    			PartSpeech oldValue = cardsCntl.getTable().getFocusModel().getFocusedItem().getPartSpeech();
 	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setPartSpeech((PartSpeech) entity);
+	    			if ( ((PartSpeech) entity).getName().equals(oldValue.getName()) &&
+	    				 ((PartSpeech) entity).getTranslate().equals(oldValue.getTranslate())	) {
+	    				flag = false;
+	    			}
 	    		} else if (entity instanceof SenseGroup) {
+	    			SenseGroup oldValue = cardsCntl.getTable().getFocusModel().getFocusedItem().getSenseGroup();
 	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setSenseGroup((SenseGroup) entity);
+	    			if ( ((SenseGroup) entity).getName().equals(oldValue.getName()) &&
+		    				 ((SenseGroup) entity).getTranslate().equals(oldValue.getTranslate())	) {
+		    				flag = false;
+		    			}
 	    		} else if (entity instanceof SubGroup) {
+	    			SubGroup oldValue = cardsCntl.getTable().getFocusModel().getFocusedItem().getSubGroup();
 	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setSubGroup((SubGroup) entity);
+	    			if ( ((SubGroup) entity).getName().equals(oldValue.getName()) &&
+		    				 ((SubGroup) entity).getTranslate().equals(oldValue.getTranslate())	) {
+		    				flag = false;
+		    			}
 	    		}
-	    		cardsCntl.getNotApply().setVisible(true);
+	    		
+	    		if (flag) cardsCntl.getNotApply().setVisible(true);
 	    		cardsCntl.getTable().refresh();
 	    	}
 	    		
@@ -212,6 +227,7 @@ public class EditCardController<T,S,C> {
      		this.information.setStyle(" -fx-text-fill: #d8d8d8;");
     	}
     	table.requestFocus();
+    	table.scrollTo(this.data.size()-1);
     }
     
 	public T getEntity() {

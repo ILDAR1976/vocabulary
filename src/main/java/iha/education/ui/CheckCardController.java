@@ -116,8 +116,7 @@ public class CheckCardController {
 				checkColumn,
 				modificatedColumn);
 		checkTable.setItems(cardsData);
-		checkTable.refresh();
-		checkTable.requestFocus();
+		
     }
 
     private void checkColumn_OnEditCommit(Event e) {
@@ -158,6 +157,7 @@ public class CheckCardController {
     	info.setText(info.getText() + " " + statistic.getTimeStamp().toString() + " matches : " + statistic.getMatchesCounter() + System.lineSeparator());
     	
     	statistics.add(statistic);
+    	info.selectEnd();
     }
 
     public void handleGetButton() {
@@ -166,40 +166,57 @@ public class CheckCardController {
     	List<SenseGroup> sg = senseGroupService.findAll();
     	List<SubGroup> sug = subGroupService.findAll();
 
-    	int rnd1 = (int)(Math.random() * ps.get(ps.size()-1).getId().intValue());
-    	int rnd2 = (int)(Math.random() * sg.get(sg.size()-1).getId().intValue());
-    	int rnd3 = (int)(Math.random() * sug.get(sug.size()-1).getId().intValue());
-    	
-    	PartSpeech cps = partSpeechService.findTop1By();
-    	SenseGroup csg = senseGroupService.findTop1By();
-    	SubGroup csug = subGroupService.findTop1By();
-    	
-    	int min1 = ps.get(ps.size()-1).getId().intValue();
-    	int min2 = sg.get(sg.size()-1).getId().intValue();
-    	int min3 = sug.get(sug.size()-1).getId().intValue();
-    	
-    	for (int i = 0; i < ps.size();i++) {
-    		if (Math.abs(ps.get(i).getId() - rnd1) <= min1) {
-    			min1 = (int) Math.abs(ps.get(i).getId() - rnd1);
-    			cps = ps.get(i);
-    		}
-    	}
-    	
-    	for (int i = 0; i < sg.size();i++) {
-    		if (Math.abs(sg.get(i).getId() - rnd2) <= min2) {
-    			min2 = (int) Math.abs(sg.get(i).getId() - rnd2);
-    			csg = sg.get(i);
-    		}
-    	}
+    	List<Cards> cards = null;
+    	PartSpeech cps = null;
+    	SenseGroup csg = null;
+    	SubGroup csug = null;
 
-    	for (int i = 0; i < sug.size();i++) {
-    		if (Math.abs(sug.get(i).getId() - rnd3) <= min3) {
-    			min3 = (int) Math.abs(sug.get(i).getId() - rnd3);
-    			csug = sug.get(i);
-    		}
-    	}
+    	Boolean flag = true;
     	
-    	List<Cards> cards = cardsService.findByThirdFilter(cps, csg, csug);
+    	do {
+    		
+    	
+	    	int rnd1 = (int)(Math.random() * ps.get(ps.size()-1).getId().intValue());
+	    	int rnd2 = (int)(Math.random() * sg.get(sg.size()-1).getId().intValue());
+	    	int rnd3 = (int)(Math.random() * sug.get(sug.size()-1).getId().intValue());
+	       	
+	    	cps = partSpeechService.findTop1By();
+	    	csg = senseGroupService.findTop1By();
+	    	csug = subGroupService.findTop1By();
+    	
+	    	int min1 = ps.get(ps.size()-1).getId().intValue();
+	    	int min2 = sg.get(sg.size()-1).getId().intValue();
+	    	int min3 = sug.get(sug.size()-1).getId().intValue();
+	    	
+	    	for (int i = 0; i < ps.size();i++) {
+	    		if (Math.abs(ps.get(i).getId() - rnd1) <= min1) {
+	    			min1 = (int) Math.abs(ps.get(i).getId() - rnd1);
+	    			cps = ps.get(i);
+	    		}
+	    	}
+	    	
+	    	for (int i = 0; i < sg.size();i++) {
+	    		if (Math.abs(sg.get(i).getId() - rnd2) <= min2) {
+	    			min2 = (int) Math.abs(sg.get(i).getId() - rnd2);
+	    			csg = sg.get(i);
+	    		}
+	    	}
+	
+	    	for (int i = 0; i < sug.size();i++) {
+	    		if (Math.abs(sug.get(i).getId() - rnd3) <= min3) {
+	    			min3 = (int) Math.abs(sug.get(i).getId() - rnd3);
+	    			csug = sug.get(i);
+	    		}
+	    	}
+	    	
+	    	cards = cardsService.findByThirdFilter(cps, csg, csug);
+	    	
+	    	if (cards.size() != 0) {
+	    		flag = false;
+	    	}
+	    	
+    	} while (flag);
+    	
     	cardsData = FXCollections.observableArrayList(cards);
     	checkTable.setItems(cardsData);
 		checkTable.refresh();
@@ -214,7 +231,7 @@ public class CheckCardController {
     			csug.getName() +
     			System.lineSeparator()
     			); 
-
+	   	info.selectEnd();
     }
     
 	public void setMainApp(Application mainApp) {

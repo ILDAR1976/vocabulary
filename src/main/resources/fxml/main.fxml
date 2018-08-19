@@ -19,11 +19,6 @@
                     <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Close" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Search">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Search word" />
-                  </items>
-                </Menu>
                   <Menu mnemonicParsing="false" text="Tools">
                     <items>
                       <MenuItem mnemonicParsing="false" text="Properties" />

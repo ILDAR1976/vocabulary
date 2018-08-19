@@ -52,4 +52,45 @@ public class CardsServiceImpl implements CardsService {
 	public List<Cards> findByThirdFilter(PartSpeech partSpeech, SenseGroup senseGroup, SubGroup subGroup){
 		return repository.findByThirdFilter(partSpeech, senseGroup, subGroup);
 	}
+
+	@Override
+	public List<Cards> findByFifthFilterLike(PartSpeech partSpeech, SenseGroup senseGroup, SubGroup subGroup, String word,
+			String translate) {
+		return repository.findByFifthFilterLike(partSpeech, senseGroup, subGroup, word, translate);
+	}
+
+	@Override
+	public List<Cards> findByVariantOneFilterLike(PartSpeech partSpeech, String word, String translate) {
+		return repository.findByVariantOneFilterLike(partSpeech, word, translate);
+	}
+
+	@Override
+	public List<Cards> findByVariantTwoFilterLike(SenseGroup senseGroup, String word, String translate) {
+		return repository.findByVariantTwoFilterLike(senseGroup, word, translate);
+	}
+
+	@Override
+	public List<Cards> findByVariantThreeFilterLike(SubGroup subGroup, String word, String translate) {
+		return repository.findByVariantThreeFilterLike(subGroup, word, translate);
+	}
+
+	@Override
+	public List<Cards> findByVariantFourFilterLike(PartSpeech partSpeech, SenseGroup senseGroup, String word,
+			String translate) {
+		return repository.findByVariantFourFilterLike(partSpeech, senseGroup, word, translate);
+	}
+
+	@Override
+	public List<Cards> findByVariantFiveFilterLike(SenseGroup senseGroup, SubGroup subGroup, String word,
+			String translate) {
+		return repository.findByVariantFiveFilterLike(senseGroup, subGroup, word, translate);
+	}
+
+	@Override
+	public List<Cards> findByVariantSixFilterLike(PartSpeech partSpeech, SubGroup subGroup, String word,
+			String translate) {
+		return repository.findByVariantSixFilterLike(partSpeech, subGroup, word, translate);
+	}
+	
+	
 }

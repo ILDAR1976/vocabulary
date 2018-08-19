@@ -1,822 +1,1536 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <vocabulary>
     <card>
-        <example>I begin a talk</example>
-        <id>1</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>1</id>
-            <name>beginning</name>
-            <translate>Начало</translate>
-        </subGroup>
-        <translate>начинать(ся)</translate>
-        <word>start</word>
-    </card>
-    <card>
-        <example>I start</example>
-        <id>2</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>1</id>
-            <name>beginning</name>
-            <translate>Начало</translate>
-        </subGroup>
-        <translate>начинать(ся)</translate>
-        <word>begin</word>
-    </card>
-    <card>
-        <example></example>
-        <id>3</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>1</id>
-            <name>beginning</name>
-            <translate>Начало</translate>
-        </subGroup>
-        <translate>появляться</translate>
-        <word>appear</word>
-    </card>
-    <card>
-        <example></example>
         <id>4</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>1</id>
-            <name>beginning</name>
-            <translate>Начало</translate>
-        </subGroup>
-        <translate>становиться</translate>
-        <word>grow</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>begin</word>
+        <translate>начало</translate>
+        <example>I begin a talk</example>
     </card>
     <card>
-        <example></example>
         <id>5</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>1</id>
-            <name>beginning</name>
-            <translate>Начало</translate>
-        </subGroup>
-        <translate>становиться</translate>
-        <word>become</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>start</word>
+        <translate>начинать</translate>
+        <example>I start a bussines</example>
     </card>
     <card>
-        <example></example>
         <id>6</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>1</id>
-            <name>beginning</name>
-            <translate>Начало</translate>
-        </subGroup>
-        <translate>становиться</translate>
-        <word>get</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>appear</word>
+        <translate>появляться</translate>
+        <example>This is appear</example>
+        <modificated>true</modificated>
     </card>
     <card>
-        <example></example>
         <id>7</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>1</id>
-            <name>beginning</name>
-            <translate>Начало</translate>
-        </subGroup>
-        <translate>готовиться</translate>
-        <word>prepare</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>grow</word>
+        <translate>становиться</translate>
+        <example></example>
+        <modificated>true</modificated>
     </card>
     <card>
-        <example></example>
         <id>8</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>1</id>
-            <name>beginning</name>
-            <translate>Начало</translate>
-        </subGroup>
-        <translate>опаздывать</translate>
-        <word>be late</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>become</word>
+        <translate>становиться</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>9</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>продолжать(ся)</translate>
-        <word>continue</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>get</word>
+        <translate>становиться</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>10</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>продолжать</translate>
-        <word>go on</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>prepare</word>
+        <translate>готовиться</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>11</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>длиться</translate>
-        <word>last</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>3</subGroup>
+        <word>be late</word>
+        <translate>опаздывать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
-        <id>12</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>занимать(время)</translate>
-        <word>take</word>
-    </card>
-    <card>
-        <example></example>
         <id>13</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>задерживать</translate>
-        <word>delay</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>continue</word>
+        <translate>продолжать(ся)</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>14</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>откладывать</translate>
-        <word>put off</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>go on</word>
+        <translate>продолжать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>15</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>откладывать</translate>
-        <word>postpone</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>last</word>
+        <translate>длиться</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>16</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>повторять</translate>
-        <word>repeat</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>take</word>
+        <translate>занимать(время)</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>17</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>2</id>
-            <name>Continuation</name>
-            <translate>Продолжение</translate>
-        </subGroup>
-        <translate>возобновлять</translate>
-        <word>resume</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>delay</word>
+        <translate>задерживать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>18</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>3</id>
-            <name>End</name>
-            <translate>Завершение</translate>
-        </subGroup>
-        <translate>завершать(ся)</translate>
-        <word>finish</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>put off</word>
+        <translate>откладывать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>19</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>3</id>
-            <name>End</name>
-            <translate>Завершение</translate>
-        </subGroup>
-        <translate>завершать</translate>
-        <word>complete</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>postpone</word>
+        <translate>откладывать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>20</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>3</id>
-            <name>End</name>
-            <translate>Завершение</translate>
-        </subGroup>
-        <translate>прерывать</translate>
-        <word>break</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>repeat</word>
+        <translate>повторить</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>21</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>3</id>
-            <name>End</name>
-            <translate>Завершение</translate>
-        </subGroup>
-        <translate>прерывать</translate>
-        <word>interrupt</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>12</subGroup>
+        <word>resume</word>
+        <translate>возобновлять</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
-        <id>22</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>3</id>
-            <name>End</name>
-            <translate>Завершение</translate>
-        </subGroup>
-        <translate>приостанавливать</translate>
-        <word>suspend</word>
-    </card>
-    <card>
-        <example></example>
         <id>23</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>3</id>
-            <name>End</name>
-            <translate>Завершение</translate>
-        </subGroup>
-        <translate>переставать</translate>
-        <word>cease</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>22</subGroup>
+        <word>finish</word>
+        <translate>завершать(ся)</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>24</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>1</id>
-            <name>Verb of Stage</name>
-            <translate>Глаголы стадии</translate>
-        </senseGroup>
-        <subGroup>
-            <id>3</id>
-            <name>End</name>
-            <translate>Завершение</translate>
-        </subGroup>
-        <translate>прекращать</translate>
-        <word>stop</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>22</subGroup>
+        <word>end</word>
+        <translate>завершать(ся)</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>25</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>двигать(ся)</translate>
-        <word>move</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>22</subGroup>
+        <word>complete</word>
+        <translate>завершать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>26</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>останавливать(ся)</translate>
-        <word>stop</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>22</subGroup>
+        <word>break</word>
+        <translate>прерывать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>27</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>идти/ехать</translate>
-        <word>go</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>22</subGroup>
+        <word>interrupt</word>
+        <translate>прерывать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>28</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>скользить</translate>
-        <word>slide</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>22</subGroup>
+        <word>suspend</word>
+        <translate>приостанавливать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>29</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>катить(ся)</translate>
-        <word>roll</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>22</subGroup>
+        <word>cease</word>
+        <translate>переставать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>30</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>поворачивать(ся)</translate>
-        <word>turn</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>22</subGroup>
+        <word>stop</word>
+        <translate>прекращать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
-        <id>31</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>гнуть</translate>
-        <word>bend</word>
-    </card>
-    <card>
-        <example></example>
-        <id>32</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>махать рукой</translate>
-        <word>wave</word>
-    </card>
-    <card>
-        <example></example>
         <id>33</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>трясти(сь)</translate>
-        <word>shake</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>move</word>
+        <translate>двигать(ся)</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>34</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>раскачиваться</translate>
-        <word>swing</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>stop</word>
+        <translate>останавливать(ся)</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>35</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>плыть</translate>
-        <word>swim</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>go</word>
+        <translate>идти/ехать</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>36</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>вращаться</translate>
-        <word>rotate</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>slide</word>
+        <translate>скользить</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>37</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>кататься на лыжах</translate>
-        <word>ski</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>roll</word>
+        <translate>катить(ся)</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>38</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>4</id>
-            <name>Way of movement</name>
-            <translate>Виды движений</translate>
-        </subGroup>
-        <translate>кататься на коньках</translate>
-        <word>skate</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>turn</word>
+        <translate>поворачивать(ся)</translate>
+        <example></example>
     </card>
     <card>
-        <example></example>
         <id>39</id>
-        <partSpeech>
-            <id>1</id>
-            <name>Verb</name>
-            <translate>Глагол</translate>
-        </partSpeech>
-        <senseGroup>
-            <id>2</id>
-            <name>Verb of movement</name>
-            <translate>Глаголы движения</translate>
-        </senseGroup>
-        <subGroup>
-            <id>5</id>
-            <name>Upward/Downward movement</name>
-            <translate>Движение вверх/вниз</translate>
-        </subGroup>
-        <translate>подниматься</translate>
-        <word>raise</word>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>bend</word>
+        <translate>гнуть</translate>
+        <example></example>
     </card>
+    <card>
+        <id>40</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>wave</word>
+        <translate>махать рукой</translate>
+        <example></example>
+    </card>
+    <card>
+        <id>41</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>shake</word>
+        <translate>трясти(сь)</translate>
+        <example></example>
+    </card>
+    <card>
+        <id>42</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>swing</word>
+        <translate>раскачиваться</translate>
+        <example></example>
+    </card>
+    <card>
+        <id>43</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>swim</word>
+        <translate>плыть</translate>
+        <example></example>
+    </card>
+    <card>
+        <id>44</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>rotate</word>
+        <translate>вращаться</translate>
+        <example></example>
+    </card>
+    <card>
+        <id>45</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>ski</word>
+        <translate>кататься на лыжах</translate>
+        <example></example>
+    </card>
+    <card>
+        <id>46</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>skate</word>
+        <translate>кататься на коньках</translate>
+        <example></example>
+    </card>
+    <card>
+        <id>47</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>raise</word>
+        <translate>поднимать</translate>
+        <example></example>
+    </card>
+    <card>
+        <id>48</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>31</senseGroup>
+        <subGroup>32</subGroup>
+        <word>lift</word>
+        <translate>поднимать</translate>
+        <example></example>
+    </card>
+    <part_speech>
+        <id>1</id>
+        <name>Verb</name>
+        <translate>Глагол</translate>
+        <cards>
+            <cards>
+                <id>33</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>move</word>
+                <translate>двигать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>34</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>stop</word>
+                <translate>останавливать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>35</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>go</word>
+                <translate>идти/ехать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>36</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>slide</word>
+                <translate>скользить</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>37</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>roll</word>
+                <translate>катить(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>38</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>turn</word>
+                <translate>поворачивать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>39</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>bend</word>
+                <translate>гнуть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>40</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>wave</word>
+                <translate>махать рукой</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>41</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>shake</word>
+                <translate>трясти(сь)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>42</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>swing</word>
+                <translate>раскачиваться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>43</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>swim</word>
+                <translate>плыть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>44</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>rotate</word>
+                <translate>вращаться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>45</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>ski</word>
+                <translate>кататься на лыжах</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>46</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>skate</word>
+                <translate>кататься на коньках</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>47</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>raise</word>
+                <translate>поднимать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>48</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>lift</word>
+                <translate>поднимать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>4</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>begin</word>
+                <translate>начало</translate>
+                <example>I begin a talk</example>
+            </cards>
+            <cards>
+                <id>5</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>start</word>
+                <translate>начинать</translate>
+                <example>I start a bussines</example>
+            </cards>
+            <cards>
+                <id>6</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>appear</word>
+                <translate>появляться</translate>
+                <example>This is appear</example>
+                <modificated>true</modificated>
+            </cards>
+            <cards>
+                <id>7</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>grow</word>
+                <translate>становиться</translate>
+                <example></example>
+                <modificated>true</modificated>
+            </cards>
+            <cards>
+                <id>8</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>become</word>
+                <translate>становиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>9</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>get</word>
+                <translate>становиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>10</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>prepare</word>
+                <translate>готовиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>11</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>be late</word>
+                <translate>опаздывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>13</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>continue</word>
+                <translate>продолжать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>14</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>go on</word>
+                <translate>продолжать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>15</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>last</word>
+                <translate>длиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>16</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>take</word>
+                <translate>занимать(время)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>17</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>delay</word>
+                <translate>задерживать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>18</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>put off</word>
+                <translate>откладывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>19</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>postpone</word>
+                <translate>откладывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>20</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>repeat</word>
+                <translate>повторить</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>21</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>resume</word>
+                <translate>возобновлять</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>23</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>finish</word>
+                <translate>завершать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>24</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>end</word>
+                <translate>завершать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>25</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>complete</word>
+                <translate>завершать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>26</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>break</word>
+                <translate>прерывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>27</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>interrupt</word>
+                <translate>прерывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>28</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>suspend</word>
+                <translate>приостанавливать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>29</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>cease</word>
+                <translate>переставать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>30</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>stop</word>
+                <translate>прекращать</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </part_speech>
+    <sense_group>
+        <id>2</id>
+        <name>Verb of Stage</name>
+        <translate>Глаголы стадии</translate>
+        <cards>
+            <cards>
+                <id>4</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>begin</word>
+                <translate>начало</translate>
+                <example>I begin a talk</example>
+            </cards>
+            <cards>
+                <id>5</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>start</word>
+                <translate>начинать</translate>
+                <example>I start a bussines</example>
+            </cards>
+            <cards>
+                <id>6</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>appear</word>
+                <translate>появляться</translate>
+                <example>This is appear</example>
+                <modificated>true</modificated>
+            </cards>
+            <cards>
+                <id>7</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>grow</word>
+                <translate>становиться</translate>
+                <example></example>
+                <modificated>true</modificated>
+            </cards>
+            <cards>
+                <id>8</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>become</word>
+                <translate>становиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>9</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>get</word>
+                <translate>становиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>10</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>prepare</word>
+                <translate>готовиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>11</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>be late</word>
+                <translate>опаздывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>13</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>continue</word>
+                <translate>продолжать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>14</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>go on</word>
+                <translate>продолжать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>15</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>last</word>
+                <translate>длиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>16</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>take</word>
+                <translate>занимать(время)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>17</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>delay</word>
+                <translate>задерживать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>18</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>put off</word>
+                <translate>откладывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>19</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>postpone</word>
+                <translate>откладывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>20</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>repeat</word>
+                <translate>повторить</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>21</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>resume</word>
+                <translate>возобновлять</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>23</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>finish</word>
+                <translate>завершать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>24</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>end</word>
+                <translate>завершать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>25</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>complete</word>
+                <translate>завершать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>26</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>break</word>
+                <translate>прерывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>27</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>interrupt</word>
+                <translate>прерывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>28</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>suspend</word>
+                <translate>приостанавливать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>29</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>cease</word>
+                <translate>переставать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>30</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>stop</word>
+                <translate>прекращать</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </sense_group>
+    <sense_group>
+        <id>31</id>
+        <name>Verbs of Movement</name>
+        <translate>Глаголы движения</translate>
+        <cards>
+            <cards>
+                <id>33</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>move</word>
+                <translate>двигать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>34</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>stop</word>
+                <translate>останавливать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>35</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>go</word>
+                <translate>идти/ехать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>36</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>slide</word>
+                <translate>скользить</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>37</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>roll</word>
+                <translate>катить(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>38</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>turn</word>
+                <translate>поворачивать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>39</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>bend</word>
+                <translate>гнуть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>40</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>wave</word>
+                <translate>махать рукой</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>41</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>shake</word>
+                <translate>трясти(сь)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>42</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>swing</word>
+                <translate>раскачиваться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>43</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>swim</word>
+                <translate>плыть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>44</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>rotate</word>
+                <translate>вращаться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>45</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>ski</word>
+                <translate>кататься на лыжах</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>46</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>skate</word>
+                <translate>кататься на коньках</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>47</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>raise</word>
+                <translate>поднимать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>48</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>lift</word>
+                <translate>поднимать</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </sense_group>
+    <sub_group>
+        <id>3</id>
+        <name>Beginning</name>
+        <translate>Начало</translate>
+        <cards>
+            <cards>
+                <id>4</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>begin</word>
+                <translate>начало</translate>
+                <example>I begin a talk</example>
+            </cards>
+            <cards>
+                <id>5</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>start</word>
+                <translate>начинать</translate>
+                <example>I start a bussines</example>
+            </cards>
+            <cards>
+                <id>6</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>appear</word>
+                <translate>появляться</translate>
+                <example>This is appear</example>
+                <modificated>true</modificated>
+            </cards>
+            <cards>
+                <id>7</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>grow</word>
+                <translate>становиться</translate>
+                <example></example>
+                <modificated>true</modificated>
+            </cards>
+            <cards>
+                <id>8</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>become</word>
+                <translate>становиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>9</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>get</word>
+                <translate>становиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>10</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>prepare</word>
+                <translate>готовиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>11</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>be late</word>
+                <translate>опаздывать</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </sub_group>
+    <sub_group>
+        <id>12</id>
+        <name>Сontinuation</name>
+        <translate>Продолжение</translate>
+        <cards>
+            <cards>
+                <id>17</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>delay</word>
+                <translate>задерживать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>18</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>put off</word>
+                <translate>откладывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>19</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>postpone</word>
+                <translate>откладывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>20</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>repeat</word>
+                <translate>повторить</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>21</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>resume</word>
+                <translate>возобновлять</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>13</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>continue</word>
+                <translate>продолжать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>14</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>go on</word>
+                <translate>продолжать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>15</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>last</word>
+                <translate>длиться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>16</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>12</subGroup>
+                <word>take</word>
+                <translate>занимать(время)</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </sub_group>
+    <sub_group>
+        <id>22</id>
+        <name>End</name>
+        <translate>Завершение</translate>
+        <cards>
+            <cards>
+                <id>23</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>finish</word>
+                <translate>завершать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>24</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>end</word>
+                <translate>завершать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>25</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>complete</word>
+                <translate>завершать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>26</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>break</word>
+                <translate>прерывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>27</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>interrupt</word>
+                <translate>прерывать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>28</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>suspend</word>
+                <translate>приостанавливать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>29</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>cease</word>
+                <translate>переставать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>30</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>22</subGroup>
+                <word>stop</word>
+                <translate>прекращать</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </sub_group>
+    <sub_group>
+        <id>32</id>
+        <name>Ways of Movement</name>
+        <translate>Виды движений</translate>
+        <cards>
+            <cards>
+                <id>33</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>move</word>
+                <translate>двигать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>34</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>stop</word>
+                <translate>останавливать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>35</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>go</word>
+                <translate>идти/ехать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>36</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>slide</word>
+                <translate>скользить</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>37</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>roll</word>
+                <translate>катить(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>38</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>turn</word>
+                <translate>поворачивать(ся)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>39</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>bend</word>
+                <translate>гнуть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>40</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>wave</word>
+                <translate>махать рукой</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>41</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>shake</word>
+                <translate>трясти(сь)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>42</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>swing</word>
+                <translate>раскачиваться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>43</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>swim</word>
+                <translate>плыть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>44</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>rotate</word>
+                <translate>вращаться</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>45</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>ski</word>
+                <translate>кататься на лыжах</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>46</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>skate</word>
+                <translate>кататься на коньках</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>47</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>raise</word>
+                <translate>поднимать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>48</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>31</senseGroup>
+                <subGroup>32</subGroup>
+                <word>lift</word>
+                <translate>поднимать</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </sub_group>
 </vocabulary>

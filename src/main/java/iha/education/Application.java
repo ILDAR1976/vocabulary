@@ -1,6 +1,7 @@
 package iha.education;
 
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -58,6 +59,7 @@ public class Application extends AbstractJavaFxApplicationSupport {
     	stage.setTitle(windowTitle);
     	stage.setScene(scene);
         stage.setResizable(true);
+		stage.getIcons().add(new Image(getClass().getClassLoader().getResource("icon.png").toString()));
         stage.centerOnScreen();
         stage.show();
     }
