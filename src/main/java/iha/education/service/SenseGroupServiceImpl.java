@@ -43,4 +43,9 @@ public class SenseGroupServiceImpl implements SenseGroupService {
 		return repository.findById(id).get();
 	}
 
+	@Override
+	public SenseGroup findTop1By() {
+		return repository.findTop1By();
+	}
+
 }

@@ -8,8 +8,6 @@ import iha.education.repository.PartSpeechRepository;
 
 import javax.transaction.Transactional;
 import java.util.List;
-
-
 @Service
 @Transactional
 public class PartSpeechServiceImpl implements PartSpeechService {
@@ -41,6 +39,11 @@ public class PartSpeechServiceImpl implements PartSpeechService {
 	@Override
 	public PartSpeech findById(Long id) {
 		return repository.findById(id).get();
+	}
+
+	@Override
+	public PartSpeech findTop1By() {
+		return repository.findTop1By();
 	}
 
 }

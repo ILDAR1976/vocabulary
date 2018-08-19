@@ -4,6 +4,8 @@ import javafx.application.Application;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import iha.education.utils.Utils;
+
 @SuppressWarnings("restriction")
 public abstract class AbstractJavaFxApplicationSupport extends Application {
 

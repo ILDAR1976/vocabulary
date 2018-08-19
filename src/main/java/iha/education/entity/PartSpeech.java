@@ -22,6 +22,7 @@ import java.util.Set;
 @Table
 @NamedQueries({
     @NamedQuery(name="PartSpeech.findByName", query="select ps from PartSpeech ps where ps.name=:name")
+  
 })
 public class PartSpeech implements Serializable {
 

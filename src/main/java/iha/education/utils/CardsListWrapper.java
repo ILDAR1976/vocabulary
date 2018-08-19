@@ -19,7 +19,6 @@ public class CardsListWrapper implements Serializable  {
 	private List<PartSpeech> partSpeech;
 	private List<SenseGroup> senseGroup;
 	private List<SubGroup> subGroup;
-	
 
     public CardsListWrapper() {
     	

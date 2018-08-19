@@ -16,48 +16,77 @@
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
-            <HBox BorderPane.alignment="CENTER">
+            <HBox maxHeight="27.0" minHeight="27.0" prefHeight="27.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="txtPartOfSpeech" promptText="Part of Speech" />
+                  <TextField fx:id="txtPartOfSpeech" promptText="Part of Speech">
+                     <font>
+                        <Font size="10.0" />
+                     </font></TextField>
                   <Button graphicTextGap="1.0" mnemonicParsing="false" onAction="#handlePartSpeech" prefHeight="25.0" prefWidth="7.0" text="...">
                      <font>
                         <Font size="4.0" />
                      </font>
                   </Button>
-                  <TextField fx:id="txtSenseGroup" promptText="Sense group" />
+                  <TextField fx:id="txtSenseGroup" promptText="Sense group">
+                     <font>
+                        <Font size="10.0" />
+                     </font></TextField>
                   <Button graphicTextGap="1.0" mnemonicParsing="false" onAction="#handleSenseGroup" prefHeight="25.0" prefWidth="7.0" text="...">
                      <font>
                         <Font size="4.0" />
                      </font>
                   </Button>
-                  <TextField fx:id="txtSubGroup" promptText="Subgroup" />
+                  <TextField fx:id="txtSubGroup" promptText="Subgroup">
+                     <font>
+                        <Font size="10.0" />
+                     </font></TextField>
                   <Button graphicTextGap="1.0" mnemonicParsing="false" onAction="#handleSubGroup" prefHeight="25.0" prefWidth="7.0" text="...">
                      <font>
                         <Font size="4.0" />
                      </font>
                   </Button>
-                  <TextField fx:id="txtWord" promptText="Word" />
-                  <TextField fx:id="txtTranslate" promptText="Translate" />
-                  <TextField fx:id="txtExample" promptText="Example" />
-                  <Button minWidth="60.0" mnemonicParsing="false" onAction="#handleInsertRow" prefWidth="60.0" text="Insert">
+                  <TextField fx:id="txtWord" promptText="Word">
                      <font>
                         <Font size="10.0" />
-                     </font></Button>
-                  <Button minWidth="60.0" mnemonicParsing="false" prefWidth="60.0" text="Delete">
+                     </font></TextField>
+                  <TextField fx:id="txtTranslate" promptText="Translate">
                      <font>
                         <Font size="10.0" />
-                     </font></Button>
-                  <Button minWidth="60.0" mnemonicParsing="false" onAction="#handleSaveData" prefWidth="60.0" text="Apply">
+                     </font></TextField>
+                  <TextField fx:id="txtExample" promptText="Example">
                      <font>
                         <Font size="10.0" />
-                     </font></Button>
+                     </font></TextField>
+                  <AnchorPane>
+                     <children>
+                        <HBox alignment="TOP_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button minWidth="60.0" mnemonicParsing="false" prefWidth="60.0" text="Delete">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button minWidth="60.0" mnemonicParsing="false" onAction="#handleInsertRow" prefWidth="60.0" text="Insert">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button minWidth="60.0" mnemonicParsing="false" onAction="#handleSaveData" prefWidth="60.0" text="Apply">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
                </children>
             </HBox>
          </bottom>
          <center>
             <ScrollPane fitToHeight="true" fitToWidth="true" BorderPane.alignment="CENTER">
                <content>
-                  <TableView fx:id="table" editable="true" focusTraversable="false" tableMenuButtonVisible="true">
+                  <TableView fx:id="table" editable="true" tableMenuButtonVisible="true">
                       <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>

@@ -18,6 +18,24 @@
         <translate>начинать</translate>
         <example>I start a bussines</example>
     </card>
+    <card>
+        <id>7</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>6</subGroup>
+        <word>continue</word>
+        <translate>продолжение</translate>
+        <example>This is continue</example>
+    </card>
+    <card>
+        <id>8</id>
+        <partSpeech>1</partSpeech>
+        <senseGroup>2</senseGroup>
+        <subGroup>6</subGroup>
+        <word>make</word>
+        <translate>делаю</translate>
+        <example>I make</example>
+    </card>
     <part_speech>
         <id>1</id>
         <name>Verb</name>
@@ -31,6 +49,33 @@
                 <word>begin</word>
                 <translate>начало</translate>
                 <example>I begin a talk</example>
+            </cards>
+            <cards>
+                <id>5</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>start</word>
+                <translate>начинать</translate>
+                <example>I start a bussines</example>
+            </cards>
+            <cards>
+                <id>7</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>6</subGroup>
+                <word>continue</word>
+                <translate>продолжение</translate>
+                <example>This is continue</example>
+            </cards>
+            <cards>
+                <id>8</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>6</subGroup>
+                <word>make</word>
+                <translate>делаю</translate>
+                <example>I make</example>
             </cards>
         </cards>
     </part_speech>
@@ -48,6 +93,33 @@
                 <translate>начало</translate>
                 <example>I begin a talk</example>
             </cards>
+            <cards>
+                <id>5</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>start</word>
+                <translate>начинать</translate>
+                <example>I start a bussines</example>
+            </cards>
+            <cards>
+                <id>7</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>6</subGroup>
+                <word>continue</word>
+                <translate>продолжение</translate>
+                <example>This is continue</example>
+            </cards>
+            <cards>
+                <id>8</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>6</subGroup>
+                <word>make</word>
+                <translate>делаю</translate>
+                <example>I make</example>
+            </cards>
         </cards>
     </sense_group>
     <sub_group>
@@ -63,6 +135,40 @@
                 <word>begin</word>
                 <translate>начало</translate>
                 <example>I begin a talk</example>
+            </cards>
+            <cards>
+                <id>5</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>3</subGroup>
+                <word>start</word>
+                <translate>начинать</translate>
+                <example>I start a bussines</example>
+            </cards>
+        </cards>
+    </sub_group>
+    <sub_group>
+        <id>6</id>
+        <name>continue</name>
+        <translate>Продолжение</translate>
+        <cards>
+            <cards>
+                <id>7</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>6</subGroup>
+                <word>continue</word>
+                <translate>продолжение</translate>
+                <example>This is continue</example>
+            </cards>
+            <cards>
+                <id>8</id>
+                <partSpeech>1</partSpeech>
+                <senseGroup>2</senseGroup>
+                <subGroup>6</subGroup>
+                <word>make</word>
+                <translate>делаю</translate>
+                <example>I make</example>
             </cards>
         </cards>
     </sub_group>

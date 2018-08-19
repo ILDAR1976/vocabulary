@@ -16,5 +16,6 @@ public interface PartSpeechRepository extends CrudRepository<PartSpeech, Long> {
     List<PartSpeech> findAll();
     @Query(nativeQuery=true)
     PartSpeech findByName(@Param("name")String name);
- 
+	PartSpeech findTop1By();
+    
 }

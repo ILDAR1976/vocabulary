@@ -45,7 +45,7 @@ public class SubGroup implements Serializable  {
 	private Set<Cards> cards = new HashSet<Cards>();
     
     
-    SubGroup() {} 
+    public SubGroup() {} 
     
     public SubGroup(String name, String translate) {
 		super();

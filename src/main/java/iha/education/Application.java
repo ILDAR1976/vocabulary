@@ -9,7 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Lazy;
 
 import iha.education.ui.CardsController;
+import iha.education.ui.CheckCardController;
 import iha.education.ui.MainController;
+import iha.education.utils.Utils;
 
 
 @SuppressWarnings("restriction")
@@ -31,16 +33,21 @@ public class Application extends AbstractJavaFxApplicationSupport {
     @Qualifier("editCardView")
     @Autowired
     private ConfigurationControllers.View editCardView;
-    
+
+    @Qualifier("checkCardView")
+    @Autowired
+    private ConfigurationControllers.View checkCardView;
+
     private Scene scene;
     
     @Override
     public void start(Stage stage) throws Exception {
+    	
     	((MainController) mainView.getController()).setMainApp(this);
     	((CardsController) cardsView.getController()).setMainApp(this);
-        
+    	((CheckCardController) checkCardView.getController()).setMainApp(this);        
     	
-    	scene = new Scene(mainView.getView(),1200,800,true);
+    	scene = new Scene(mainView.getView(),1000,600,true);
 
     	scene.getStylesheets()
 			.add(getClass()
@@ -53,8 +60,6 @@ public class Application extends AbstractJavaFxApplicationSupport {
         stage.setResizable(true);
         stage.centerOnScreen();
         stage.show();
-    	
-        
     }
 
     public static void main(String[] args) {
@@ -71,6 +76,10 @@ public class Application extends AbstractJavaFxApplicationSupport {
 
 	public ConfigurationControllers.View getEditCardView() {
 		return editCardView;
+	}
+	
+	public ConfigurationControllers.View getCheckCardView() {
+		return checkCardView;
 	}
 
 	public Scene getScene() {

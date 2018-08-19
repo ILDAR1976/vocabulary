@@ -1,5 +1,6 @@
 package iha.education.repository;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Propagation;
@@ -13,6 +14,8 @@ import java.util.List;
 public interface SubGroupRepository extends CrudRepository<SubGroup, Long> {
 
     List<SubGroup> findAll();
+    @Query(nativeQuery=true)
     SubGroup findByName(@Param("name")String name);
+    SubGroup findTop1By();
 
 }

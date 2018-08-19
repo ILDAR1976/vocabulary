@@ -23,6 +23,7 @@ public class MainController {
     @FXML
     public void initialize() {
     	mainAnchor.setStyle("-fx-background-color: #3c3c3c;");
+    	
     }
 
     @PostConstruct
@@ -36,7 +37,16 @@ public class MainController {
     	CardsController cards = (CardsController)mainApp.getCardsView().getController();
     	cards.getCardsAnchor().setVisible(true);
     	mainFrame.setCenter(mainApp.getCardsView().getView());
+    	cards.update();
     }
+    
+    public void handleShowCheckCardDialog()throws IOException {
+    	mainFrame.setCenter(null);
+    	CheckCardController checkCard = (CheckCardController)mainApp.getCheckCardView().getController();
+    	checkCard.getCheckCardAnchor().setVisible(true);
+    	mainFrame.setCenter(mainApp.getCheckCardView().getView());
+    	checkCard.update();
+    } 
     
     @FXML
     private void handleExit() {

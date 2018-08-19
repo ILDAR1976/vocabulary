@@ -9,7 +9,11 @@ import javax.xml.bind.annotation.XmlIDREF;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import iha.education.entity.WSLongAdapter;
+import iha.education.ui.CardsController;
 
 import java.io.Serializable;
 
@@ -24,11 +28,14 @@ import java.io.Serializable;
 @Entity
 @Table
 @NamedQueries({
-    @NamedQuery(name="Cards.findByWord", query="select c from Cards c where c.word=:word")
+    @NamedQuery(name="Cards.findByWord", query="select c from Cards c where c.word=:word"),
+    @NamedQuery(name="Cards.findByThirdFilter", query="select c from Cards c where c.partSpeech=:partSpeech and "
+    																			 + "c.senseGroup=:senseGroup and "
+    																			 + "c.subGroup=:subGroup")
 })
+
 public class Cards implements Serializable {
 	
-
 	private static final long serialVersionUID = 1776649399856633994L;
 
 	@XmlElement
@@ -47,9 +54,12 @@ public class Cards implements Serializable {
 	private String translate;
 	@XmlElement
 	private String example;
-    private Boolean modificated;
+    private String checkWord;
+	private Boolean modificated;
+   
     
     public Cards() {
+    	//logger.info("Cards 1 created ...");
     }
 
     public Cards(String word, String translate, String example) {
@@ -57,7 +67,7 @@ public class Cards implements Serializable {
     	this.word = word;
 		this.translate = translate;
 		this.example = example;
-    	
+    	//logger.info("Cards 2 created ...");
     }
    
     public Cards(PartSpeech partSpeech, SenseGroup senseGroup, SubGroup subGroup, String word, String translate,
@@ -66,6 +76,7 @@ public class Cards implements Serializable {
 		this.partSpeech = partSpeech;
 		this.senseGroup = senseGroup;
 		this.subGroup = subGroup;
+		//logger.info("Cards 3 created ...");
 	}
 
     @Id
@@ -136,6 +147,15 @@ public class Cards implements Serializable {
 	}
 	
 	@Column
+	public String getCheckWord() {
+		return checkWord;
+	}
+
+	public void setCheckWord(String check) {
+		this.checkWord = check;
+	}
+
+	@Column
 	public Boolean getModificated() {
 		return modificated;
 	}
@@ -144,6 +164,7 @@ public class Cards implements Serializable {
 		this.modificated = modificated;
 	}
 
+	
 	
 	@Override
 	public int hashCode() {

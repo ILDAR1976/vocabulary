@@ -46,7 +46,7 @@ public class SenseGroup implements Serializable  {
 	@XmlElementWrapper
     private Set<Cards> cards = new HashSet<Cards>();
 
-    SenseGroup() {}
+    public SenseGroup() {}
  
     public SenseGroup(String name, String translate) {
 		super();

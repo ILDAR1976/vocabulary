@@ -12,5 +12,7 @@ public interface PartSpeechService {
     PartSpeech findById(int id);
     PartSpeech findById(Long id);
     PartSpeech findByName(String name);
+    PartSpeech findTop1By();
+    
 
 }

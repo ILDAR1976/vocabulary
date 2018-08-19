@@ -15,7 +15,7 @@
                 <Menu mnemonicParsing="false" text="File">
                   <items>
                         <MenuItem mnemonicParsing="false" onAction="#handleShowCardsDialog" text="Cards" />
-                        <MenuItem mnemonicParsing="false" text="Check" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowCheckCardDialog" text="Check" />
                     <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Close" />
                   </items>
                 </Menu>

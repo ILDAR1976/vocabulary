@@ -42,4 +42,9 @@ public class SubGroupServiceImpl implements SubGroupService {
 		return repository.findByName(name);
 	}
 
+	@Override
+	public SubGroup findTop1By() {
+		return repository.findTop1By();
+	}
+
 }

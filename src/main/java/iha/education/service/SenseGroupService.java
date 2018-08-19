@@ -12,5 +12,6 @@ public interface SenseGroupService {
     SenseGroup findById(int id);
     SenseGroup findById(Long id);
     SenseGroup findByName(String name);
+    SenseGroup findTop1By();
 
 }
