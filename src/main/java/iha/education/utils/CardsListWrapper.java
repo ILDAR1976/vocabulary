@@ -13,34 +13,24 @@ import iha.education.entity.SubGroup;
 
 @SuppressWarnings("serial")
 @XmlRootElement(name = "vocabulary")
-public class CardsListWrapper implements Serializable  {
-    
-	private List<Cards> cards;
+public class CardsListWrapper implements Serializable {
+
 	private List<PartSpeech> partSpeech;
 	private List<SenseGroup> senseGroup;
 	private List<SubGroup> subGroup;
-
-    public CardsListWrapper() {
-    	
-    }
-
-    public CardsListWrapper(List<Cards> cards, List<PartSpeech> partSpeech, List<SenseGroup> senseGroup, List<SubGroup> subGroup) {
-    	this.cards = cards;
-    	this.partSpeech = partSpeech;
-    	this.senseGroup = senseGroup;
-    	this.subGroup = subGroup;
-    }
-    
-    @XmlElement(name = "card")
-	public List<Cards> getCards() {
-		return cards;
-	}
-
-	public void setCards(List<Cards> cards) {
-		this.cards = cards;
-	}
 	
-	@XmlElement(name = "part_speech")
+
+	public CardsListWrapper() {
+
+	}
+
+	public CardsListWrapper(List<PartSpeech> partSpeech, List<SenseGroup> senseGroup,
+			List<SubGroup> subGroup) {
+		
+	}
+
+
+	@XmlElement(name = "partSpeech")
 	public List<PartSpeech> getPartSpeech() {
 		return partSpeech;
 	}
@@ -49,7 +39,7 @@ public class CardsListWrapper implements Serializable  {
 		this.partSpeech = partSpeech;
 	}
 
-	@XmlElement(name = "sense_group")
+	@XmlElement(name = "senseGroup")
 	public List<SenseGroup> getSenseGroup() {
 		return senseGroup;
 	}
@@ -57,8 +47,8 @@ public class CardsListWrapper implements Serializable  {
 	public void setSenseGroup(List<SenseGroup> senseGroup) {
 		this.senseGroup = senseGroup;
 	}
-	
-	@XmlElement(name = "sub_group")
+
+	@XmlElement(name = "subGroup")
 	public List<SubGroup> getSubGroup() {
 		return subGroup;
 	}
@@ -66,7 +56,6 @@ public class CardsListWrapper implements Serializable  {
 	public void setSubGroup(List<SubGroup> subGroup) {
 		this.subGroup = subGroup;
 	}
-	
-	
 
+	
 }

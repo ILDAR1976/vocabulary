@@ -63,6 +63,8 @@ import java.io.File;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 @SuppressWarnings({ "restriction" })
 public class CardsController {
@@ -132,56 +134,18 @@ public class CardsController {
 		return cardsAnchor;
 	}
 
-	@FXML
-	public void handleCloseTable() {
-		this.cardsAnchor.setVisible(false);
-	}
-	
-	@FXML
-	public void handleSaveData() throws JAXBException {
-		File file = Utils.getVocabularyFile();
-		cardsData.stream().forEach(e->{cardsService.save(e);});
-		wrapper = new CardsListWrapper();
-		wrapper.setCards(cardsData);
-		wrapper.setPartSpeech(FXCollections.observableArrayList(partSpeechService.findAll()));
-		wrapper.setSenseGroup(FXCollections.observableArrayList(senseGroupService.findAll()));
-		wrapper.setSubGroup(FXCollections.observableArrayList(subGroupService.findAll()));
-		saveCards(file, wrapper);
-		notApply.setVisible(false);
-	}
 	
 	@SuppressWarnings("unchecked")
 	@PostConstruct
 	public void init() throws JAXBException, URISyntaxException {
 		logger.info("Running cards controller ...");
 		
-		File file = Utils.getVocabularyFile();
-
-		switch (2) {
-		case 1:
-			generateTestData();
-			cards = cardsService.findAll();
-			partSpeeches = partSpeechService.findAll();
-			senseGroups = senseGroupService.findAll();
-			subGroups = subGroupService.findAll();
-			cardsData = FXCollections.observableArrayList(cards);
-			wrapper = new CardsListWrapper();
-			wrapper.setCards(cardsData);
-			wrapper.setPartSpeech(FXCollections.observableArrayList(partSpeechService.findAll()));
-			wrapper.setSenseGroup(FXCollections.observableArrayList(senseGroupService.findAll()));
-			wrapper.setSubGroup(FXCollections.observableArrayList(subGroupService.findAll()));
-			saveCards(file, wrapper);
-			
-			break;
-		case 2:
-			cards = new ArrayList<>();
-			cards = cardsService.findAll();
-			partSpeeches = partSpeechService.findAll();
-			senseGroups = senseGroupService.findAll();
-			subGroups = subGroupService.findAll();
-			cardsData = FXCollections.observableArrayList(cards);
-			break;
-		}
+		cards = new ArrayList<>();
+		cards = cardsService.findAll();
+		partSpeeches = partSpeechService.findAll();
+		senseGroups = senseGroupService.findAll();
+		subGroups = subGroupService.findAll();
+		cardsData = FXCollections.observableArrayList(cards);
 
 		TableColumn<Cards, String> idColumn = new TableColumn<>("ID");
 		idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
@@ -319,6 +283,7 @@ public class CardsController {
 		editController.update();
 		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
 		editController.getTable().requestFocus();
+		editController.setEditable();
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -335,6 +300,7 @@ public class CardsController {
 		editController.update();
 		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
 		editController.getTable().requestFocus();
+		editController.setEditable();
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -351,8 +317,46 @@ public class CardsController {
 		editController.update();
 		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
 		editController.getTable().requestFocus();
+		editController.setEditable();
 	}
+	
+	@FXML
+	public void handleCloseTable() {
+		this.cardsAnchor.setVisible(false);
+	}
+	
+	@FXML
+	public void handleSaveData() throws JAXBException {
+		File file = Utils.getVocabularyFile();
 
+		cardsData.stream()
+		.filter(f->{if (f.getModificated() != null) return f.getModificated(); else return false;})
+		.forEach(e->{e.setModificated(false);
+			         cardsService.save(e);});
+
+		partSpeeches.stream()
+		.filter(f->{if (f.getModificated() != null) return f.getModificated(); else return false;})
+		.forEach(e->{e.setModificated(false);
+					 partSpeechService.save(e);});
+
+		senseGroups.stream()
+		.filter(f->{if (f.getModificated() != null) return f.getModificated(); else return false;})
+		.forEach(e->{e.setModificated(false);
+		             senseGroupService.save(e);});
+		
+		subGroups.stream()
+		.filter(f->{if (f.getModificated() != null) return f.getModificated(); else return false;})
+		.forEach(e->{e.setModificated(false);
+		             subGroupService.save(e);});
+		
+		wrapper = new CardsListWrapper();
+		wrapper.setPartSpeech(FXCollections.observableArrayList(partSpeechService.findAll()));
+		wrapper.setSenseGroup(FXCollections.observableArrayList(senseGroupService.findAll()));
+		wrapper.setSubGroup(FXCollections.observableArrayList(subGroupService.findAll()));
+		saveCards(file, wrapper);
+		notApply.setVisible(false);
+	}
+	
 	@SuppressWarnings("unchecked")
 	@FXML
 	private void handlePartSpeech() {
@@ -368,6 +372,7 @@ public class CardsController {
 		editController.update();
 		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
 		editController.getTable().requestFocus();
+		editController.setEditable();
 	}
 	
 	@FXML
@@ -384,6 +389,7 @@ public class CardsController {
 		editController.update();
 		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
 		editController.getTable().requestFocus();
+		editController.setEditable();
 	}
 	
 	@FXML
@@ -400,6 +406,7 @@ public class CardsController {
 		editController.update();
 		mainController.getMainFrame().setCenter(mainApp.getEditCardView().getView());
 		editController.getTable().requestFocus();
+		editController.setEditable();
 	}
 	
 	@FXML
@@ -427,8 +434,19 @@ public class CardsController {
 		currentTranslate = txtTranslate.getText();
 		currentExample = txtExample.getText();
 		
-		if (currentPartSpeech == null && currentSenseGroup == null &&  currentSubGroup == null && currentWord.isEmpty() && currentTranslate.isEmpty()) {
-			cards = cardsService.findAll();
+		if (currentPartSpeech == null && currentSenseGroup == null &&  currentSubGroup == null ) {
+			if (currentWord.isEmpty() && currentTranslate.isEmpty()) {
+				cards = cardsService.findAll();
+			} else {
+				if (currentWord.isEmpty()) {
+					cards = cardsService.findByTranslateLike("%" + currentTranslate + "%");
+				} else if (currentTranslate.isEmpty()) {
+					cards = cardsService.findByWordLike("%" + currentWord + "%");
+				} else {
+					cards = cardsService.findBySecondFilterLike("%" +currentWord + "%", "%" +currentTranslate + "%");
+				}
+					
+			}
 		} else {
 			if (currentPartSpeech != null && currentSenseGroup == null &&  currentSubGroup == null) {
 				cards = cardsService.findByVariantOneFilterLike(currentPartSpeech, "%"+currentWord+"%", "%"+currentTranslate+"%");
@@ -470,67 +488,6 @@ public class CardsController {
 		txtWord.setText("");
 		txtTranslate.setText("");
 		txtExample.setText("");
-		
-	}
-	
-	private void generateTestData() {
-		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "begin", "начало", "I begin a talk");
-		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "start", "начинать", "I start a bussines");
-	}
-
-	private void createRow(String partSpeech,
-			               String partSpeech_translate,	
-			               String senseGroup,
-			               String senseGroup_translate,
-			               String subGroup,
-			               String subGroup_translate,
-			               String word, 
-			               String translate, 
-			               String example) {
-		
-		PartSpeech ps = null;
-		SenseGroup sg = null;
-		SubGroup sug = null;
-		
-		if (partSpeechService.findByName(partSpeech) != null) {
-			ps = partSpeechService.findByName(partSpeech);
-		} else {
-			ps = new PartSpeech(partSpeech, partSpeech_translate);
-			ps.getCards().clear();
-		}
-		
-		if (senseGroupService.findByName(senseGroup) != null) {
-			sg = senseGroupService.findByName(senseGroup);
-		} else {
-			sg = new SenseGroup(senseGroup, senseGroup_translate);
-			sg.getCards().clear();
-		}
-
-		if (subGroupService.findByName(subGroup) != null) {
-			sug = subGroupService.findByName(subGroup);
-		} else {
-			sug = new SubGroup(subGroup,subGroup_translate);
-			sug.getCards().clear();
-		}
-		
-		partSpeechService.save(ps);
-		senseGroupService.save(sg);
-		subGroupService.save(sug);
-
-		Cards cds = new Cards(word, 
-				              translate, 
-				              example); 
-		
-		ps.getCards().add(cds);
-		sg.getCards().add(cds);
-		sug.getCards().add(cds);
-		
-		cds.setPartSpeech(ps);
-		cds.setSenseGroup(sg);
-		cds.setSubGroup(sug);
-		
-		cardsService.save(cds);
-		
 		
 	}
 
@@ -673,5 +630,29 @@ public class CardsController {
 	public void setTxtExample(String txtExample) {
 		this.txtExample.setText(txtExample);
 	}
+	
+	public PartSpeechService getPartSpeechService() {
+		return partSpeechService;
+	}
 
+
+	public SenseGroupService getSenseGroupService() {
+		return senseGroupService;
+	}
+
+
+	public SubGroupService getSubGroupService() {
+		return subGroupService;
+	}
+
+
+	public void saveCurrentRow(Cards currentCards) {
+		cardsService.save(currentCards);
+	}
+	
+	public void refresh() {
+    	cards = cardsService.findAll();
+    	cardsData = FXCollections.observableArrayList(cards);
+    	table.setItems(cardsData);
+	}
 }

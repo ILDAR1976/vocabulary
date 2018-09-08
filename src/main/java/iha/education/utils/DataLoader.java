@@ -1,5 +1,7 @@
 package iha.education.utils;
 
+import static iha.education.utils.Utils.saveCards;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,9 +11,11 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import javax.annotation.PostConstruct;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 import org.slf4j.Logger;
@@ -26,6 +30,7 @@ import iha.education.service.CardsService;
 import iha.education.service.PartSpeechService;
 import iha.education.service.SenseGroupService;
 import iha.education.service.SubGroupService;
+import javafx.collections.FXCollections;
 
 public class DataLoader {
 	
@@ -51,85 +56,173 @@ public class DataLoader {
 	private PartSpeech ps;
 	private SenseGroup sg;
 	private SubGroup sug;
+	private Cards crd;
 	
 	public DataLoader() {
 		logger.info("Running data loader ...");
 	}
 	
 	@PostConstruct
-	public void inicialization() {
+	public void inicialization() throws JAXBException {
 		logger.info("Inicialization data source ...");
-		File file = Utils.getVocabularyFile();
-		cards = new ArrayList<>();
-		wrapper = new CardsListWrapper();
-		wrapper = Utils.loadCards(file, wrapper);
-		transferToSpringContext();
+		
+		switch (2) {
+		
+		case 1:
+			generateData();
+			break;
+		case 2:
+			File file = Utils.getVocabularyFile();
+			cards = new ArrayList<>();
+			wrapper = new CardsListWrapper();
+			wrapper = Utils.loadCards(file, wrapper);
+			transferToSpringContext();
+			break;
+		}
 	}
-
 	
 	private void transferToSpringContext() {
 		
+		cards = new ArrayList<>();
 		partSpeeches = new ArrayList<>();
 		senseGroups = new ArrayList<>();
 		subGroups = new ArrayList<>();
-		List<Element> sequence = new ArrayList<>();
-		
-		wrapper.getCards().stream().forEach(item -> {
-			Element elm = new Element();
-			elm.setId(item.getId());
-			elm.setObj(item);
-			elm.setType(item.getClass().getName());
-			sequence.add(elm);
-		});
-
 		
 		wrapper.getPartSpeech().stream().forEach(item -> {
-			Element elm = new Element();
-			elm.setId(item.getId());
-			elm.setObj(item);
-			elm.setType(item.getClass().getName());
-			sequence.add(elm);
+			ps = item;
+			List<Cards> crd = ps.getCards();
+			crd.stream().forEach(c -> {
+				c.setModificated(false);
+				if (cards.contains(c)) {
+					cards.get(cards.indexOf(c)).setPartSpeech(ps);
+				} else {
+					c.setPartSpeech(ps);
+					cards.add(c);
+				}
+			});
+			ps.getCards().clear();
+			ps.setModificated(false);
+			partSpeechService.save(ps);
+			
+			
 		});
 
 		wrapper.getSenseGroup().stream().forEach(item -> {
-			Element elm = new Element();
-			elm.setId(item.getId());
-			elm.setObj(item);
-			elm.setType(item.getClass().getName());
-			sequence.add(elm);
-		});
-
-		wrapper.getSubGroup().stream().forEach(item -> {
-			Element elm = new Element();
-			elm.setId(item.getId());
-			elm.setObj(item);
-			elm.setType(item.getClass().getName());
-			sequence.add(elm);
+			sg = item;
+			List<Cards> crd = sg.getCards();
+			crd.stream().forEach(c -> {
+				c.setModificated(false);
+				if (cards.contains(c)) {
+					cards.get(cards.indexOf(c)).setSenseGroup(sg);
+				} else {
+					c.setSenseGroup(sg);
+					cards.add(c);
+				}
+			});
+			sg.getCards().clear();
+			sg.setModificated(false);
+			senseGroupService.save(sg);
 		});
 		
-		sequence.sort(new CompTypeComparator());
-		sequence.stream().forEach(g -> {
-			if (g.getType().equals("iha.education.entity.PartSpeech")) {
-				ps = (PartSpeech) g.getObj();
-				ps.getCards().clear();
-				partSpeechService.save(ps);
-			} if (g.getType().equals("iha.education.entity.SenseGroup")) {
-				sg = (SenseGroup) g.getObj();
-				sg.getCards().clear();
-				senseGroupService.save(sg);	
-			} if (g.getType().equals("iha.education.entity.SubGroup")) {
-				sug = (SubGroup) g.getObj();
-				sug.getCards().clear();
-				subGroupService.save(sug);		
-			} if (g.getType().equals("iha.education.entity.Cards")) {
-				Cards crd = (Cards) g.getObj();
-				crd.setPartSpeech(ps);
-				crd.setSenseGroup(sg);
-				crd.setSubGroup(sug);
-				cardsService.save(crd);			
-			}
+		wrapper.getSubGroup().stream().forEach(item -> {
+			sug = item;
+			List<Cards> crd = sug.getCards();
+			crd.stream().forEach(c -> {
+				if (cards.contains(c)) {
+					cards.get(cards.indexOf(c)).setSubGroup(sug);
+				} else {
+					c.setSubGroup(sug);
+					cards.add(c);
+				}
+			});
+			sug.getCards().clear();
+			sug.setModificated(false);
+			subGroupService.save(sug);
 		});
 
+		cards.stream().forEach(c ->{
+			c.setModificated(false);
+			cardsService.save(c);
+		});
+		
+		
+		
+	}
+	
+	private void generateTestData() {
+		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "begin", "начало", "I begin a talk");
+		createRow("Verb", "Глагол", "Verb of Stage", "Глаголы стадии", "beginning", "Начало", "start", "начинать", "I start a bussines");
+	}
+
+	private void createRow(String partSpeech,
+			               String partSpeech_translate,	
+			               String senseGroup,
+			               String senseGroup_translate,
+			               String subGroup,
+			               String subGroup_translate,
+			               String word, 
+			               String translate, 
+			               String example) {
+		
+		PartSpeech ps = null;
+		SenseGroup sg = null;
+		SubGroup sug = null;
+		
+		if (partSpeechService.findByName(partSpeech) != null) {
+			ps = partSpeechService.findByName(partSpeech);
+		} else {
+			ps = new PartSpeech(partSpeech, partSpeech_translate);
+			ps.getCards().clear();
+		}
+		
+		if (senseGroupService.findByName(senseGroup) != null) {
+			sg = senseGroupService.findByName(senseGroup);
+		} else {
+			sg = new SenseGroup(senseGroup, senseGroup_translate);
+			sg.getCards().clear();
+		}
+
+		if (subGroupService.findByName(subGroup) != null) {
+			sug = subGroupService.findByName(subGroup);
+		} else {
+			sug = new SubGroup(subGroup,subGroup_translate);
+			sug.getCards().clear();
+		}
+		
+		partSpeechService.save(ps);
+		senseGroupService.save(sg);
+		subGroupService.save(sug);
+
+		Cards cds = new Cards(word, 
+				              translate, 
+				              example); 
+		
+		ps.getCards().add(cds);
+		sg.getCards().add(cds);
+		sug.getCards().add(cds);
+		
+		cds.setPartSpeech(ps);
+		cds.setSenseGroup(sg);
+		cds.setSubGroup(sug);
+		
+		cardsService.save(cds);
+		
+		
+	}
+
+	private void generateData() throws JAXBException {
+		generateTestData();
+		cards = cardsService.findAll();
+		partSpeeches = partSpeechService.findAll();
+		senseGroups = senseGroupService.findAll();
+		subGroups = subGroupService.findAll();
+		wrapper = new CardsListWrapper();
+		//wrapper.setCards(cards);
+		wrapper.setPartSpeech(partSpeeches);
+		wrapper.setSenseGroup(senseGroups);
+		wrapper.setSubGroup(subGroups);
+		File file = Utils.getVocabularyFile();
+		saveCards(file, wrapper);
 	}
 	
 	public class Element {

@@ -1,7 +1,9 @@
 package iha.education.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -44,8 +46,9 @@ public class SenseGroup implements Serializable  {
 	@XmlElement
 	private String translate;
 	@XmlElementWrapper
-    private Set<Cards> cards = new HashSet<Cards>();
-
+    private List<Cards> cards = new ArrayList<>();
+	private Boolean modificated;
+	
     public SenseGroup() {}
  
     public SenseGroup(String name, String translate) {
@@ -55,7 +58,7 @@ public class SenseGroup implements Serializable  {
 	}
 
     @Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getId() {
 		return id;
 	}
@@ -80,13 +83,22 @@ public class SenseGroup implements Serializable  {
 	}
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "senseGroup")
-	public Set<Cards> getCards() {
+	public List<Cards> getCards() {
 		return cards;
 	}
 
-	public void setCards(Set<Cards> cards) {
+	public void setCards(List<Cards> cards) {
 		this.cards = cards;
 	}
+	
+	public Boolean getModificated() {
+		return modificated;
+	}
+
+	public void setModificated(Boolean modificated) {
+		this.modificated = modificated;
+	}
+	
 
 	@Override
 	public int hashCode() {

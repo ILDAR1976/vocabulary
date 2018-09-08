@@ -44,8 +44,18 @@ public class CardsServiceImpl implements CardsService {
     }
 
 	@Override
-	public List<Cards> findByWord(String word) {
-		return repository.findByWord(word);
+	public List<Cards> findByWordLike(String word) {
+		return repository.findByWordLike(word);
+	}
+
+	@Override
+	public List<Cards> findByTranslateLike(String translate) {
+		return repository.findByTranslateLike(translate);
+	}
+
+	@Override
+	public List<Cards> findBySecondFilterLike(String word, String translate) {
+		return repository.findBySecondFilterLike(word, translate);
 	}
 
 	@Override 
@@ -91,6 +101,6 @@ public class CardsServiceImpl implements CardsService {
 			String translate) {
 		return repository.findByVariantSixFilterLike(partSpeech, subGroup, word, translate);
 	}
-	
-	
+
+
 }

@@ -93,7 +93,7 @@ public class PropertiesController {
     	    	cards = cardsService.findAll();
     	        data = FXCollections.observableArrayList(cards);
     	        wrapper = new CardsListWrapper(); 
-    	    	wrapper.setCards(data);
+    	    	//wrapper.setCards(data);
     	    	saveCards(file, wrapper);
     	    	
    			break;
@@ -163,7 +163,7 @@ public class PropertiesController {
     }
 
     private void transferToSpringContext() {
-   		for (Cards item: wrapper.getCards()) {
+/*   		for (Cards item: wrapper.getCards()) {
 			partSpeechService.save(item.getPartSpeech());
 			senseGroupService.save(item.getSenseGroup());
 			subGroupService.save(item.getSubGroup());
@@ -175,5 +175,5 @@ public class PropertiesController {
 					                    item.getExample()));
 		}
    	
-    }
+*/    }
 }

@@ -28,7 +28,10 @@ import java.io.Serializable;
 @Entity
 @Table
 @NamedQueries({
-    @NamedQuery(name="Cards.findByWord", query="select c from Cards c where c.word=:word"),
+    @NamedQuery(name="Cards.findByWordLike", query="select c from Cards c where c.word like :word"),
+    @NamedQuery(name="Cards.findByTranslateLike", query="select c from Cards c where c.translate like :translate"),
+    @NamedQuery(name="Cards.findBySecondFilterLike", query="select c from Cards c where c.word like :word and "
+    		+ "                                                                     c.translate like :translate"),
     @NamedQuery(name="Cards.findByThirdFilter", query="select c from Cards c where c.partSpeech=:partSpeech and "
     																			 + "c.senseGroup=:senseGroup and "
     																			 + "c.subGroup=:subGroup"),
@@ -87,7 +90,7 @@ public class Cards implements Serializable {
 	}
 
     @Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
  	public Long getId() {
 		return id;
 	}

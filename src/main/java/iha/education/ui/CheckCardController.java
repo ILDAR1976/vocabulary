@@ -14,6 +14,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import javax.annotation.PostConstruct;
 
@@ -72,6 +73,8 @@ public class CheckCardController {
 	private ObservableList<Cards> cardsData;
 	private List<Cards> cards =  new ArrayList<>();
 	private List<Statistics> statistics = new ArrayList<>();
+
+	private Random rn = new Random(5);
 	
     @SuppressWarnings("unchecked")
     @PostConstruct
@@ -165,52 +168,23 @@ public class CheckCardController {
     	List<PartSpeech> ps = partSpeechService.findAll();
     	List<SenseGroup> sg = senseGroupService.findAll();
     	List<SubGroup> sug = subGroupService.findAll();
-
     	List<Cards> cards = null;
+    	
     	PartSpeech cps = null;
     	SenseGroup csg = null;
     	SubGroup csug = null;
-
+    	
     	Boolean flag = true;
     	
     	do {
-    		
     	
-	    	int rnd1 = (int)(Math.random() * ps.get(ps.size()-1).getId().intValue());
-	    	int rnd2 = (int)(Math.random() * sg.get(sg.size()-1).getId().intValue());
-	    	int rnd3 = (int)(Math.random() * sug.get(sug.size()-1).getId().intValue());
-	       	
-	    	cps = partSpeechService.findTop1By();
-	    	csg = senseGroupService.findTop1By();
-	    	csug = subGroupService.findTop1By();
-    	
-	    	int min1 = ps.get(ps.size()-1).getId().intValue();
-	    	int min2 = sg.get(sg.size()-1).getId().intValue();
-	    	int min3 = sug.get(sug.size()-1).getId().intValue();
-	    	
-	    	for (int i = 0; i < ps.size();i++) {
-	    		if (Math.abs(ps.get(i).getId() - rnd1) <= min1) {
-	    			min1 = (int) Math.abs(ps.get(i).getId() - rnd1);
-	    			cps = ps.get(i);
-	    		}
-	    	}
-	    	
-	    	for (int i = 0; i < sg.size();i++) {
-	    		if (Math.abs(sg.get(i).getId() - rnd2) <= min2) {
-	    			min2 = (int) Math.abs(sg.get(i).getId() - rnd2);
-	    			csg = sg.get(i);
-	    		}
-	    	}
+    		cps = ps.get(randomGenerator(ps.size()-1));
+	    	csg = sg.get(randomGenerator(sg.size()-1));
+	    	csug = sug.get(randomGenerator(sug.size()-1));
 	
-	    	for (int i = 0; i < sug.size();i++) {
-	    		if (Math.abs(sug.get(i).getId() - rnd3) <= min3) {
-	    			min3 = (int) Math.abs(sug.get(i).getId() - rnd3);
-	    			csug = sug.get(i);
-	    		}
-	    	}
-	    	
 	    	cards = cardsService.findByThirdFilter(cps, csg, csug);
-	    	
+
+	    
 	    	if (cards.size() != 0) {
 	    		flag = false;
 	    	}
@@ -221,8 +195,7 @@ public class CheckCardController {
     	checkTable.setItems(cardsData);
 		checkTable.refresh();
 		checkTable.requestFocus();
-		
-		
+				
 	   	info.setText(
     			info.getText() + 
     			"Card: " + 
@@ -238,6 +211,20 @@ public class CheckCardController {
         this.mainApp = mainApp;
     }
 
+	
+	private int randomGenerator(int supBound) {
+		int rnd = 0;
+		
+		while (true) {
+			rnd = (int) ( Math.random() * 5000);
+			if (rnd <= supBound) {
+				return rnd;
+			}
+		}
+
+	}
+	
+	
 	private class Statistics{
 		private String CardName;
 		private int matchesCounter;

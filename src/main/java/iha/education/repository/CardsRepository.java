@@ -20,7 +20,12 @@ public interface CardsRepository extends CrudRepository<Cards, Long> {
 
 	List<Cards> findAll();
 	@Query(nativeQuery=true)
-	List<Cards> findByWord(@Param("word")String word);
+	List<Cards> findByWordLike(@Param("word")String word);
+	@Query(nativeQuery=true)
+	List<Cards> findByTranslateLike(@Param("translate")String translate);
+	@Query(nativeQuery=true)
+	List<Cards> findBySecondFilterLike(@Param("word")String word,
+			                           @Param("translate")String translate);
 	@Query(nativeQuery=true)
 	List<Cards> findByThirdFilter(@Param("partSpeech") PartSpeech partSpeech,
 								  @Param("senseGroup") SenseGroup senseGroup,
@@ -86,24 +91,7 @@ public interface CardsRepository extends CrudRepository<Cards, Long> {
 			                               @Param("word")String word,
 			                               @Param("translate")String translate);
 
-/*	@Query("insert into Cards (id, partSpeech, senseGroup, subGroup, word, translate, example ) values"
-			 + " ( :id , :partSpeech, :senseGroup, "
-			 + " :subGroup, :word, :translate, :example )")   
-	void saveCard(  
-					@Param("id") Long id,
-					@Param("partSpeech") PartSpeech partSpeech,
-					@Param("senseGroup") SenseGroup senseGroup,
-					@Param("subGroup") SubGroup subGroup,
-					@Param("word") String word,
-					@Param("translate") String translate,
-					@Param("example") String example
-				 );
-	
-	@Query("insert into Cards(id) VALUES (:id)")   
-	void saveCard(  
-					@Param("id") Long id);
-					
- */
+
 	
 }
 

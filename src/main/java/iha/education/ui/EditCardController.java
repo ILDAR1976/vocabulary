@@ -87,6 +87,7 @@ public class EditCardController<T,S,C> {
     		entity = (T) table.getFocusModel().getFocusedItem();
     		
 	    	if (getInsertButton()) {
+	    		
 	    		if (entity instanceof PartSpeech){
 	    			cardsCntl.setTxtPartOfSpeech(entity.toString());
 	    			cardsCntl.setCurrentPartSpeech((PartSpeech)entity);
@@ -97,12 +98,13 @@ public class EditCardController<T,S,C> {
 	    			cardsCntl.setTxtSubGroup(entity.toString());
 	    			cardsCntl.setCurrentSubGroup((SubGroup) entity);
 	    		}
-	    		cardsCntl.getTable().refresh();
 	    	} else {
+	    		
 	    		Boolean flag = true;
 	    		if (entity instanceof PartSpeech){
 	    			PartSpeech oldValue = cardsCntl.getTable().getFocusModel().getFocusedItem().getPartSpeech();
 	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setPartSpeech((PartSpeech) entity);
+	    			cardsCntl.getPartSpeechService().save((PartSpeech)entity);
 	    			if ( ((PartSpeech) entity).getName().equals(oldValue.getName()) &&
 	    				 ((PartSpeech) entity).getTranslate().equals(oldValue.getTranslate())	) {
 	    				flag = false;
@@ -110,6 +112,7 @@ public class EditCardController<T,S,C> {
 	    		} else if (entity instanceof SenseGroup) {
 	    			SenseGroup oldValue = cardsCntl.getTable().getFocusModel().getFocusedItem().getSenseGroup();
 	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setSenseGroup((SenseGroup) entity);
+	    			cardsCntl.getSenseGroupService().save((SenseGroup) entity);
 	    			if ( ((SenseGroup) entity).getName().equals(oldValue.getName()) &&
 		    				 ((SenseGroup) entity).getTranslate().equals(oldValue.getTranslate())	) {
 		    				flag = false;
@@ -117,16 +120,22 @@ public class EditCardController<T,S,C> {
 	    		} else if (entity instanceof SubGroup) {
 	    			SubGroup oldValue = cardsCntl.getTable().getFocusModel().getFocusedItem().getSubGroup();
 	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setSubGroup((SubGroup) entity);
+	    			cardsCntl.getSubGroupService().save((SubGroup) entity);
 	    			if ( ((SubGroup) entity).getName().equals(oldValue.getName()) &&
 		    				 ((SubGroup) entity).getTranslate().equals(oldValue.getTranslate())	) {
 		    				flag = false;
 		    			}
 	    		}
 	    		
-	    		if (flag) cardsCntl.getNotApply().setVisible(true);
-	    		cardsCntl.getTable().refresh();
+	    		if (flag) {
+	    			cardsCntl.getNotApply().setVisible(true);
+	    			cardsCntl.getTable().getFocusModel().getFocusedItem().setModificated(true);
+	    			cardsCntl.saveCurrentRow(cardsCntl.getTable().getFocusModel().getFocusedItem());
+	    			cardsCntl.refresh();
+	    		}
 	    	}
-	    		
+	    	
+	    	cardsCntl.getTable().refresh();
 	    	mainController.getMainFrame().setCenter(cardsCntl.getCardsAnchor());
     	}
     	
@@ -192,6 +201,14 @@ public class EditCardController<T,S,C> {
 		sm.select(0);
    }
 
+    public void setEditable() {
+    	if (getInsertButton()) {
+    		table.setEditable(false);
+    	} else {
+    		table.setEditable(true);
+    	}
+    }
+    
     @SuppressWarnings("unchecked")
 	public void update() {
     	CardsController cntrl = (CardsController) controller;
@@ -287,13 +304,15 @@ public class EditCardController<T,S,C> {
 		T name = ce.getRowValue();
 		if (name instanceof PartSpeech) {
 			((PartSpeech) name).setName(ce.getNewValue());
+			((PartSpeech) name).setModificated(true);
 		} else if (name instanceof SenseGroup) {
 			((SenseGroup) name).setName(ce.getNewValue());
+			((SenseGroup) name).setModificated(true);
 		} else if (name instanceof SubGroup) {
 			((SubGroup) name).setName(ce.getNewValue());
+			((SubGroup) name).setModificated(true);
 		}
 		
-		//notApply.setVisible(true);
 	}
 
 	@SuppressWarnings("unchecked")
@@ -303,13 +322,15 @@ public class EditCardController<T,S,C> {
 		T translate = ce.getRowValue();
 		if (translate instanceof PartSpeech) {
 			((PartSpeech) translate).setTranslate(ce.getNewValue());
+			((PartSpeech) translate).setModificated(true);
 		} else if (translate instanceof SenseGroup) {
 			((SenseGroup) translate).setTranslate(ce.getNewValue());
+			((SenseGroup) translate).setModificated(true);
 		} else if (translate instanceof SubGroup) {
 			((SubGroup) translate).setTranslate(ce.getNewValue());
+			((SubGroup) translate).setModificated(true);
 		}
 		
-		//notApply.setVisible(true);
 	}
 	
 }
