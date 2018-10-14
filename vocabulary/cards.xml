@@ -14919,6 +14919,7 @@
                 <word>horse</word>
                 <translate>лошадь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1491</id>
@@ -14928,6 +14929,7 @@
                 <word>stallion</word>
                 <translate>жеребец</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1492</id>
@@ -14937,6 +14939,7 @@
                 <word>mare</word>
                 <translate>кобыла</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1493</id>
@@ -14946,6 +14949,7 @@
                 <word>goat</word>
                 <translate>коза</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1494</id>
@@ -14955,6 +14959,7 @@
                 <word>he goat</word>
                 <translate>козел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1495</id>
@@ -14964,6 +14969,7 @@
                 <word>sheep</word>
                 <translate>овца</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1496</id>
@@ -14973,6 +14979,7 @@
                 <word>ram</word>
                 <translate>баран</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1497</id>
@@ -14982,6 +14989,7 @@
                 <word>donkey</word>
                 <translate>осел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1498</id>
@@ -14991,6 +14999,7 @@
                 <word>mule</word>
                 <translate>мул</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1499</id>
@@ -15000,6 +15009,7 @@
                 <word>pig</word>
                 <translate>свинья</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1500</id>
@@ -15009,6 +15019,7 @@
                 <word>cat</word>
                 <translate>кошка</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1501</id>
@@ -15018,6 +15029,7 @@
                 <word>dog</word>
                 <translate>собака</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1502</id>
@@ -15027,6 +15039,7 @@
                 <word>calf</word>
                 <translate>теленок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1503</id>
@@ -15036,6 +15049,7 @@
                 <word>lamb</word>
                 <translate>ягненок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1504</id>
@@ -15045,6 +15059,7 @@
                 <word>foal</word>
                 <translate>жеребенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1505</id>
@@ -15054,6 +15069,7 @@
                 <word>piglet</word>
                 <translate>поросенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1506</id>
@@ -15063,6 +15079,7 @@
                 <word>kitten</word>
                 <translate>котенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1507</id>
@@ -15072,6 +15089,7 @@
                 <word>puppy</word>
                 <translate>щенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1508</id>
@@ -15081,6 +15099,7 @@
                 <word>mouse</word>
                 <translate>мышь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1509</id>
@@ -15090,6 +15109,7 @@
                 <word>rat</word>
                 <translate>крыса</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1510</id>
@@ -15099,6 +15119,7 @@
                 <word>bird</word>
                 <translate>птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1511</id>
@@ -15108,6 +15129,7 @@
                 <word>poultry</word>
                 <translate>домашняя птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1512</id>
@@ -15117,6 +15139,7 @@
                 <word>hen</word>
                 <translate>курица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1513</id>
@@ -15126,6 +15149,7 @@
                 <word>cock</word>
                 <translate>петух</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1514</id>
@@ -15135,6 +15159,7 @@
                 <word>chick</word>
                 <translate>цыплёнок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1515</id>
@@ -15144,6 +15169,7 @@
                 <word>goose</word>
                 <translate>гусь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1516</id>
@@ -15153,6 +15179,7 @@
                 <word>gander</word>
                 <translate>гусак</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1517</id>
@@ -15162,6 +15189,7 @@
                 <word>gosling</word>
                 <translate>гусенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1518</id>
@@ -15171,6 +15199,7 @@
                 <word>duck</word>
                 <translate>утка</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1519</id>
@@ -15180,6 +15209,7 @@
                 <word>duckling</word>
                 <translate>гусенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1520</id>
@@ -15189,6 +15219,7 @@
                 <word>drake</word>
                 <translate>селезень</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1521</id>
@@ -15198,6 +15229,7 @@
                 <word>turkey</word>
                 <translate>индюк</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1522</id>
@@ -15207,6 +15239,7 @@
                 <word>wild bird</word>
                 <translate>дикая птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1523</id>
@@ -15216,6 +15249,7 @@
                 <word>crow</word>
                 <translate>ворона</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1524</id>
@@ -15225,6 +15259,7 @@
                 <word>parrot</word>
                 <translate>попугай</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1525</id>
@@ -15234,6 +15269,7 @@
                 <word>sparrow</word>
                 <translate>воробей</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1526</id>
@@ -15243,6 +15279,7 @@
                 <word>magpie</word>
                 <translate>сорока</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1527</id>
@@ -15252,6 +15289,7 @@
                 <word>swan</word>
                 <translate>лебедь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1528</id>
@@ -15261,6 +15299,7 @@
                 <word>crane</word>
                 <translate>журавль</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1529</id>
@@ -15280,6 +15319,7 @@
                 <word>eagle</word>
                 <translate>орел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1531</id>
@@ -15289,6 +15329,7 @@
                 <word>nightingale</word>
                 <translate>соловей</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1532</id>
@@ -15298,6 +15339,7 @@
                 <word>hawk</word>
                 <translate>ястреб</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1533</id>
@@ -15307,6 +15349,7 @@
                 <word>nestling</word>
                 <translate>птенец</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1534</id>
@@ -15316,6 +15359,7 @@
                 <word>fish</word>
                 <translate>рыба</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1535</id>
@@ -15325,6 +15369,7 @@
                 <word>herring</word>
                 <translate>сельдь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1536</id>
@@ -15334,6 +15379,7 @@
                 <word>cod</word>
                 <translate>треска</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1537</id>
@@ -15343,14 +15389,1232 @@
                 <word>crucian</word>
                 <translate>карась</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1538</id>
                 <partSpeech>3</partSpeech>
                 <senseGroup>22</senseGroup>
                 <subGroup>115</subGroup>
-                <word>earp</word>
+                <word>carp</word>
                 <translate>карп</translate>
+                <example></example>
+                <modificated>false</modificated>
+            </cards>
+            <cards>
+                <id>1539</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>salmon</word>
+                <translate>лосось</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1540</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>stargeon</word>
+                <translate>осетр</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1541</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>flatfish</word>
+                <translate>камбала</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1542</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>sheat-fish</word>
+                <translate>сом</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1543</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>roach</word>
+                <translate>плотва</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1544</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>shark</word>
+                <translate>акула</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1545</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>pike</word>
+                <translate>щука</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1546</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>spawn</word>
+                <translate>икра</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1547</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>young fish</word>
+                <translate>малек</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1548</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>insect</word>
+                <translate>насекомое</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1549</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>fly</word>
+                <translate>муха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1550</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>bee</word>
+                <translate>пчела</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1551</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>wasp</word>
+                <translate>оса</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1552</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>butterfly</word>
+                <translate>бабочка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1553</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>caterpillar</word>
+                <translate>гусеница</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1554</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>dragonfly</word>
+                <translate>стрекоза</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1555</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>aphis</word>
+                <translate>тля</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1556</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>ant</word>
+                <translate>муравей</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1557</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>spider</word>
+                <translate>паук</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1558</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>cockroach</word>
+                <translate>таракан</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1559</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>bug</word>
+                <translate>клоп</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1560</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>louse</word>
+                <translate>вошь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1561</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>grasshopper</word>
+                <translate>кузнечик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1562</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>cricket</word>
+                <translate>сверчок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1563</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>reptile</word>
+                <translate>пресмыкающееся</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1564</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>frog</word>
+                <translate>лягушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1565</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>toad</word>
+                <translate>жаба</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1566</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>snake</word>
+                <translate>змея</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1567</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>viper</word>
+                <translate>гадюка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1568</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>grass-snake</word>
+                <translate>уж</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1569</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>tortoise</word>
+                <translate>черепаха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1570</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>turtle</word>
+                <translate>черепаха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1571</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>lizard</word>
+                <translate>ящерица</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1572</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>crocodile</word>
+                <translate>крокодил</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1573</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>sex</word>
+                <translate>пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1574</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>man, male</word>
+                <translate>мужчина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1575</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>woman, female</word>
+                <translate>женщина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1576</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>boy</word>
+                <translate>мальчик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1577</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>girl</word>
+                <translate>девочка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1578</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old man</word>
+                <translate>старик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1579</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old woman</word>
+                <translate>пожилая женщина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1580</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>strong sex</word>
+                <translate>сильный пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1581</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>fair sex</word>
+                <translate>прекрасный пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1582</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>age</word>
+                <translate>возраст</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1583</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>childhood</word>
+                <translate>детство</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1584</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>youth</word>
+                <translate>юность, молодость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1585</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>middle age</word>
+                <translate>зрелый возраст</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1586</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old age</word>
+                <translate>старость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1587</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>baby</word>
+                <translate>младенец</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1588</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>child</word>
+                <translate>ребенок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1589</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>teen-ager</word>
+                <translate>подросток</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1590</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>youth</word>
+                <translate>молодежь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1591</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>birthday</word>
+                <translate>день рождения</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1592</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>name</word>
+                <translate>имя</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1593</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>patronymic</word>
+                <translate>отчество</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1594</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>surname</word>
+                <translate>фамилия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1595</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Mr</word>
+                <translate>господин(перед именем)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1596</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Mrs</word>
+                <translate>госпожа(перед именем)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1597</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Ms</word>
+                <translate>обращение перед имененм незамужней женщины</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1598</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>sir</word>
+                <translate>господин(без имени)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1599</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>madam</word>
+                <translate>мадам, госпожа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1600</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>lady</word>
+                <translate>госпожа, леди</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1601</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>gentelmen</word>
+                <translate>господа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1602</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>passport</word>
+                <translate>паспорт</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1603</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>visiting card</word>
+                <translate>визитная карточка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1604</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>business card</word>
+                <translate>визитная карточка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1605</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>person</word>
+                <translate>человек</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1606</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>origin</word>
+                <translate>происхождение</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1607</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>nationality</word>
+                <translate>национальность</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1608</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>biography</word>
+                <translate>биография</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1609</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>weight</word>
+                <translate>вес</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1610</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>stature</word>
+                <translate>рост / фигура</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1611</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>height</word>
+                <translate>рост</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1612</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>bone</word>
+                <translate>кость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1613</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>muscles</word>
+                <translate>мышцы</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1614</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nerve</word>
+                <translate>нерв</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1615</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>skin</word>
+                <translate>кожа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1616</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hair</word>
+                <translate>волос</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1617</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>cartilage</word>
+                <translate>хрящ</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1618</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>blood</word>
+                <translate>кровь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1619</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>artery</word>
+                <translate>артерия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1620</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>vein</word>
+                <translate>вена</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1621</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>body</word>
+                <translate>тело</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1622</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>head</word>
+                <translate>голова</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1623</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>neck</word>
+                <translate>шея</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1624</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>chest</word>
+                <translate>грудь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1625</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>back</word>
+                <translate>спина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1626</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>abdomen</word>
+                <translate>живот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1627</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>belly</word>
+                <translate>живот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1628</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>waist</word>
+                <translate>талия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1629</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>leg</word>
+                <translate>нога</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1630</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>foot</word>
+                <translate>стопа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1631</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>toe</word>
+                <translate>палец ноги</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1632</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>knee</word>
+                <translate>колено</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1633</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>heel</word>
+                <translate>пятка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1634</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hip</word>
+                <translate>бедро</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1635</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>thigh</word>
+                <translate>бедро</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1636</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>arm</word>
+                <translate>рука</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1637</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hand</word>
+                <translate>кисть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1638</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>finger</word>
+                <translate>палец руки</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1639</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>elbow</word>
+                <translate>локоть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1640</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nail</word>
+                <translate>ноготь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1641</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>head</word>
+                <translate>голова</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1642</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eye</word>
+                <translate>глаз</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1643</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyebrow</word>
+                <translate>бровь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1644</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyelash</word>
+                <translate>ресница</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1645</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyelid</word>
+                <translate>веко</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1646</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>ear</word>
+                <translate>ухо</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1647</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>earlobe</word>
+                <translate>мочка уха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1648</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>mouth</word>
+                <translate>рот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1649</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>lip</word>
+                <translate>губа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1650</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>tooth</word>
+                <translate>зуб</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1651</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>tongue</word>
+                <translate>язык</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1652</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>face</word>
+                <translate>лицо</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1653</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nose</word>
+                <translate>нос</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1654</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>skull</word>
+                <translate>череп</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1655</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>chin</word>
+                <translate>подбродок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1656</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>jaw</word>
+                <translate>челюсть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1657</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>forehead</word>
+                <translate>лоб</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1658</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>cheek</word>
+                <translate>щека</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1659</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>temple</word>
+                <translate>висок</translate>
+                <example></example>
+                <modificated>false</modificated>
+            </cards>
+            <cards>
+                <id>1660</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>brain</word>
+                <translate>мозг</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1661</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>lungs</word>
+                <translate>легкие</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1662</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>heart</word>
+                <translate>сердце</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1663</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>stomach</word>
+                <translate>желудок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1664</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>intestine</word>
+                <translate>кишечник</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1665</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>liver</word>
+                <translate>печень</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1666</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>kidney</word>
+                <translate>почки</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1667</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>father</word>
+                <translate>отец</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1668</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>mother</word>
+                <translate>мать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1669</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>sister</word>
+                <translate>сестра</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1670</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>brother</word>
+                <translate>брат</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1671</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>grandmother</word>
+                <translate>бабушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1672</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>grandfather</word>
+                <translate>дедушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1673</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>child</word>
+                <translate>ребенок</translate>
                 <example></example>
             </cards>
         </cards>
@@ -30427,6 +31691,7 @@
                 <word>horse</word>
                 <translate>лошадь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1491</id>
@@ -30436,6 +31701,7 @@
                 <word>stallion</word>
                 <translate>жеребец</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1492</id>
@@ -30445,6 +31711,7 @@
                 <word>mare</word>
                 <translate>кобыла</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1493</id>
@@ -30454,6 +31721,7 @@
                 <word>goat</word>
                 <translate>коза</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1494</id>
@@ -30463,6 +31731,7 @@
                 <word>he goat</word>
                 <translate>козел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1495</id>
@@ -30472,6 +31741,7 @@
                 <word>sheep</word>
                 <translate>овца</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1496</id>
@@ -30481,6 +31751,7 @@
                 <word>ram</word>
                 <translate>баран</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1497</id>
@@ -30490,6 +31761,7 @@
                 <word>donkey</word>
                 <translate>осел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1498</id>
@@ -30499,6 +31771,7 @@
                 <word>mule</word>
                 <translate>мул</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1499</id>
@@ -30508,6 +31781,7 @@
                 <word>pig</word>
                 <translate>свинья</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1500</id>
@@ -30517,6 +31791,7 @@
                 <word>cat</word>
                 <translate>кошка</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1501</id>
@@ -30526,6 +31801,7 @@
                 <word>dog</word>
                 <translate>собака</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1502</id>
@@ -30535,6 +31811,7 @@
                 <word>calf</word>
                 <translate>теленок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1503</id>
@@ -30544,6 +31821,7 @@
                 <word>lamb</word>
                 <translate>ягненок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1504</id>
@@ -30553,6 +31831,7 @@
                 <word>foal</word>
                 <translate>жеребенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1505</id>
@@ -30562,6 +31841,7 @@
                 <word>piglet</word>
                 <translate>поросенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1506</id>
@@ -30571,6 +31851,7 @@
                 <word>kitten</word>
                 <translate>котенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1507</id>
@@ -30580,6 +31861,7 @@
                 <word>puppy</word>
                 <translate>щенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1508</id>
@@ -30589,6 +31871,7 @@
                 <word>mouse</word>
                 <translate>мышь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1509</id>
@@ -30598,6 +31881,7 @@
                 <word>rat</word>
                 <translate>крыса</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1510</id>
@@ -30607,6 +31891,7 @@
                 <word>bird</word>
                 <translate>птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1511</id>
@@ -30616,6 +31901,7 @@
                 <word>poultry</word>
                 <translate>домашняя птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1512</id>
@@ -30625,6 +31911,7 @@
                 <word>hen</word>
                 <translate>курица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1513</id>
@@ -30634,6 +31921,7 @@
                 <word>cock</word>
                 <translate>петух</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1514</id>
@@ -30643,6 +31931,7 @@
                 <word>chick</word>
                 <translate>цыплёнок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1515</id>
@@ -30652,6 +31941,7 @@
                 <word>goose</word>
                 <translate>гусь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1516</id>
@@ -30661,6 +31951,7 @@
                 <word>gander</word>
                 <translate>гусак</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1517</id>
@@ -30670,6 +31961,7 @@
                 <word>gosling</word>
                 <translate>гусенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1518</id>
@@ -30679,6 +31971,7 @@
                 <word>duck</word>
                 <translate>утка</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1519</id>
@@ -30688,6 +31981,7 @@
                 <word>duckling</word>
                 <translate>гусенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1520</id>
@@ -30697,6 +31991,7 @@
                 <word>drake</word>
                 <translate>селезень</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1521</id>
@@ -30706,6 +32001,7 @@
                 <word>turkey</word>
                 <translate>индюк</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1522</id>
@@ -30715,6 +32011,7 @@
                 <word>wild bird</word>
                 <translate>дикая птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1523</id>
@@ -30724,6 +32021,7 @@
                 <word>crow</word>
                 <translate>ворона</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1524</id>
@@ -30733,6 +32031,7 @@
                 <word>parrot</word>
                 <translate>попугай</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1525</id>
@@ -30742,6 +32041,7 @@
                 <word>sparrow</word>
                 <translate>воробей</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1526</id>
@@ -30751,6 +32051,7 @@
                 <word>magpie</word>
                 <translate>сорока</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1527</id>
@@ -30760,6 +32061,7 @@
                 <word>swan</word>
                 <translate>лебедь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1528</id>
@@ -30769,6 +32071,7 @@
                 <word>crane</word>
                 <translate>журавль</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1529</id>
@@ -30788,6 +32091,7 @@
                 <word>eagle</word>
                 <translate>орел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1531</id>
@@ -30797,6 +32101,7 @@
                 <word>nightingale</word>
                 <translate>соловей</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1532</id>
@@ -30806,6 +32111,7 @@
                 <word>hawk</word>
                 <translate>ястреб</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1533</id>
@@ -30815,6 +32121,7 @@
                 <word>nestling</word>
                 <translate>птенец</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1534</id>
@@ -30824,6 +32131,7 @@
                 <word>fish</word>
                 <translate>рыба</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1535</id>
@@ -30833,6 +32141,7 @@
                 <word>herring</word>
                 <translate>сельдь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1536</id>
@@ -30842,6 +32151,7 @@
                 <word>cod</word>
                 <translate>треска</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1537</id>
@@ -30851,18 +32161,1243 @@
                 <word>crucian</word>
                 <translate>карась</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1538</id>
                 <partSpeech>3</partSpeech>
                 <senseGroup>22</senseGroup>
                 <subGroup>115</subGroup>
-                <word>earp</word>
+                <word>carp</word>
                 <translate>карп</translate>
+                <example></example>
+                <modificated>false</modificated>
+            </cards>
+            <cards>
+                <id>1539</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>salmon</word>
+                <translate>лосось</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1540</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>stargeon</word>
+                <translate>осетр</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1541</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>flatfish</word>
+                <translate>камбала</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1542</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>sheat-fish</word>
+                <translate>сом</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1543</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>roach</word>
+                <translate>плотва</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1544</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>shark</word>
+                <translate>акула</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1545</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>pike</word>
+                <translate>щука</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1546</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>spawn</word>
+                <translate>икра</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1547</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>young fish</word>
+                <translate>малек</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1548</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>insect</word>
+                <translate>насекомое</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1549</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>fly</word>
+                <translate>муха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1550</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>bee</word>
+                <translate>пчела</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1551</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>wasp</word>
+                <translate>оса</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1552</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>butterfly</word>
+                <translate>бабочка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1553</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>caterpillar</word>
+                <translate>гусеница</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1554</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>dragonfly</word>
+                <translate>стрекоза</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1555</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>aphis</word>
+                <translate>тля</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1556</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>ant</word>
+                <translate>муравей</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1557</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>spider</word>
+                <translate>паук</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1558</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>cockroach</word>
+                <translate>таракан</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1559</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>bug</word>
+                <translate>клоп</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1560</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>louse</word>
+                <translate>вошь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1561</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>grasshopper</word>
+                <translate>кузнечик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1562</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>cricket</word>
+                <translate>сверчок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1563</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>reptile</word>
+                <translate>пресмыкающееся</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1564</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>frog</word>
+                <translate>лягушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1565</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>toad</word>
+                <translate>жаба</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1566</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>snake</word>
+                <translate>змея</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1567</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>viper</word>
+                <translate>гадюка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1568</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>grass-snake</word>
+                <translate>уж</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1569</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>tortoise</word>
+                <translate>черепаха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1570</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>turtle</word>
+                <translate>черепаха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1571</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>lizard</word>
+                <translate>ящерица</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1572</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>crocodile</word>
+                <translate>крокодил</translate>
                 <example></example>
             </cards>
         </cards>
         <modificated>false</modificated>
+    </senseGroup>
+    <senseGroup>
+        <id>23</id>
+        <name>Human Being</name>
+        <translate>Человек</translate>
+        <cards>
+            <cards>
+                <id>1573</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>sex</word>
+                <translate>пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1574</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>man, male</word>
+                <translate>мужчина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1575</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>woman, female</word>
+                <translate>женщина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1576</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>boy</word>
+                <translate>мальчик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1577</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>girl</word>
+                <translate>девочка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1578</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old man</word>
+                <translate>старик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1579</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old woman</word>
+                <translate>пожилая женщина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1580</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>strong sex</word>
+                <translate>сильный пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1581</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>fair sex</word>
+                <translate>прекрасный пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1582</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>age</word>
+                <translate>возраст</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1583</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>childhood</word>
+                <translate>детство</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1584</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>youth</word>
+                <translate>юность, молодость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1585</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>middle age</word>
+                <translate>зрелый возраст</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1586</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old age</word>
+                <translate>старость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1587</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>baby</word>
+                <translate>младенец</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1588</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>child</word>
+                <translate>ребенок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1589</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>teen-ager</word>
+                <translate>подросток</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1590</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>youth</word>
+                <translate>молодежь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1591</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>birthday</word>
+                <translate>день рождения</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1592</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>name</word>
+                <translate>имя</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1593</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>patronymic</word>
+                <translate>отчество</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1594</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>surname</word>
+                <translate>фамилия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1595</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Mr</word>
+                <translate>господин(перед именем)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1596</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Mrs</word>
+                <translate>госпожа(перед именем)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1597</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Ms</word>
+                <translate>обращение перед имененм незамужней женщины</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1598</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>sir</word>
+                <translate>господин(без имени)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1599</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>madam</word>
+                <translate>мадам, госпожа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1600</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>lady</word>
+                <translate>госпожа, леди</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1601</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>gentelmen</word>
+                <translate>господа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1602</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>passport</word>
+                <translate>паспорт</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1603</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>visiting card</word>
+                <translate>визитная карточка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1604</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>business card</word>
+                <translate>визитная карточка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1605</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>person</word>
+                <translate>человек</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1606</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>origin</word>
+                <translate>происхождение</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1607</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>nationality</word>
+                <translate>национальность</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1608</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>biography</word>
+                <translate>биография</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1609</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>weight</word>
+                <translate>вес</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1610</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>stature</word>
+                <translate>рост / фигура</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1611</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>height</word>
+                <translate>рост</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1612</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>bone</word>
+                <translate>кость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1613</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>muscles</word>
+                <translate>мышцы</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1614</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nerve</word>
+                <translate>нерв</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1615</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>skin</word>
+                <translate>кожа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1616</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hair</word>
+                <translate>волос</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1617</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>cartilage</word>
+                <translate>хрящ</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1618</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>blood</word>
+                <translate>кровь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1619</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>artery</word>
+                <translate>артерия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1620</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>vein</word>
+                <translate>вена</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1621</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>body</word>
+                <translate>тело</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1622</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>head</word>
+                <translate>голова</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1623</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>neck</word>
+                <translate>шея</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1624</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>chest</word>
+                <translate>грудь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1625</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>back</word>
+                <translate>спина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1626</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>abdomen</word>
+                <translate>живот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1627</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>belly</word>
+                <translate>живот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1628</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>waist</word>
+                <translate>талия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1629</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>leg</word>
+                <translate>нога</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1630</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>foot</word>
+                <translate>стопа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1631</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>toe</word>
+                <translate>палец ноги</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1632</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>knee</word>
+                <translate>колено</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1633</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>heel</word>
+                <translate>пятка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1634</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hip</word>
+                <translate>бедро</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1635</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>thigh</word>
+                <translate>бедро</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1636</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>arm</word>
+                <translate>рука</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1637</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hand</word>
+                <translate>кисть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1638</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>finger</word>
+                <translate>палец руки</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1639</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>elbow</word>
+                <translate>локоть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1640</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nail</word>
+                <translate>ноготь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1641</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>head</word>
+                <translate>голова</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1642</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eye</word>
+                <translate>глаз</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1643</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyebrow</word>
+                <translate>бровь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1644</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyelash</word>
+                <translate>ресница</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1645</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyelid</word>
+                <translate>веко</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1646</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>ear</word>
+                <translate>ухо</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1647</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>earlobe</word>
+                <translate>мочка уха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1648</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>mouth</word>
+                <translate>рот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1649</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>lip</word>
+                <translate>губа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1650</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>tooth</word>
+                <translate>зуб</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1651</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>tongue</word>
+                <translate>язык</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1652</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>face</word>
+                <translate>лицо</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1653</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nose</word>
+                <translate>нос</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1654</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>skull</word>
+                <translate>череп</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1655</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>chin</word>
+                <translate>подбродок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1656</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>jaw</word>
+                <translate>челюсть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1657</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>forehead</word>
+                <translate>лоб</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1658</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>cheek</word>
+                <translate>щека</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1659</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>temple</word>
+                <translate>висок</translate>
+                <example></example>
+                <modificated>false</modificated>
+            </cards>
+            <cards>
+                <id>1660</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>brain</word>
+                <translate>мозг</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1661</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>lungs</word>
+                <translate>легкие</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1662</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>heart</word>
+                <translate>сердце</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1663</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>stomach</word>
+                <translate>желудок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1664</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>intestine</word>
+                <translate>кишечник</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1665</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>liver</word>
+                <translate>печень</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1666</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>kidney</word>
+                <translate>почки</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1667</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>father</word>
+                <translate>отец</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1668</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>mother</word>
+                <translate>мать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1669</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>sister</word>
+                <translate>сестра</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1670</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>brother</word>
+                <translate>брат</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1671</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>grandmother</word>
+                <translate>бабушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1672</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>grandfather</word>
+                <translate>дедушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1673</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>child</word>
+                <translate>ребенок</translate>
+                <example></example>
+            </cards>
+        </cards>
     </senseGroup>
     <subGroup>
         <id>1</id>
@@ -46663,6 +49198,7 @@
                 <word>horse</word>
                 <translate>лошадь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1491</id>
@@ -46672,6 +49208,7 @@
                 <word>stallion</word>
                 <translate>жеребец</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1492</id>
@@ -46681,6 +49218,7 @@
                 <word>mare</word>
                 <translate>кобыла</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1493</id>
@@ -46690,6 +49228,7 @@
                 <word>goat</word>
                 <translate>коза</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1494</id>
@@ -46699,6 +49238,7 @@
                 <word>he goat</word>
                 <translate>козел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1495</id>
@@ -46708,6 +49248,7 @@
                 <word>sheep</word>
                 <translate>овца</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1496</id>
@@ -46717,6 +49258,7 @@
                 <word>ram</word>
                 <translate>баран</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1497</id>
@@ -46726,6 +49268,7 @@
                 <word>donkey</word>
                 <translate>осел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1498</id>
@@ -46735,6 +49278,7 @@
                 <word>mule</word>
                 <translate>мул</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1499</id>
@@ -46744,6 +49288,7 @@
                 <word>pig</word>
                 <translate>свинья</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1500</id>
@@ -46753,6 +49298,7 @@
                 <word>cat</word>
                 <translate>кошка</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1501</id>
@@ -46762,6 +49308,7 @@
                 <word>dog</word>
                 <translate>собака</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1502</id>
@@ -46771,6 +49318,7 @@
                 <word>calf</word>
                 <translate>теленок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1503</id>
@@ -46780,6 +49328,7 @@
                 <word>lamb</word>
                 <translate>ягненок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1504</id>
@@ -46789,6 +49338,7 @@
                 <word>foal</word>
                 <translate>жеребенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1505</id>
@@ -46798,6 +49348,7 @@
                 <word>piglet</word>
                 <translate>поросенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1506</id>
@@ -46807,6 +49358,7 @@
                 <word>kitten</word>
                 <translate>котенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1507</id>
@@ -46816,6 +49368,7 @@
                 <word>puppy</word>
                 <translate>щенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1508</id>
@@ -46825,6 +49378,7 @@
                 <word>mouse</word>
                 <translate>мышь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1509</id>
@@ -46834,6 +49388,7 @@
                 <word>rat</word>
                 <translate>крыса</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
         </cards>
         <modificated>false</modificated>
@@ -46851,6 +49406,7 @@
                 <word>bird</word>
                 <translate>птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1511</id>
@@ -46860,6 +49416,7 @@
                 <word>poultry</word>
                 <translate>домашняя птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1512</id>
@@ -46869,6 +49426,7 @@
                 <word>hen</word>
                 <translate>курица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1513</id>
@@ -46878,6 +49436,7 @@
                 <word>cock</word>
                 <translate>петух</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1514</id>
@@ -46887,6 +49446,7 @@
                 <word>chick</word>
                 <translate>цыплёнок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1515</id>
@@ -46896,6 +49456,7 @@
                 <word>goose</word>
                 <translate>гусь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1516</id>
@@ -46905,6 +49466,7 @@
                 <word>gander</word>
                 <translate>гусак</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1517</id>
@@ -46914,6 +49476,7 @@
                 <word>gosling</word>
                 <translate>гусенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1518</id>
@@ -46923,6 +49486,7 @@
                 <word>duck</word>
                 <translate>утка</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1519</id>
@@ -46932,6 +49496,7 @@
                 <word>duckling</word>
                 <translate>гусенок</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1520</id>
@@ -46941,6 +49506,7 @@
                 <word>drake</word>
                 <translate>селезень</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1521</id>
@@ -46950,6 +49516,7 @@
                 <word>turkey</word>
                 <translate>индюк</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1522</id>
@@ -46959,6 +49526,7 @@
                 <word>wild bird</word>
                 <translate>дикая птица</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1523</id>
@@ -46968,6 +49536,7 @@
                 <word>crow</word>
                 <translate>ворона</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1524</id>
@@ -46977,6 +49546,7 @@
                 <word>parrot</word>
                 <translate>попугай</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1525</id>
@@ -46986,6 +49556,7 @@
                 <word>sparrow</word>
                 <translate>воробей</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1526</id>
@@ -46995,6 +49566,7 @@
                 <word>magpie</word>
                 <translate>сорока</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1527</id>
@@ -47004,6 +49576,7 @@
                 <word>swan</word>
                 <translate>лебедь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1528</id>
@@ -47013,6 +49586,7 @@
                 <word>crane</word>
                 <translate>журавль</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1529</id>
@@ -47032,6 +49606,7 @@
                 <word>eagle</word>
                 <translate>орел</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1531</id>
@@ -47041,6 +49616,7 @@
                 <word>nightingale</word>
                 <translate>соловей</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1532</id>
@@ -47050,6 +49626,7 @@
                 <word>hawk</word>
                 <translate>ястреб</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1533</id>
@@ -47059,8 +49636,10 @@
                 <word>nestling</word>
                 <translate>птенец</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
         </cards>
+        <modificated>false</modificated>
     </subGroup>
     <subGroup>
         <id>115</id>
@@ -47075,6 +49654,7 @@
                 <word>fish</word>
                 <translate>рыба</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1535</id>
@@ -47084,6 +49664,7 @@
                 <word>herring</word>
                 <translate>сельдь</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1536</id>
@@ -47093,6 +49674,7 @@
                 <word>cod</word>
                 <translate>треска</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1537</id>
@@ -47102,14 +49684,1268 @@
                 <word>crucian</word>
                 <translate>карась</translate>
                 <example></example>
+                <modificated>false</modificated>
             </cards>
             <cards>
                 <id>1538</id>
                 <partSpeech>3</partSpeech>
                 <senseGroup>22</senseGroup>
                 <subGroup>115</subGroup>
-                <word>earp</word>
+                <word>carp</word>
                 <translate>карп</translate>
+                <example></example>
+                <modificated>false</modificated>
+            </cards>
+            <cards>
+                <id>1539</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>salmon</word>
+                <translate>лосось</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1540</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>stargeon</word>
+                <translate>осетр</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1541</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>flatfish</word>
+                <translate>камбала</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1542</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>sheat-fish</word>
+                <translate>сом</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1543</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>roach</word>
+                <translate>плотва</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1544</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>shark</word>
+                <translate>акула</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1545</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>pike</word>
+                <translate>щука</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1546</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>spawn</word>
+                <translate>икра</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1547</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>115</subGroup>
+                <word>young fish</word>
+                <translate>малек</translate>
+                <example></example>
+            </cards>
+        </cards>
+        <modificated>false</modificated>
+    </subGroup>
+    <subGroup>
+        <id>116</id>
+        <name>Insects</name>
+        <translate>насекомые</translate>
+        <cards>
+            <cards>
+                <id>1548</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>insect</word>
+                <translate>насекомое</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1549</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>fly</word>
+                <translate>муха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1550</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>bee</word>
+                <translate>пчела</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1551</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>wasp</word>
+                <translate>оса</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1552</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>butterfly</word>
+                <translate>бабочка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1553</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>caterpillar</word>
+                <translate>гусеница</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1554</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>dragonfly</word>
+                <translate>стрекоза</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1555</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>aphis</word>
+                <translate>тля</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1556</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>ant</word>
+                <translate>муравей</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1557</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>spider</word>
+                <translate>паук</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1558</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>cockroach</word>
+                <translate>таракан</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1559</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>bug</word>
+                <translate>клоп</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1560</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>louse</word>
+                <translate>вошь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1561</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>grasshopper</word>
+                <translate>кузнечик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1562</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>116</subGroup>
+                <word>cricket</word>
+                <translate>сверчок</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </subGroup>
+    <subGroup>
+        <id>117</id>
+        <name>Other Classes</name>
+        <translate>Прочие классы</translate>
+        <cards>
+            <cards>
+                <id>1563</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>reptile</word>
+                <translate>пресмыкающееся</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1564</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>frog</word>
+                <translate>лягушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1565</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>toad</word>
+                <translate>жаба</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1566</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>snake</word>
+                <translate>змея</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1567</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>viper</word>
+                <translate>гадюка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1568</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>grass-snake</word>
+                <translate>уж</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1569</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>tortoise</word>
+                <translate>черепаха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1570</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>turtle</word>
+                <translate>черепаха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1571</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>lizard</word>
+                <translate>ящерица</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1572</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>22</senseGroup>
+                <subGroup>117</subGroup>
+                <word>crocodile</word>
+                <translate>крокодил</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </subGroup>
+    <subGroup>
+        <id>118</id>
+        <name>General information</name>
+        <translate>Общие сведения</translate>
+        <cards>
+            <cards>
+                <id>1573</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>sex</word>
+                <translate>пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1574</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>man, male</word>
+                <translate>мужчина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1575</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>woman, female</word>
+                <translate>женщина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1576</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>boy</word>
+                <translate>мальчик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1577</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>girl</word>
+                <translate>девочка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1578</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old man</word>
+                <translate>старик</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1579</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old woman</word>
+                <translate>пожилая женщина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1580</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>strong sex</word>
+                <translate>сильный пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1581</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>fair sex</word>
+                <translate>прекрасный пол</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1582</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>age</word>
+                <translate>возраст</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1583</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>childhood</word>
+                <translate>детство</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1584</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>youth</word>
+                <translate>юность, молодость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1585</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>middle age</word>
+                <translate>зрелый возраст</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1586</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>old age</word>
+                <translate>старость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1587</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>baby</word>
+                <translate>младенец</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1588</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>child</word>
+                <translate>ребенок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1589</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>teen-ager</word>
+                <translate>подросток</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1590</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>youth</word>
+                <translate>молодежь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1591</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>birthday</word>
+                <translate>день рождения</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1592</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>name</word>
+                <translate>имя</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1593</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>patronymic</word>
+                <translate>отчество</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1594</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>surname</word>
+                <translate>фамилия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1595</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Mr</word>
+                <translate>господин(перед именем)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1596</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Mrs</word>
+                <translate>госпожа(перед именем)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1597</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>Ms</word>
+                <translate>обращение перед имененм незамужней женщины</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1598</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>sir</word>
+                <translate>господин(без имени)</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1599</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>madam</word>
+                <translate>мадам, госпожа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1600</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>lady</word>
+                <translate>госпожа, леди</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1601</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>gentelmen</word>
+                <translate>господа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1602</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>passport</word>
+                <translate>паспорт</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1603</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>visiting card</word>
+                <translate>визитная карточка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1604</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>business card</word>
+                <translate>визитная карточка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1605</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>person</word>
+                <translate>человек</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1606</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>origin</word>
+                <translate>происхождение</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1607</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>nationality</word>
+                <translate>национальность</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1608</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>118</subGroup>
+                <word>biography</word>
+                <translate>биография</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </subGroup>
+    <subGroup>
+        <id>119</id>
+        <name>Anatomy</name>
+        <translate>Анатомия</translate>
+        <cards>
+            <cards>
+                <id>1609</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>weight</word>
+                <translate>вес</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1610</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>stature</word>
+                <translate>рост / фигура</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1611</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>height</word>
+                <translate>рост</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1612</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>bone</word>
+                <translate>кость</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1613</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>muscles</word>
+                <translate>мышцы</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1614</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nerve</word>
+                <translate>нерв</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1615</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>skin</word>
+                <translate>кожа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1616</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hair</word>
+                <translate>волос</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1617</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>cartilage</word>
+                <translate>хрящ</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1618</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>blood</word>
+                <translate>кровь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1619</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>artery</word>
+                <translate>артерия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1620</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>vein</word>
+                <translate>вена</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1621</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>body</word>
+                <translate>тело</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1622</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>head</word>
+                <translate>голова</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1623</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>neck</word>
+                <translate>шея</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1624</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>chest</word>
+                <translate>грудь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1625</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>back</word>
+                <translate>спина</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1626</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>abdomen</word>
+                <translate>живот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1627</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>belly</word>
+                <translate>живот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1628</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>waist</word>
+                <translate>талия</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1629</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>leg</word>
+                <translate>нога</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1630</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>foot</word>
+                <translate>стопа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1631</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>toe</word>
+                <translate>палец ноги</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1632</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>knee</word>
+                <translate>колено</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1633</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>heel</word>
+                <translate>пятка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1634</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hip</word>
+                <translate>бедро</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1635</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>thigh</word>
+                <translate>бедро</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1636</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>arm</word>
+                <translate>рука</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1637</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>hand</word>
+                <translate>кисть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1638</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>finger</word>
+                <translate>палец руки</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1639</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>elbow</word>
+                <translate>локоть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1640</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nail</word>
+                <translate>ноготь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1641</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>head</word>
+                <translate>голова</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1642</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eye</word>
+                <translate>глаз</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1643</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyebrow</word>
+                <translate>бровь</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1644</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyelash</word>
+                <translate>ресница</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1645</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>eyelid</word>
+                <translate>веко</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1646</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>ear</word>
+                <translate>ухо</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1647</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>earlobe</word>
+                <translate>мочка уха</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1648</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>mouth</word>
+                <translate>рот</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1649</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>lip</word>
+                <translate>губа</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1650</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>tooth</word>
+                <translate>зуб</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1651</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>tongue</word>
+                <translate>язык</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1652</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>face</word>
+                <translate>лицо</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1653</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>nose</word>
+                <translate>нос</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1654</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>skull</word>
+                <translate>череп</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1655</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>chin</word>
+                <translate>подбродок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1656</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>jaw</word>
+                <translate>челюсть</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1657</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>forehead</word>
+                <translate>лоб</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1658</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>cheek</word>
+                <translate>щека</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1659</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>temple</word>
+                <translate>висок</translate>
+                <example></example>
+                <modificated>false</modificated>
+            </cards>
+            <cards>
+                <id>1660</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>brain</word>
+                <translate>мозг</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1661</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>lungs</word>
+                <translate>легкие</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1662</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>heart</word>
+                <translate>сердце</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1663</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>stomach</word>
+                <translate>желудок</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1664</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>intestine</word>
+                <translate>кишечник</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1665</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>liver</word>
+                <translate>печень</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1666</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>119</subGroup>
+                <word>kidney</word>
+                <translate>почки</translate>
+                <example></example>
+            </cards>
+        </cards>
+    </subGroup>
+    <subGroup>
+        <id>120</id>
+        <name>Human Relations</name>
+        <translate>Отношения между людьми</translate>
+        <cards>
+            <cards>
+                <id>1667</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>father</word>
+                <translate>отец</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1668</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>mother</word>
+                <translate>мать</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1669</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>sister</word>
+                <translate>сестра</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1670</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>brother</word>
+                <translate>брат</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1671</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>grandmother</word>
+                <translate>бабушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1672</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>grandfather</word>
+                <translate>дедушка</translate>
+                <example></example>
+            </cards>
+            <cards>
+                <id>1673</id>
+                <partSpeech>3</partSpeech>
+                <senseGroup>23</senseGroup>
+                <subGroup>120</subGroup>
+                <word>child</word>
+                <translate>ребенок</translate>
                 <example></example>
             </cards>
         </cards>
