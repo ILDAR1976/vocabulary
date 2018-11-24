@@ -22,6 +22,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.sun.javafx.application.LauncherImpl;
+
+import iha.education.Application;
+import iha.education.CurrentPreloader;
 import iha.education.entity.Cards;
 import iha.education.entity.PartSpeech;
 import iha.education.entity.SenseGroup;
@@ -30,11 +34,14 @@ import iha.education.service.CardsService;
 import iha.education.service.PartSpeechService;
 import iha.education.service.SenseGroupService;
 import iha.education.service.SubGroupService;
+import iha.education.ProgressBeanPostProcessor;
 import javafx.collections.FXCollections;
+
 
 public class DataLoader {
 	
 	private Logger logger = LoggerFactory.getLogger(DataLoader.class);
+	private Application application;
 	
 	@Autowired
 	private PartSpeechService partSpeechService;
@@ -99,6 +106,8 @@ public class DataLoader {
 					c.setPartSpeech(ps);
 					cards.add(c);
 				}
+				
+				this.generateInfo("load part speech: " + ps.getName());
 			});
 			ps.getCards().clear();
 			ps.setModificated(false);
@@ -118,6 +127,8 @@ public class DataLoader {
 					c.setSenseGroup(sg);
 					cards.add(c);
 				}
+				
+				this.generateInfo("load sense group: " + sg.getName());
 			});
 			sg.getCards().clear();
 			sg.setModificated(false);
@@ -134,6 +145,8 @@ public class DataLoader {
 					c.setSubGroup(sug);
 					cards.add(c);
 				}
+				
+				this.generateInfo("load sub group: " + sug.getName());
 			});
 			sug.getCards().clear();
 			sug.setModificated(false);
@@ -143,9 +156,10 @@ public class DataLoader {
 		cards.stream().forEach(c ->{
 			c.setModificated(false);
 			cardsService.save(c);
+			this.generateInfo("load word: " + c.getWord());
 		});
 		
-		
+		logger.info("count: "+ProgressBeanPostProcessor.getCounter());
 		
 	}
 	
@@ -255,4 +269,17 @@ public class DataLoader {
 		  }
 	}
 
+    private void generateInfo(String info) {	
+    	ProgressBeanPostProcessor.setCounter(ProgressBeanPostProcessor.getCounter()+1);
+		LauncherImpl.notifyPreloader(application, new CurrentPreloader.PreloaderProgressNotification( ProgressBeanPostProcessor.getCounter(), info));
+    }
+
+	
+    public Application getApplication() {
+		return application;
+	}
+
+	public void setApplication(Application application) {
+		this.application = application;
+	}
 }

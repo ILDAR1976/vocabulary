@@ -18,10 +18,17 @@ import java.io.InputStream;
 public class ConfigurationControllers {
 
 	private DataLoader dataSource;
+	private Application application;
+	
+	@Bean
+	public ProgressBeanPostProcessor progressBeanPostProcessor() {
+		return new ProgressBeanPostProcessor(application);
+	}
 
 	@Bean(name = "mainSource")
 	public DataLoader getSource() {
 		this.dataSource = new DataLoader();
+		this.dataSource.setApplication(application);
 		return dataSource;
 	}
 
@@ -49,7 +56,7 @@ public class ConfigurationControllers {
 	public View getEditCardView() throws IOException {
 		return loadView("fxml/editCard.fxml");
 	}
-	
+
 	@Bean
 	public CardsController getCardsController() throws IOException {
 		return (CardsController) getCardsView().getController();

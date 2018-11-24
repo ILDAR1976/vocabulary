@@ -4,6 +4,7 @@ import static iha.education.utils.Utils.loadCards;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -66,6 +67,19 @@ public class Utils {
 		
 		return new File(path.toString() +  "/cards.xml");
 		
+	}
+
+	public static void write(String fileName, String text) {
+		try {
+			PrintWriter out = new PrintWriter(new File(fileName).getAbsoluteFile());
+			try {
+				out.print(text);
+			} finally {
+				out.close();
+			}
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 }

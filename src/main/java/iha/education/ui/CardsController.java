@@ -133,7 +133,6 @@ public class CardsController {
 	public AnchorPane getCardsAnchor() {
 		return cardsAnchor;
 	}
-
 	
 	@SuppressWarnings("unchecked")
 	@PostConstruct
@@ -635,16 +634,13 @@ public class CardsController {
 		return partSpeechService;
 	}
 
-
 	public SenseGroupService getSenseGroupService() {
 		return senseGroupService;
 	}
 
-
 	public SubGroupService getSubGroupService() {
 		return subGroupService;
 	}
-
 
 	public void saveCurrentRow(Cards currentCards) {
 		cardsService.save(currentCards);

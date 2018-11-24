@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Lazy;
-
 import iha.education.ui.CardsController;
 import iha.education.ui.CheckCardController;
 import iha.education.ui.MainController;
@@ -65,7 +64,7 @@ public class Application extends AbstractJavaFxApplicationSupport {
     }
 
     public static void main(String[] args) {
-        launchApp(Application.class, args);
+        launchApp(Application.class, CurrentPreloader.class, args);
     }
 
 	public ConfigurationControllers.View getMainView() {

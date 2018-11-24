@@ -224,7 +224,6 @@ public class CheckCardController {
 
 	}
 	
-	
 	private class Statistics{
 		private String CardName;
 		private int matchesCounter;

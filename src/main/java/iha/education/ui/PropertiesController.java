@@ -100,7 +100,7 @@ public class PropertiesController {
     		case 2:
     			wrapper = new CardsListWrapper();
     		    wrapper = loadCards(file, wrapper);
-    		    transferToSpringContext();
+    		    //transferToSpringContext();
     	    	cards = cardsService.findAll();
       	        data = FXCollections.observableArrayList(cards);
     	        break;
